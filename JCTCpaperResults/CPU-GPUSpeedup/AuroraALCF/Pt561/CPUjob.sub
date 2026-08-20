@@ -1,0 +1,50 @@
+#!/bin/bash
+#PBS -l select=1
+#PBS -l place=scatter
+#PBS -l walltime=00:40:59
+#PBS -l filesystems=flare
+#PBS -j oe
+#PBS -q debug
+#PBS -A DFTCalc2
+#PBS -N PAWjctc_CPU
+
+module load boost
+
+cd $PBS_O_WORKDIR
+
+NNODES=$(wc -l < "$PBS_NODEFILE")
+
+# Aurora CPU-only optimal config
+NRANKS_PER_NODE=102   # 104 cores - 2 reserved for OS
+NTHREADS=1
+NTOTRANKS=$(( NNODES * NRANKS_PER_NODE ))
+
+echo "Number of Nodes Allocated = $NNODES"
+echo "Ranks per node            = $NRANKS_PER_NODE"
+echo "Total MPI ranks           = $NTOTRANKS"
+
+# Threading (pure MPI)
+export OMP_NUM_THREADS=1
+export OMP_PLACES=cores
+export OMP_PROC_BIND=close
+
+# Disable GPU path completely
+export MPIR_CVAR_ENABLE_GPU=0
+unset CCL_DEVICE
+
+# MPI / fabric settings (keep your working ones)
+export CCL_LOG_LEVEL=error
+export CCL_ATL_TRANSPORT=ofi
+export FI_PROVIDER=cxi
+export CCL_KVS_MODE=pmi
+export CCL_PROCESS_LAUNCHER=pmix
+export FI_MR_CACHE_MONITOR=userfaultfd
+export CCL_KVS_CONNECTION_TIMEOUT=300
+
+# Launch (critical change: depth=1)
+mpiexec -n ${NTOTRANKS} \
+        --ppn ${NRANKS_PER_NODE} \
+        --depth=1 \
+        --cpu-bind=depth \
+        /lus/flare/projects/DFTCalc2/kartickr/dftfe_PAWjctc/install/real/dftfe TimingCPU.prm \
+        > CPUout_1Node_PGDMerge2.op

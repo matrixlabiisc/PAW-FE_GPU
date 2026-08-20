@@ -1,0 +1,80 @@
+set SOLVER MODE = GS
+set VERBOSITY = 4
+set MEM OPT MODE = false
+set USE GPU = true
+subsection Geometry
+  set NATOMS=2253
+  set NATOM TYPES=4
+  set ATOMIC COORDINATES FILE      = coordinates.inp           
+  set DOMAIN VECTORS FILE = domainVectors.inp 
+  subsection Optimization
+    set CELL STRESS              = false
+    set ION FORCE = true
+  end
+end
+
+
+subsection Boundary conditions
+  set PERIODIC1                       = true
+  set PERIODIC2                       = true
+  set PERIODIC3                       = false
+  set APPLY NEUMANN BOUNDARY CONDITION = true
+end
+
+subsection Finite element mesh parameters
+  set POLYNOMIAL ORDER=7
+  set DENSITY QUADRATURE RULE         = 14
+  subsection Auto mesh generation parameters
+    set MESH SIZE AROUND ATOM  = 1.17
+    set ATOM BALL RADIUS                  = 4.5
+  end
+end
+
+
+subsection DFT functional parameters
+  set EXCHANGE CORRELATION TYPE   = GGA-PBE
+  set PSEUDOPOTENTIAL CALCULATION = true  
+  set PSEUDOPOTENTIAL FILE NAMES LIST = pseudo.inp
+end
+
+subsection SCF parameters
+set ADAPT ANDERSON MIXING PARAMETER = false
+set MIXING HISTORY                  = 15
+  set TEMPERATURE                      = 500
+  set TOLERANCE                        = 5e-6
+  set MIXING METHOD                     =ANDERSON
+  set MAXIMUM ITERATIONS       = 5
+  set USE APPROX DELTA MATRIX                 = true
+  set USE GRAD PHI MIXING                     = false
+  set ADAPT ANDERSON MIXING PARAMETER         = true
+  subsection Eigen-solver parameters
+      set RESTRICT TO SINGLE FILTER PASS                       = true
+    set REUSE LANCZOS UPPER BOUND                            = true  
+      set NUMBER OF KOHN-SHAM WAVEFUNCTIONS = 12600 
+      set CHEBY WFC BLOCK SIZE                                 = 1260
+      set WFC BLOCK SIZE                                       = 1260
+      set OVERLAP COMPUTE COMMUN CHEBY                         = true    
+      set USE APPROXIMATE OVERLAP MATRIX                       = false  
+      set USE SINGLE PREC CHEBY                                = true  
+      set USE MIXED PREC RR_SR                                 = true       
+set TENSOR OP TYPE SINGLE PREC CHEBY                     = TF32  
+set COMMUN PREC CHEBY                                    = BF16              
+  end
+end
+subsection GPU
+  set AUTO GPU BLOCK SIZES         = false
+  set FINE GRAINED GPU TIMINGS     = true
+  set SUBSPACE ROT FULL CPU MEM    = true
+  set USE DCCL                     = true
+  set USE ELPA GPU KERNEL          = true
+  set USE GPUDIRECT MPI ALL REDUCE = true
+end
+
+subsection Poisson problem parameters
+  set GPU MODE           = true
+  set MAXIMUM ITERATIONS = 20000
+  set TOLERANCE          = 1e-8
+  set VSELF GPU MODE     = true
+    set USE TWO GRID POISSON = true
+  set LOW DEGREE POLYNOMIAL = 4
+end

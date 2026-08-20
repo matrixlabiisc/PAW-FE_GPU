@@ -1,0 +1,46 @@
+#!/bin/bash
+#PBS -l select=256
+#PBS -l place=scatter
+#PBS -l walltime=00:15:00
+#PBS -l filesystems=home
+#PBS -j oe
+#PBS -q debug-scaling
+#PBS -A DFTCalc2 
+#PBS -N PAW-FE
+
+
+echo "Number of Nodes Allocated      = $PBS_NUM_NODES"
+echo "Number of Tasks Allocated      = $PBS_NUM_PPN"
+echo "CPU on node                    = $PBS_NUM_CPUS"
+module load cmake ninja boost
+
+export MPIR_CVAR_ENABLE_GPU=0
+cd $PBS_O_WORKDIR
+
+NNODES=$(wc -l < "$PBS_NODEFILE")
+NRANKS_PER_NODE=12
+NDEPTH=1
+NTHREADS=8
+NTOTRANKS=$(( NNODES * NRANKS_PER_NODE ))
+
+export OMP_NUM_THREADS=8
+export OMP_PLACES=threads
+export DFTFE_NUM_THREADS=8
+export DEAL_II_NUM_THREADS=1
+export OMP_MAX_ACTIVE_LEVELS=1
+export ELPA_DEFAULT_omp_threads=8
+export MKL_NUM_THREADS=8
+export OMP_PROC_BIND=close
+export MKL_DYNAMIC=FALSE
+
+export CPU_BIND_SCHEME="--cpu-bind=list:1-8:9-16:17-24:25-32:33-40:41-48:53-60:61-68:69-76:77-84:85-92:93-100"
+export GPU_BIND_SCHEME="--gpu-bind=list:0.0:0.1:1.0:1.1:2.0:2.1:3.0:3.1:4.0:4.1:5.0:5.1"
+#export CPU_BIND_SCHEME="--cpu-bind list:0-7,104-111:8-15,112-119:16-23,120-127:24-31,128-135:32-39,136-143:40-47,144-151:52-59,156-163:60-67,164-171:68-75,172-179:76-83,180-187:84-91,188-195:92-99,196-203"
+
+export BASE=/lus/flare/projects/DFTCalc2/kartickr/dftfe_PAWjctc/install/real
+#mpiexec -n ${NTOTRANKS} --ppn ${NRANKS_PER_NODE} ${CPU_BIND_SCHEME} ${GPU_BIND_SCHEME} $BASE/dftfe Poly6Mesh0.6Electro6.prm > out_Poly6Mesh0.6Electro6.op
+
+#mpiexec -n ${NTOTRANKS} --ppn ${NRANKS_PER_NODE} ${CPU_BIND_SCHEME} ${GPU_BIND_SCHEME} $BASE/dftfe Poly4Mesh1.0Electro8.prm > out_Poly4Mesh1.0Electro8.op
+mpiexec -n ${NTOTRANKS} --ppn ${NRANKS_PER_NODE} ${CPU_BIND_SCHEME} ${GPU_BIND_SCHEME} /home/phanim/nishant/install_DFTFE/dftfe_PAWjctc/install-GPUAware-OFF-NCCL-ON-17f048a/real/dftfe parameterFile_a.prm  > outJCTC_256Nodes.op
+#mpiexec -n ${NTOTRANKS} --ppn ${NRANKS_PER_NODE} ${CPU_BIND_SCHEME} ${GPU_BIND_SCHEME} $BASE/dftfe Poly7Mesh2.0Electro8.prm > out_Poly7Mesh2.0Electro8Density20.op
+

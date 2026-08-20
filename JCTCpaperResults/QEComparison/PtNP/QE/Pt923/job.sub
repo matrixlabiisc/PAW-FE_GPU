@@ -1,0 +1,40 @@
+#!/bin/sh
+#PBS -l select=48:system=polaris
+#PBS -l place=scatter
+#PBS -l walltime=00:29:00
+#PBS -l filesystems=home:eagle
+#PBS -q prod
+#PBS -A DFTCalculations
+#PBS -e job%id.err
+#PBS -o job%id.out
+## remember to adjust the above job related info for your project and run.
+
+# load the same modules as the executable was built
+module load PrgEnv-nvidia
+module load cray-hdf5
+module load craype-x86-milan cray-fftw
+
+# Enable GPU-MPI (if supported by application)
+export MPICH_GPU_SUPPORT_ENABLED=0
+
+# Change to working directory
+cd ${PBS_O_WORKDIR}
+
+# MPI and OpenMP settings
+NNODES=`wc -l < $PBS_NODEFILE`
+NRANKS_PER_NODE=4
+NDEPTH=8
+NTHREADS=8
+
+NTOTRANKS=$(( NNODES * NRANKS_PER_NODE ))
+echo "NUM_OF_NODES= ${NNODES} TOTAL_NUM_RANKS= ${NTOTRANKS} RANKS_PER_NODE= ${NRANKS_PER_NODE} THREADS_PER_RANK= ${NTHREADS}"
+export LD_LIBRARY_PATH=/soft/compilers/nvhpc/Linux_x86_64/24.11/compilers/lib:/soft/compilers/nvhpc/Linux_x86_64/24.11/math_libs/lib64:/soft/compilers/nvhpc/Linux_x86_64/24.11/cuda/lib64:$LD_LIBRARY_PATH
+exe=/soft/applications/quantum_espresso/7.5-nvhpc24.11-libxc700/bin/pw.x
+
+ldd $exe >& ldd.out
+
+# For applications that need mpiexec to bind MPI ranks to GPUs
+
+mpiexec -n ${NTOTRANKS} --ppn ${NRANKS_PER_NODE} --depth=${NDEPTH} --cpu-bind depth --env OMP_NUM_THREADS=${NTHREADS} -env OMP_PLACES=threads ./set_affinity_gpu_polaris.sh $exe -nb 2  -inp TimingLTF.scf.in > Finalout_Timing_65Bohr_48NodesNB2_LTF.scf.op 2> job.${PBS_JOBID}.err
+
+

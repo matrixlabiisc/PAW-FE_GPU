@@ -1,0 +1,3711 @@
+“RANK= 1 LOCAL_RANK= 1 gpu= 1”
+“RANK= 3 LOCAL_RANK= 3 gpu= 3”
+“RANK= 26 LOCAL_RANK= 2 gpu= 2”
+“RANK= 0 LOCAL_RANK= 0 gpu= 0”
+“RANK= 2 LOCAL_RANK= 2 gpu= 2”
+“RANK= 45 LOCAL_RANK= 1 gpu= 1”
+“RANK= 10 LOCAL_RANK= 2 gpu= 2”
+“RANK= 25 LOCAL_RANK= 1 gpu= 1”
+“RANK= 46 LOCAL_RANK= 2 gpu= 2”
+“RANK= 20 LOCAL_RANK= 0 gpu= 0”
+“RANK= 24 LOCAL_RANK= 0 gpu= 0”
+“RANK= 27 LOCAL_RANK= 3 gpu= 3”
+“RANK= 39 LOCAL_RANK= 3 gpu= 3”
+“RANK= 60 LOCAL_RANK= 0 gpu= 0”
+“RANK= 54 LOCAL_RANK= 2 gpu= 2”
+“RANK= 9 LOCAL_RANK= 1 gpu= 1”
+“RANK= 44 LOCAL_RANK= 0 gpu= 0”
+“RANK= 8 LOCAL_RANK= 0 gpu= 0”
+“RANK= 47 LOCAL_RANK= 3 gpu= 3”
+“RANK= 11 LOCAL_RANK= 3 gpu= 3”
+“RANK= 57 LOCAL_RANK= 1 gpu= 1”
+“RANK= 50 LOCAL_RANK= 2 gpu= 2”
+“RANK= 30 LOCAL_RANK= 2 gpu= 2”
+“RANK= 74 LOCAL_RANK= 2 gpu= 2”
+“RANK= 33 LOCAL_RANK= 1 gpu= 1”
+“RANK= 21 LOCAL_RANK= 1 gpu= 1”
+“RANK= 53 LOCAL_RANK= 1 gpu= 1”
+“RANK= 7 LOCAL_RANK= 3 gpu= 3”
+“RANK= 49 LOCAL_RANK= 1 gpu= 1”
+“RANK= 36 LOCAL_RANK= 0 gpu= 0”
+“RANK= 22 LOCAL_RANK= 2 gpu= 2”
+“RANK= 23 LOCAL_RANK= 3 gpu= 3”
+“RANK= 59 LOCAL_RANK= 3 gpu= 3”
+“RANK= 61 LOCAL_RANK= 1 gpu= 1”
+“RANK= 42 LOCAL_RANK= 2 gpu= 2”
+“RANK= 76 LOCAL_RANK= 0 gpu= 0”
+“RANK= 51 LOCAL_RANK= 3 gpu= 3”
+“RANK= 48 LOCAL_RANK= 0 gpu= 0”
+“RANK= 37 LOCAL_RANK= 1 gpu= 1”
+“RANK= 52 LOCAL_RANK= 0 gpu= 0”
+“RANK= 38 LOCAL_RANK= 2 gpu= 2”
+“RANK= 55 LOCAL_RANK= 3 gpu= 3”
+“RANK= 62 LOCAL_RANK= 2 gpu= 2”
+“RANK= 31 LOCAL_RANK= 3 gpu= 3”
+“RANK= 69 LOCAL_RANK= 1 gpu= 1”
+“RANK= 66 LOCAL_RANK= 2 gpu= 2”
+“RANK= 56 LOCAL_RANK= 0 gpu= 0”
+“RANK= 58 LOCAL_RANK= 2 gpu= 2”
+“RANK= 63 LOCAL_RANK= 3 gpu= 3”
+“RANK= 19 LOCAL_RANK= 3 gpu= 3”
+“RANK= 28 LOCAL_RANK= 0 gpu= 0”
+“RANK= 29 LOCAL_RANK= 1 gpu= 1”
+“RANK= 32 LOCAL_RANK= 0 gpu= 0”
+“RANK= 14 LOCAL_RANK= 2 gpu= 2”
+“RANK= 73 LOCAL_RANK= 1 gpu= 1”
+“RANK= 34 LOCAL_RANK= 2 gpu= 2”
+“RANK= 35 LOCAL_RANK= 3 gpu= 3”
+“RANK= 4 LOCAL_RANK= 0 gpu= 0”
+“RANK= 6 LOCAL_RANK= 2 gpu= 2”
+“RANK= 5 LOCAL_RANK= 1 gpu= 1”
+“RANK= 79 LOCAL_RANK= 3 gpu= 3”
+“RANK= 40 LOCAL_RANK= 0 gpu= 0”
+“RANK= 72 LOCAL_RANK= 0 gpu= 0”
+“RANK= 75 LOCAL_RANK= 3 gpu= 3”
+“RANK= 71 LOCAL_RANK= 3 gpu= 3”
+“RANK= 67 LOCAL_RANK= 3 gpu= 3”
+“RANK= 78 LOCAL_RANK= 2 gpu= 2”
+“RANK= 77 LOCAL_RANK= 1 gpu= 1”
+“RANK= 70 LOCAL_RANK= 2 gpu= 2”
+“RANK= 68 LOCAL_RANK= 0 gpu= 0”
+“RANK= 64 LOCAL_RANK= 0 gpu= 0”
+“RANK= 65 LOCAL_RANK= 1 gpu= 1”
+“RANK= 18 LOCAL_RANK= 2 gpu= 2”
+“RANK= 12 LOCAL_RANK= 0 gpu= 0”
+“RANK= 43 LOCAL_RANK= 3 gpu= 3”
+“RANK= 41 LOCAL_RANK= 1 gpu= 1”
+“RANK= 16 LOCAL_RANK= 0 gpu= 0”
+“RANK= 17 LOCAL_RANK= 1 gpu= 1”
+“RANK= 15 LOCAL_RANK= 3 gpu= 3”
+“RANK= 13 LOCAL_RANK= 1 gpu= 1”
+
+     Program PWSCF v.7.5 starts on  7Mar2026 at 15: 8:11 
+        Git branch: HEAD
+        Last git commit: 770a0b2d12928a67048e2f3da8d10d057e52179e
+        Last git commit date: Tue Aug 19 09:57:12 2025 +0000
+        Last git commit subject: Merge branch 'QE-7.5-RC' into 'master'
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 29 465901 (2017);
+         "P. Giannozzi et al., J. Chem. Phys. 152 154105 (2020);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI & OpenMP), running on     640 processor cores
+     Number of MPI processes:                80
+     Threads/MPI process:                     8
+
+     MPI processes distributed on    20 nodes
+     505672 MiB available memory on the printing compute node when the environment starts
+ 
+     Reading input from Timing.scf.in
+Warning: card PT	-11.1682814	-3.722760466	0 ignored
+Warning: card PT	-14.89104186	-7.445520931	7.445520931 ignored
+Warning: card PT	-14.89104186	-3.722760466	11.1682814 ignored
+Warning: card PT	-11.1682814	-7.445520931	11.1682814 ignored
+Warning: card PT	-11.1682814	-3.722760466	7.445520931 ignored
+Warning: card PT	-14.89104186	-7.445520931	14.89104186 ignored
+Warning: card PT	-14.89104186	-3.722760466	18.61380233 ignored
+Warning: card PT	-11.1682814	-7.445520931	18.61380233 ignored
+Warning: card PT	-11.1682814	-3.722760466	14.89104186 ignored
+Warning: card PT	-14.89104186	-7.445520931	22.33656279 ignored
+Warning: card PT	-14.89104186	-3.722760466	26.05932326 ignored
+Warning: card PT	-11.1682814	-7.445520931	26.05932326 ignored
+Warning: card PT	-11.1682814	-3.722760466	22.33656279 ignored
+Warning: card PT	-14.89104186	3.722760466	-26.05932326 ignored
+Warning: card PT	-11.1682814	0	-26.05932326 ignored
+Warning: card PT	-14.89104186	0	-22.33656279 ignored
+Warning: card PT	-14.89104186	3.722760466	-18.61380233 ignored
+Warning: card PT	-11.1682814	0	-18.61380233 ignored
+Warning: card PT	-11.1682814	3.722760466	-22.33656279 ignored
+Warning: card PT	-14.89104186	0	-14.89104186 ignored
+Warning: card PT	-14.89104186	3.722760466	-11.1682814 ignored
+Warning: card PT	-11.1682814	0	-11.1682814 ignored
+Warning: card PT	-11.1682814	3.722760466	-14.89104186 ignored
+Warning: card PT	-14.89104186	0	-7.445520931 ignored
+Warning: card PT	-14.89104186	3.722760466	-3.722760466 ignored
+Warning: card PT	-11.1682814	0	-3.722760466 ignored
+Warning: card PT	-11.1682814	3.722760466	-7.445520931 ignored
+Warning: card PT	-14.89104186	0	0 ignored
+Warning: card PT	-14.89104186	3.722760466	3.722760466 ignored
+Warning: card PT	-11.1682814	0	3.722760466 ignored
+Warning: card PT	-11.1682814	3.722760466	0 ignored
+Warning: card PT	-14.89104186	0	7.445520931 ignored
+Warning: card PT	-14.89104186	3.722760466	11.1682814 ignored
+Warning: card PT	-11.1682814	0	11.1682814 ignored
+Warning: card PT	-11.1682814	3.722760466	7.445520931 ignored
+Warning: card PT	-14.89104186	0	14.89104186 ignored
+Warning: card PT	-14.89104186	3.722760466	18.61380233 ignored
+Warning: card PT	-11.1682814	0	18.61380233 ignored
+Warning: card PT	-11.1682814	3.722760466	14.89104186 ignored
+Warning: card PT	-14.89104186	0	22.33656279 ignored
+Warning: card PT	-14.89104186	3.722760466	26.05932326 ignored
+Warning: card PT	-11.1682814	0	26.05932326 ignored
+Warning: card PT	-11.1682814	3.722760466	22.33656279 ignored
+Warning: card PT	-14.89104186	11.1682814	-26.05932326 ignored
+Warning: card PT	-11.1682814	7.445520931	-26.05932326 ignored
+Warning: card PT	-14.89104186	7.445520931	-22.33656279 ignored
+Warning: card PT	-14.89104186	11.1682814	-18.61380233 ignored
+Warning: card PT	-11.1682814	7.445520931	-18.61380233 ignored
+Warning: card PT	-11.1682814	11.1682814	-22.33656279 ignored
+Warning: card PT	-14.89104186	7.445520931	-14.89104186 ignored
+Warning: card PT	-14.89104186	11.1682814	-11.1682814 ignored
+Warning: card PT	-11.1682814	7.445520931	-11.1682814 ignored
+Warning: card PT	-11.1682814	11.1682814	-14.89104186 ignored
+Warning: card PT	-14.89104186	7.445520931	-7.445520931 ignored
+Warning: card PT	-14.89104186	11.1682814	-3.722760466 ignored
+Warning: card PT	-11.1682814	7.445520931	-3.722760466 ignored
+Warning: card PT	-11.1682814	11.1682814	-7.445520931 ignored
+Warning: card PT	-14.89104186	7.445520931	0 ignored
+Warning: card PT	-14.89104186	11.1682814	3.722760466 ignored
+Warning: card PT	-11.1682814	7.445520931	3.722760466 ignored
+Warning: card PT	-11.1682814	11.1682814	0 ignored
+Warning: card PT	-14.89104186	7.445520931	7.445520931 ignored
+Warning: card PT	-14.89104186	11.1682814	11.1682814 ignored
+Warning: card PT	-11.1682814	7.445520931	11.1682814 ignored
+Warning: card PT	-11.1682814	11.1682814	7.445520931 ignored
+Warning: card PT	-14.89104186	7.445520931	14.89104186 ignored
+Warning: card PT	-14.89104186	11.1682814	18.61380233 ignored
+Warning: card PT	-11.1682814	7.445520931	18.61380233 ignored
+Warning: card PT	-11.1682814	11.1682814	14.89104186 ignored
+Warning: card PT	-14.89104186	7.445520931	22.33656279 ignored
+Warning: card PT	-14.89104186	11.1682814	26.05932326 ignored
+Warning: card PT	-11.1682814	7.445520931	26.05932326 ignored
+Warning: card PT	-11.1682814	11.1682814	22.33656279 ignored
+Warning: card PT	-11.1682814	14.89104186	-26.05932326 ignored
+Warning: card PT	-14.89104186	14.89104186	-22.33656279 ignored
+Warning: card PT	-14.89104186	18.61380233	-18.61380233 ignored
+Warning: card PT	-11.1682814	14.89104186	-18.61380233 ignored
+Warning: card PT	-11.1682814	18.61380233	-22.33656279 ignored
+Warning: card PT	-14.89104186	14.89104186	-14.89104186 ignored
+Warning: card PT	-14.89104186	18.61380233	-11.1682814 ignored
+Warning: card PT	-11.1682814	14.89104186	-11.1682814 ignored
+Warning: card PT	-11.1682814	18.61380233	-14.89104186 ignored
+Warning: card PT	-14.89104186	14.89104186	-7.445520931 ignored
+Warning: card PT	-14.89104186	18.61380233	-3.722760466 ignored
+Warning: card PT	-11.1682814	14.89104186	-3.722760466 ignored
+Warning: card PT	-11.1682814	18.61380233	-7.445520931 ignored
+Warning: card PT	-14.89104186	14.89104186	0 ignored
+Warning: card PT	-14.89104186	18.61380233	3.722760466 ignored
+Warning: card PT	-11.1682814	14.89104186	3.722760466 ignored
+Warning: card PT	-11.1682814	18.61380233	0 ignored
+Warning: card PT	-14.89104186	14.89104186	7.445520931 ignored
+Warning: card PT	-14.89104186	18.61380233	11.1682814 ignored
+Warning: card PT	-11.1682814	14.89104186	11.1682814 ignored
+Warning: card PT	-11.1682814	18.61380233	7.445520931 ignored
+Warning: card PT	-14.89104186	14.89104186	14.89104186 ignored
+Warning: card PT	-14.89104186	18.61380233	18.61380233 ignored
+Warning: card PT	-11.1682814	14.89104186	18.61380233 ignored
+Warning: card PT	-11.1682814	18.61380233	14.89104186 ignored
+Warning: card PT	-14.89104186	14.89104186	22.33656279 ignored
+Warning: card PT	-11.1682814	14.89104186	26.05932326 ignored
+Warning: card PT	-11.1682814	18.61380233	22.33656279 ignored
+Warning: card PT	-11.1682814	22.33656279	-18.61380233 ignored
+Warning: card PT	-14.89104186	22.33656279	-14.89104186 ignored
+Warning: card PT	-14.89104186	26.05932326	-11.1682814 ignored
+Warning: card PT	-11.1682814	22.33656279	-11.1682814 ignored
+Warning: card PT	-11.1682814	26.05932326	-14.89104186 ignored
+Warning: card PT	-14.89104186	22.33656279	-7.445520931 ignored
+Warning: card PT	-14.89104186	26.05932326	-3.722760466 ignored
+Warning: card PT	-11.1682814	22.33656279	-3.722760466 ignored
+Warning: card PT	-11.1682814	26.05932326	-7.445520931 ignored
+Warning: card PT	-14.89104186	22.33656279	0 ignored
+Warning: card PT	-14.89104186	26.05932326	3.722760466 ignored
+Warning: card PT	-11.1682814	22.33656279	3.722760466 ignored
+Warning: card PT	-11.1682814	26.05932326	0 ignored
+Warning: card PT	-14.89104186	22.33656279	7.445520931 ignored
+Warning: card PT	-14.89104186	26.05932326	11.1682814 ignored
+Warning: card PT	-11.1682814	22.33656279	11.1682814 ignored
+Warning: card PT	-11.1682814	26.05932326	7.445520931 ignored
+Warning: card PT	-14.89104186	22.33656279	14.89104186 ignored
+Warning: card PT	-11.1682814	22.33656279	18.61380233 ignored
+Warning: card PT	-11.1682814	26.05932326	14.89104186 ignored
+Warning: card PT	-7.445520931	-26.05932326	-18.61380233 ignored
+Warning: card PT	-3.722760466	-26.05932326	-22.33656279 ignored
+Warning: card PT	-7.445520931	-26.05932326	-11.1682814 ignored
+Warning: card PT	-3.722760466	-26.05932326	-14.89104186 ignored
+Warning: card PT	-7.445520931	-26.05932326	-3.722760466 ignored
+Warning: card PT	-3.722760466	-26.05932326	-7.445520931 ignored
+Warning: card PT	-7.445520931	-26.05932326	3.722760466 ignored
+Warning: card PT	-3.722760466	-26.05932326	0 ignored
+Warning: card PT	-7.445520931	-26.05932326	11.1682814 ignored
+Warning: card PT	-3.722760466	-26.05932326	7.445520931 ignored
+Warning: card PT	-7.445520931	-26.05932326	18.61380233 ignored
+Warning: card PT	-3.722760466	-26.05932326	14.89104186 ignored
+Warning: card PT	-3.722760466	-26.05932326	22.33656279 ignored
+Warning: card PT	-7.445520931	-18.61380233	-26.05932326 ignored
+Warning: card PT	-3.722760466	-22.33656279	-26.05932326 ignored
+Warning: card PT	-7.445520931	-22.33656279	-22.33656279 ignored
+Warning: card PT	-7.445520931	-18.61380233	-18.61380233 ignored
+Warning: card PT	-3.722760466	-22.33656279	-18.61380233 ignored
+Warning: card PT	-3.722760466	-18.61380233	-22.33656279 ignored
+Warning: card PT	-7.445520931	-22.33656279	-14.89104186 ignored
+Warning: card PT	-7.445520931	-18.61380233	-11.1682814 ignored
+Warning: card PT	-3.722760466	-22.33656279	-11.1682814 ignored
+Warning: card PT	-3.722760466	-18.61380233	-14.89104186 ignored
+Warning: card PT	-7.445520931	-22.33656279	-7.445520931 ignored
+Warning: card PT	-7.445520931	-18.61380233	-3.722760466 ignored
+Warning: card PT	-3.722760466	-22.33656279	-3.722760466 ignored
+Warning: card PT	-3.722760466	-18.61380233	-7.445520931 ignored
+Warning: card PT	-7.445520931	-22.33656279	0 ignored
+Warning: card PT	-7.445520931	-18.61380233	3.722760466 ignored
+Warning: card PT	-3.722760466	-22.33656279	3.722760466 ignored
+Warning: card PT	-3.722760466	-18.61380233	0 ignored
+Warning: card PT	-7.445520931	-22.33656279	7.445520931 ignored
+Warning: card PT	-7.445520931	-18.61380233	11.1682814 ignored
+Warning: card PT	-3.722760466	-22.33656279	11.1682814 ignored
+Warning: card PT	-3.722760466	-18.61380233	7.445520931 ignored
+Warning: card PT	-7.445520931	-22.33656279	14.89104186 ignored
+Warning: card PT	-7.445520931	-18.61380233	18.61380233 ignored
+Warning: card PT	-3.722760466	-22.33656279	18.61380233 ignored
+Warning: card PT	-3.722760466	-18.61380233	14.89104186 ignored
+Warning: card PT	-7.445520931	-22.33656279	22.33656279 ignored
+Warning: card PT	-7.445520931	-18.61380233	26.05932326 ignored
+Warning: card PT	-3.722760466	-22.33656279	26.05932326 ignored
+Warning: card PT	-3.722760466	-18.61380233	22.33656279 ignored
+Warning: card PT	-7.445520931	-11.1682814	-26.05932326 ignored
+Warning: card PT	-3.722760466	-14.89104186	-26.05932326 ignored
+Warning: card PT	-7.445520931	-14.89104186	-22.33656279 ignored
+Warning: card PT	-7.445520931	-11.1682814	-18.61380233 ignored
+Warning: card PT	-3.722760466	-14.89104186	-18.61380233 ignored
+Warning: card PT	-3.722760466	-11.1682814	-22.33656279 ignored
+Warning: card PT	-7.445520931	-14.89104186	-14.89104186 ignored
+Warning: card PT	-7.445520931	-11.1682814	-11.1682814 ignored
+Warning: card PT	-3.722760466	-14.89104186	-11.1682814 ignored
+Warning: card PT	-3.722760466	-11.1682814	-14.89104186 ignored
+Warning: card PT	-7.445520931	-14.89104186	-7.445520931 ignored
+Warning: card PT	-7.445520931	-11.1682814	-3.722760466 ignored
+Warning: card PT	-3.722760466	-14.89104186	-3.722760466 ignored
+Warning: card PT	-3.722760466	-11.1682814	-7.445520931 ignored
+Warning: card PT	-7.445520931	-14.89104186	0 ignored
+Warning: card PT	-7.445520931	-11.1682814	3.722760466 ignored
+Warning: card PT	-3.722760466	-14.89104186	3.722760466 ignored
+Warning: card PT	-3.722760466	-11.1682814	0 ignored
+Warning: card PT	-7.445520931	-14.89104186	7.445520931 ignored
+Warning: card PT	-7.445520931	-11.1682814	11.1682814 ignored
+Warning: card PT	-3.722760466	-14.89104186	11.1682814 ignored
+Warning: card PT	-3.722760466	-11.1682814	7.445520931 ignored
+Warning: card PT	-7.445520931	-14.89104186	14.89104186 ignored
+Warning: card PT	-7.445520931	-11.1682814	18.61380233 ignored
+Warning: card PT	-3.722760466	-14.89104186	18.61380233 ignored
+Warning: card PT	-3.722760466	-11.1682814	14.89104186 ignored
+Warning: card PT	-7.445520931	-14.89104186	22.33656279 ignored
+Warning: card PT	-7.445520931	-11.1682814	26.05932326 ignored
+Warning: card PT	-3.722760466	-14.89104186	26.05932326 ignored
+Warning: card PT	-3.722760466	-11.1682814	22.33656279 ignored
+Warning: card PT	-7.445520931	-3.722760466	-26.05932326 ignored
+Warning: card PT	-3.722760466	-7.445520931	-26.05932326 ignored
+Warning: card PT	-7.445520931	-7.445520931	-22.33656279 ignored
+Warning: card PT	-7.445520931	-3.722760466	-18.61380233 ignored
+Warning: card PT	-3.722760466	-7.445520931	-18.61380233 ignored
+Warning: card PT	-3.722760466	-3.722760466	-22.33656279 ignored
+Warning: card PT	-7.445520931	-7.445520931	-14.89104186 ignored
+Warning: card PT	-7.445520931	-3.722760466	-11.1682814 ignored
+Warning: card PT	-3.722760466	-7.445520931	-11.1682814 ignored
+Warning: card PT	-3.722760466	-3.722760466	-14.89104186 ignored
+Warning: card PT	-7.445520931	-7.445520931	-7.445520931 ignored
+Warning: card PT	-7.445520931	-3.722760466	-3.722760466 ignored
+Warning: card PT	-3.722760466	-7.445520931	-3.722760466 ignored
+Warning: card PT	-3.722760466	-3.722760466	-7.445520931 ignored
+Warning: card PT	-7.445520931	-7.445520931	0 ignored
+Warning: card PT	-7.445520931	-3.722760466	3.722760466 ignored
+Warning: card PT	-3.722760466	-7.445520931	3.722760466 ignored
+Warning: card PT	-3.722760466	-3.722760466	0 ignored
+Warning: card PT	-7.445520931	-7.445520931	7.445520931 ignored
+Warning: card PT	-7.445520931	-3.722760466	11.1682814 ignored
+Warning: card PT	-3.722760466	-7.445520931	11.1682814 ignored
+Warning: card PT	-3.722760466	-3.722760466	7.445520931 ignored
+Warning: card PT	-7.445520931	-7.445520931	14.89104186 ignored
+Warning: card PT	-7.445520931	-3.722760466	18.61380233 ignored
+Warning: card PT	-3.722760466	-7.445520931	18.61380233 ignored
+Warning: card PT	-3.722760466	-3.722760466	14.89104186 ignored
+Warning: card PT	-7.445520931	-7.445520931	22.33656279 ignored
+Warning: card PT	-7.445520931	-3.722760466	26.05932326 ignored
+Warning: card PT	-3.722760466	-7.445520931	26.05932326 ignored
+Warning: card PT	-3.722760466	-3.722760466	22.33656279 ignored
+Warning: card PT	-7.445520931	3.722760466	-26.05932326 ignored
+Warning: card PT	-3.722760466	0	-26.05932326 ignored
+Warning: card PT	-7.445520931	0	-22.33656279 ignored
+Warning: card PT	-7.445520931	3.722760466	-18.61380233 ignored
+Warning: card PT	-3.722760466	0	-18.61380233 ignored
+Warning: card PT	-3.722760466	3.722760466	-22.33656279 ignored
+Warning: card PT	-7.445520931	0	-14.89104186 ignored
+Warning: card PT	-7.445520931	3.722760466	-11.1682814 ignored
+Warning: card PT	-3.722760466	0	-11.1682814 ignored
+Warning: card PT	-3.722760466	3.722760466	-14.89104186 ignored
+Warning: card PT	-7.445520931	0	-7.445520931 ignored
+Warning: card PT	-7.445520931	3.722760466	-3.722760466 ignored
+Warning: card PT	-3.722760466	0	-3.722760466 ignored
+Warning: card PT	-3.722760466	3.722760466	-7.445520931 ignored
+Warning: card PT	-7.445520931	0	0 ignored
+Warning: card PT	-7.445520931	3.722760466	3.722760466 ignored
+Warning: card PT	-3.722760466	0	3.722760466 ignored
+Warning: card PT	-3.722760466	3.722760466	0 ignored
+Warning: card PT	-7.445520931	0	7.445520931 ignored
+Warning: card PT	-7.445520931	3.722760466	11.1682814 ignored
+Warning: card PT	-3.722760466	0	11.1682814 ignored
+Warning: card PT	-3.722760466	3.722760466	7.445520931 ignored
+Warning: card PT	-7.445520931	0	14.89104186 ignored
+Warning: card PT	-7.445520931	3.722760466	18.61380233 ignored
+Warning: card PT	-3.722760466	0	18.61380233 ignored
+Warning: card PT	-3.722760466	3.722760466	14.89104186 ignored
+Warning: card PT	-7.445520931	0	22.33656279 ignored
+Warning: card PT	-7.445520931	3.722760466	26.05932326 ignored
+Warning: card PT	-3.722760466	0	26.05932326 ignored
+Warning: card PT	-3.722760466	3.722760466	22.33656279 ignored
+Warning: card PT	-7.445520931	11.1682814	-26.05932326 ignored
+Warning: card PT	-3.722760466	7.445520931	-26.05932326 ignored
+Warning: card PT	-7.445520931	7.445520931	-22.33656279 ignored
+Warning: card PT	-7.445520931	11.1682814	-18.61380233 ignored
+Warning: card PT	-3.722760466	7.445520931	-18.61380233 ignored
+Warning: card PT	-3.722760466	11.1682814	-22.33656279 ignored
+Warning: card PT	-7.445520931	7.445520931	-14.89104186 ignored
+Warning: card PT	-7.445520931	11.1682814	-11.1682814 ignored
+Warning: card PT	-3.722760466	7.445520931	-11.1682814 ignored
+Warning: card PT	-3.722760466	11.1682814	-14.89104186 ignored
+Warning: card PT	-7.445520931	7.445520931	-7.445520931 ignored
+Warning: card PT	-7.445520931	11.1682814	-3.722760466 ignored
+Warning: card PT	-3.722760466	7.445520931	-3.722760466 ignored
+Warning: card PT	-3.722760466	11.1682814	-7.445520931 ignored
+Warning: card PT	-7.445520931	7.445520931	0 ignored
+Warning: card PT	-7.445520931	11.1682814	3.722760466 ignored
+Warning: card PT	-3.722760466	7.445520931	3.722760466 ignored
+Warning: card PT	-3.722760466	11.1682814	0 ignored
+Warning: card PT	-7.445520931	7.445520931	7.445520931 ignored
+Warning: card PT	-7.445520931	11.1682814	11.1682814 ignored
+Warning: card PT	-3.722760466	7.445520931	11.1682814 ignored
+Warning: card PT	-3.722760466	11.1682814	7.445520931 ignored
+Warning: card PT	-7.445520931	7.445520931	14.89104186 ignored
+Warning: card PT	-7.445520931	11.1682814	18.61380233 ignored
+Warning: card PT	-3.722760466	7.445520931	18.61380233 ignored
+Warning: card PT	-3.722760466	11.1682814	14.89104186 ignored
+Warning: card PT	-7.445520931	7.445520931	22.33656279 ignored
+Warning: card PT	-7.445520931	11.1682814	26.05932326 ignored
+Warning: card PT	-3.722760466	7.445520931	26.05932326 ignored
+Warning: card PT	-3.722760466	11.1682814	22.33656279 ignored
+Warning: card PT	-7.445520931	18.61380233	-26.05932326 ignored
+Warning: card PT	-3.722760466	14.89104186	-26.05932326 ignored
+Warning: card PT	-7.445520931	14.89104186	-22.33656279 ignored
+Warning: card PT	-7.445520931	18.61380233	-18.61380233 ignored
+Warning: card PT	-3.722760466	14.89104186	-18.61380233 ignored
+Warning: card PT	-3.722760466	18.61380233	-22.33656279 ignored
+Warning: card PT	-7.445520931	14.89104186	-14.89104186 ignored
+Warning: card PT	-7.445520931	18.61380233	-11.1682814 ignored
+Warning: card PT	-3.722760466	14.89104186	-11.1682814 ignored
+Warning: card PT	-3.722760466	18.61380233	-14.89104186 ignored
+Warning: card PT	-7.445520931	14.89104186	-7.445520931 ignored
+Warning: card PT	-7.445520931	18.61380233	-3.722760466 ignored
+Warning: card PT	-3.722760466	14.89104186	-3.722760466 ignored
+Warning: card PT	-3.722760466	18.61380233	-7.445520931 ignored
+Warning: card PT	-7.445520931	14.89104186	0 ignored
+Warning: card PT	-7.445520931	18.61380233	3.722760466 ignored
+Warning: card PT	-3.722760466	14.89104186	3.722760466 ignored
+Warning: card PT	-3.722760466	18.61380233	0 ignored
+Warning: card PT	-7.445520931	14.89104186	7.445520931 ignored
+Warning: card PT	-7.445520931	18.61380233	11.1682814 ignored
+Warning: card PT	-3.722760466	14.89104186	11.1682814 ignored
+Warning: card PT	-3.722760466	18.61380233	7.445520931 ignored
+Warning: card PT	-7.445520931	14.89104186	14.89104186 ignored
+Warning: card PT	-7.445520931	18.61380233	18.61380233 ignored
+Warning: card PT	-3.722760466	14.89104186	18.61380233 ignored
+Warning: card PT	-3.722760466	18.61380233	14.89104186 ignored
+Warning: card PT	-7.445520931	14.89104186	22.33656279 ignored
+Warning: card PT	-7.445520931	18.61380233	26.05932326 ignored
+Warning: card PT	-3.722760466	14.89104186	26.05932326 ignored
+Warning: card PT	-3.722760466	18.61380233	22.33656279 ignored
+Warning: card PT	-3.722760466	22.33656279	-26.05932326 ignored
+Warning: card PT	-7.445520931	22.33656279	-22.33656279 ignored
+Warning: card PT	-7.445520931	26.05932326	-18.61380233 ignored
+Warning: card PT	-3.722760466	22.33656279	-18.61380233 ignored
+Warning: card PT	-3.722760466	26.05932326	-22.33656279 ignored
+Warning: card PT	-7.445520931	22.33656279	-14.89104186 ignored
+Warning: card PT	-7.445520931	26.05932326	-11.1682814 ignored
+Warning: card PT	-3.722760466	22.33656279	-11.1682814 ignored
+Warning: card PT	-3.722760466	26.05932326	-14.89104186 ignored
+Warning: card PT	-7.445520931	22.33656279	-7.445520931 ignored
+Warning: card PT	-7.445520931	26.05932326	-3.722760466 ignored
+Warning: card PT	-3.722760466	22.33656279	-3.722760466 ignored
+Warning: card PT	-3.722760466	26.05932326	-7.445520931 ignored
+Warning: card PT	-7.445520931	22.33656279	0 ignored
+Warning: card PT	-7.445520931	26.05932326	3.722760466 ignored
+Warning: card PT	-3.722760466	22.33656279	3.722760466 ignored
+Warning: card PT	-3.722760466	26.05932326	0 ignored
+Warning: card PT	-7.445520931	22.33656279	7.445520931 ignored
+Warning: card PT	-7.445520931	26.05932326	11.1682814 ignored
+Warning: card PT	-3.722760466	22.33656279	11.1682814 ignored
+Warning: card PT	-3.722760466	26.05932326	7.445520931 ignored
+Warning: card PT	-7.445520931	22.33656279	14.89104186 ignored
+Warning: card PT	-7.445520931	26.05932326	18.61380233 ignored
+Warning: card PT	-3.722760466	22.33656279	18.61380233 ignored
+Warning: card PT	-3.722760466	26.05932326	14.89104186 ignored
+Warning: card PT	-7.445520931	22.33656279	22.33656279 ignored
+Warning: card PT	-3.722760466	22.33656279	26.05932326 ignored
+Warning: card PT	-3.722760466	26.05932326	22.33656279 ignored
+Warning: card PT	0	-26.05932326	-26.05932326 ignored
+Warning: card PT	0	-26.05932326	-18.61380233 ignored
+Warning: card PT	3.722760466	-26.05932326	-22.33656279 ignored
+Warning: card PT	0	-26.05932326	-11.1682814 ignored
+Warning: card PT	3.722760466	-26.05932326	-14.89104186 ignored
+Warning: card PT	0	-26.05932326	-3.722760466 ignored
+Warning: card PT	3.722760466	-26.05932326	-7.445520931 ignored
+Warning: card PT	0	-26.05932326	3.722760466 ignored
+Warning: card PT	3.722760466	-26.05932326	0 ignored
+Warning: card PT	0	-26.05932326	11.1682814 ignored
+Warning: card PT	3.722760466	-26.05932326	7.445520931 ignored
+Warning: card PT	0	-26.05932326	18.61380233 ignored
+Warning: card PT	3.722760466	-26.05932326	14.89104186 ignored
+Warning: card PT	0	-26.05932326	26.05932326 ignored
+Warning: card PT	3.722760466	-26.05932326	22.33656279 ignored
+Warning: card PT	0	-18.61380233	-26.05932326 ignored
+Warning: card PT	3.722760466	-22.33656279	-26.05932326 ignored
+Warning: card PT	0	-22.33656279	-22.33656279 ignored
+Warning: card PT	0	-18.61380233	-18.61380233 ignored
+Warning: card PT	3.722760466	-22.33656279	-18.61380233 ignored
+Warning: card PT	3.722760466	-18.61380233	-22.33656279 ignored
+Warning: card PT	0	-22.33656279	-14.89104186 ignored
+Warning: card PT	0	-18.61380233	-11.1682814 ignored
+Warning: card PT	3.722760466	-22.33656279	-11.1682814 ignored
+Warning: card PT	3.722760466	-18.61380233	-14.89104186 ignored
+Warning: card PT	0	-22.33656279	-7.445520931 ignored
+Warning: card PT	0	-18.61380233	-3.722760466 ignored
+Warning: card PT	3.722760466	-22.33656279	-3.722760466 ignored
+Warning: card PT	3.722760466	-18.61380233	-7.445520931 ignored
+Warning: card PT	0	-22.33656279	0 ignored
+Warning: card PT	0	-18.61380233	3.722760466 ignored
+Warning: card PT	3.722760466	-22.33656279	3.722760466 ignored
+Warning: card PT	3.722760466	-18.61380233	0 ignored
+Warning: card PT	0	-22.33656279	7.445520931 ignored
+Warning: card PT	0	-18.61380233	11.1682814 ignored
+Warning: card PT	3.722760466	-22.33656279	11.1682814 ignored
+Warning: card PT	3.722760466	-18.61380233	7.445520931 ignored
+Warning: card PT	0	-22.33656279	14.89104186 ignored
+Warning: card PT	0	-18.61380233	18.61380233 ignored
+Warning: card PT	3.722760466	-22.33656279	18.61380233 ignored
+Warning: card PT	3.722760466	-18.61380233	14.89104186 ignored
+Warning: card PT	0	-22.33656279	22.33656279 ignored
+Warning: card PT	0	-18.61380233	26.05932326 ignored
+Warning: card PT	3.722760466	-22.33656279	26.05932326 ignored
+Warning: card PT	3.722760466	-18.61380233	22.33656279 ignored
+Warning: card PT	0	-11.1682814	-26.05932326 ignored
+Warning: card PT	3.722760466	-14.89104186	-26.05932326 ignored
+Warning: card PT	0	-14.89104186	-22.33656279 ignored
+Warning: card PT	0	-11.1682814	-18.61380233 ignored
+Warning: card PT	3.722760466	-14.89104186	-18.61380233 ignored
+Warning: card PT	3.722760466	-11.1682814	-22.33656279 ignored
+Warning: card PT	0	-14.89104186	-14.89104186 ignored
+Warning: card PT	0	-11.1682814	-11.1682814 ignored
+Warning: card PT	3.722760466	-14.89104186	-11.1682814 ignored
+Warning: card PT	3.722760466	-11.1682814	-14.89104186 ignored
+Warning: card PT	0	-14.89104186	-7.445520931 ignored
+Warning: card PT	0	-11.1682814	-3.722760466 ignored
+Warning: card PT	3.722760466	-14.89104186	-3.722760466 ignored
+Warning: card PT	3.722760466	-11.1682814	-7.445520931 ignored
+Warning: card PT	0	-14.89104186	0 ignored
+Warning: card PT	0	-11.1682814	3.722760466 ignored
+Warning: card PT	3.722760466	-14.89104186	3.722760466 ignored
+Warning: card PT	3.722760466	-11.1682814	0 ignored
+Warning: card PT	0	-14.89104186	7.445520931 ignored
+Warning: card PT	0	-11.1682814	11.1682814 ignored
+Warning: card PT	3.722760466	-14.89104186	11.1682814 ignored
+Warning: card PT	3.722760466	-11.1682814	7.445520931 ignored
+Warning: card PT	0	-14.89104186	14.89104186 ignored
+Warning: card PT	0	-11.1682814	18.61380233 ignored
+Warning: card PT	3.722760466	-14.89104186	18.61380233 ignored
+Warning: card PT	3.722760466	-11.1682814	14.89104186 ignored
+Warning: card PT	0	-14.89104186	22.33656279 ignored
+Warning: card PT	0	-11.1682814	26.05932326 ignored
+Warning: card PT	3.722760466	-14.89104186	26.05932326 ignored
+Warning: card PT	3.722760466	-11.1682814	22.33656279 ignored
+Warning: card PT	0	-3.722760466	-26.05932326 ignored
+Warning: card PT	3.722760466	-7.445520931	-26.05932326 ignored
+Warning: card PT	0	-7.445520931	-22.33656279 ignored
+Warning: card PT	0	-3.722760466	-18.61380233 ignored
+Warning: card PT	3.722760466	-7.445520931	-18.61380233 ignored
+Warning: card PT	3.722760466	-3.722760466	-22.33656279 ignored
+Warning: card PT	0	-7.445520931	-14.89104186 ignored
+Warning: card PT	0	-3.722760466	-11.1682814 ignored
+Warning: card PT	3.722760466	-7.445520931	-11.1682814 ignored
+Warning: card PT	3.722760466	-3.722760466	-14.89104186 ignored
+Warning: card PT	0	-7.445520931	-7.445520931 ignored
+Warning: card PT	0	-3.722760466	-3.722760466 ignored
+Warning: card PT	3.722760466	-7.445520931	-3.722760466 ignored
+Warning: card PT	3.722760466	-3.722760466	-7.445520931 ignored
+Warning: card PT	0	-7.445520931	0 ignored
+Warning: card PT	0	-3.722760466	3.722760466 ignored
+Warning: card PT	3.722760466	-7.445520931	3.722760466 ignored
+Warning: card PT	3.722760466	-3.722760466	0 ignored
+Warning: card PT	0	-7.445520931	7.445520931 ignored
+Warning: card PT	0	-3.722760466	11.1682814 ignored
+Warning: card PT	3.722760466	-7.445520931	11.1682814 ignored
+Warning: card PT	3.722760466	-3.722760466	7.445520931 ignored
+Warning: card PT	0	-7.445520931	14.89104186 ignored
+Warning: card PT	0	-3.722760466	18.61380233 ignored
+Warning: card PT	3.722760466	-7.445520931	18.61380233 ignored
+Warning: card PT	3.722760466	-3.722760466	14.89104186 ignored
+Warning: card PT	0	-7.445520931	22.33656279 ignored
+Warning: card PT	0	-3.722760466	26.05932326 ignored
+Warning: card PT	3.722760466	-7.445520931	26.05932326 ignored
+Warning: card PT	3.722760466	-3.722760466	22.33656279 ignored
+Warning: card PT	0	3.722760466	-26.05932326 ignored
+Warning: card PT	3.722760466	0	-26.05932326 ignored
+Warning: card PT	0	0	-22.33656279 ignored
+Warning: card PT	0	3.722760466	-18.61380233 ignored
+Warning: card PT	3.722760466	0	-18.61380233 ignored
+Warning: card PT	3.722760466	3.722760466	-22.33656279 ignored
+Warning: card PT	0	0	-14.89104186 ignored
+Warning: card PT	0	3.722760466	-11.1682814 ignored
+Warning: card PT	3.722760466	0	-11.1682814 ignored
+Warning: card PT	3.722760466	3.722760466	-14.89104186 ignored
+Warning: card PT	0	0	-7.445520931 ignored
+Warning: card PT	0	3.722760466	-3.722760466 ignored
+Warning: card PT	3.722760466	0	-3.722760466 ignored
+Warning: card PT	3.722760466	3.722760466	-7.445520931 ignored
+Warning: card PT	0	0	0 ignored
+Warning: card PT	0	3.722760466	3.722760466 ignored
+Warning: card PT	3.722760466	0	3.722760466 ignored
+Warning: card PT	3.722760466	3.722760466	0 ignored
+Warning: card PT	0	0	7.445520931 ignored
+Warning: card PT	0	3.722760466	11.1682814 ignored
+Warning: card PT	3.722760466	0	11.1682814 ignored
+Warning: card PT	3.722760466	3.722760466	7.445520931 ignored
+Warning: card PT	0	0	14.89104186 ignored
+Warning: card PT	0	3.722760466	18.61380233 ignored
+Warning: card PT	3.722760466	0	18.61380233 ignored
+Warning: card PT	3.722760466	3.722760466	14.89104186 ignored
+Warning: card PT	0	0	22.33656279 ignored
+Warning: card PT	0	3.722760466	26.05932326 ignored
+Warning: card PT	3.722760466	0	26.05932326 ignored
+Warning: card PT	3.722760466	3.722760466	22.33656279 ignored
+Warning: card PT	0	11.1682814	-26.05932326 ignored
+Warning: card PT	3.722760466	7.445520931	-26.05932326 ignored
+Warning: card PT	0	7.445520931	-22.33656279 ignored
+Warning: card PT	0	11.1682814	-18.61380233 ignored
+Warning: card PT	3.722760466	7.445520931	-18.61380233 ignored
+Warning: card PT	3.722760466	11.1682814	-22.33656279 ignored
+Warning: card PT	0	7.445520931	-14.89104186 ignored
+Warning: card PT	0	11.1682814	-11.1682814 ignored
+Warning: card PT	3.722760466	7.445520931	-11.1682814 ignored
+Warning: card PT	3.722760466	11.1682814	-14.89104186 ignored
+Warning: card PT	0	7.445520931	-7.445520931 ignored
+Warning: card PT	0	11.1682814	-3.722760466 ignored
+Warning: card PT	3.722760466	7.445520931	-3.722760466 ignored
+Warning: card PT	3.722760466	11.1682814	-7.445520931 ignored
+Warning: card PT	0	7.445520931	0 ignored
+Warning: card PT	0	11.1682814	3.722760466 ignored
+Warning: card PT	3.722760466	7.445520931	3.722760466 ignored
+Warning: card PT	3.722760466	11.1682814	0 ignored
+Warning: card PT	0	7.445520931	7.445520931 ignored
+Warning: card PT	0	11.1682814	11.1682814 ignored
+Warning: card PT	3.722760466	7.445520931	11.1682814 ignored
+Warning: card PT	3.722760466	11.1682814	7.445520931 ignored
+Warning: card PT	0	7.445520931	14.89104186 ignored
+Warning: card PT	0	11.1682814	18.61380233 ignored
+Warning: card PT	3.722760466	7.445520931	18.61380233 ignored
+Warning: card PT	3.722760466	11.1682814	14.89104186 ignored
+Warning: card PT	0	7.445520931	22.33656279 ignored
+Warning: card PT	0	11.1682814	26.05932326 ignored
+Warning: card PT	3.722760466	7.445520931	26.05932326 ignored
+Warning: card PT	3.722760466	11.1682814	22.33656279 ignored
+Warning: card PT	0	18.61380233	-26.05932326 ignored
+Warning: card PT	3.722760466	14.89104186	-26.05932326 ignored
+Warning: card PT	0	14.89104186	-22.33656279 ignored
+Warning: card PT	0	18.61380233	-18.61380233 ignored
+Warning: card PT	3.722760466	14.89104186	-18.61380233 ignored
+Warning: card PT	3.722760466	18.61380233	-22.33656279 ignored
+Warning: card PT	0	14.89104186	-14.89104186 ignored
+Warning: card PT	0	18.61380233	-11.1682814 ignored
+Warning: card PT	3.722760466	14.89104186	-11.1682814 ignored
+Warning: card PT	3.722760466	18.61380233	-14.89104186 ignored
+Warning: card PT	0	14.89104186	-7.445520931 ignored
+Warning: card PT	0	18.61380233	-3.722760466 ignored
+Warning: card PT	3.722760466	14.89104186	-3.722760466 ignored
+Warning: card PT	3.722760466	18.61380233	-7.445520931 ignored
+Warning: card PT	0	14.89104186	0 ignored
+Warning: card PT	0	18.61380233	3.722760466 ignored
+Warning: card PT	3.722760466	14.89104186	3.722760466 ignored
+Warning: card PT	3.722760466	18.61380233	0 ignored
+Warning: card PT	0	14.89104186	7.445520931 ignored
+Warning: card PT	0	18.61380233	11.1682814 ignored
+Warning: card PT	3.722760466	14.89104186	11.1682814 ignored
+Warning: card PT	3.722760466	18.61380233	7.445520931 ignored
+Warning: card PT	0	14.89104186	14.89104186 ignored
+Warning: card PT	0	18.61380233	18.61380233 ignored
+Warning: card PT	3.722760466	14.89104186	18.61380233 ignored
+Warning: card PT	3.722760466	18.61380233	14.89104186 ignored
+Warning: card PT	0	14.89104186	22.33656279 ignored
+Warning: card PT	0	18.61380233	26.05932326 ignored
+Warning: card PT	3.722760466	14.89104186	26.05932326 ignored
+Warning: card PT	3.722760466	18.61380233	22.33656279 ignored
+Warning: card PT	0	26.05932326	-26.05932326 ignored
+Warning: card PT	3.722760466	22.33656279	-26.05932326 ignored
+Warning: card PT	0	22.33656279	-22.33656279 ignored
+Warning: card PT	0	26.05932326	-18.61380233 ignored
+Warning: card PT	3.722760466	22.33656279	-18.61380233 ignored
+Warning: card PT	3.722760466	26.05932326	-22.33656279 ignored
+Warning: card PT	0	22.33656279	-14.89104186 ignored
+Warning: card PT	0	26.05932326	-11.1682814 ignored
+Warning: card PT	3.722760466	22.33656279	-11.1682814 ignored
+Warning: card PT	3.722760466	26.05932326	-14.89104186 ignored
+Warning: card PT	0	22.33656279	-7.445520931 ignored
+Warning: card PT	0	26.05932326	-3.722760466 ignored
+Warning: card PT	3.722760466	22.33656279	-3.722760466 ignored
+Warning: card PT	3.722760466	26.05932326	-7.445520931 ignored
+Warning: card PT	0	22.33656279	0 ignored
+Warning: card PT	0	26.05932326	3.722760466 ignored
+Warning: card PT	3.722760466	22.33656279	3.722760466 ignored
+Warning: card PT	3.722760466	26.05932326	0 ignored
+Warning: card PT	0	22.33656279	7.445520931 ignored
+Warning: card PT	0	26.05932326	11.1682814 ignored
+Warning: card PT	3.722760466	22.33656279	11.1682814 ignored
+Warning: card PT	3.722760466	26.05932326	7.445520931 ignored
+Warning: card PT	0	22.33656279	14.89104186 ignored
+Warning: card PT	0	26.05932326	18.61380233 ignored
+Warning: card PT	3.722760466	22.33656279	18.61380233 ignored
+Warning: card PT	3.722760466	26.05932326	14.89104186 ignored
+Warning: card PT	0	22.33656279	22.33656279 ignored
+Warning: card PT	0	26.05932326	26.05932326 ignored
+Warning: card PT	3.722760466	22.33656279	26.05932326 ignored
+Warning: card PT	3.722760466	26.05932326	22.33656279 ignored
+Warning: card PT	7.445520931	-26.05932326	-18.61380233 ignored
+Warning: card PT	7.445520931	-26.05932326	-11.1682814 ignored
+Warning: card PT	11.1682814	-26.05932326	-14.89104186 ignored
+Warning: card PT	7.445520931	-26.05932326	-3.722760466 ignored
+Warning: card PT	11.1682814	-26.05932326	-7.445520931 ignored
+Warning: card PT	7.445520931	-26.05932326	3.722760466 ignored
+Warning: card PT	11.1682814	-26.05932326	0 ignored
+Warning: card PT	7.445520931	-26.05932326	11.1682814 ignored
+Warning: card PT	11.1682814	-26.05932326	7.445520931 ignored
+Warning: card PT	7.445520931	-26.05932326	18.61380233 ignored
+Warning: card PT	11.1682814	-26.05932326	14.89104186 ignored
+Warning: card PT	7.445520931	-18.61380233	-26.05932326 ignored
+Warning: card PT	7.445520931	-22.33656279	-22.33656279 ignored
+Warning: card PT	7.445520931	-18.61380233	-18.61380233 ignored
+Warning: card PT	11.1682814	-22.33656279	-18.61380233 ignored
+Warning: card PT	11.1682814	-18.61380233	-22.33656279 ignored
+Warning: card PT	7.445520931	-22.33656279	-14.89104186 ignored
+Warning: card PT	7.445520931	-18.61380233	-11.1682814 ignored
+Warning: card PT	11.1682814	-22.33656279	-11.1682814 ignored
+Warning: card PT	11.1682814	-18.61380233	-14.89104186 ignored
+Warning: card PT	7.445520931	-22.33656279	-7.445520931 ignored
+Warning: card PT	7.445520931	-18.61380233	-3.722760466 ignored
+Warning: card PT	11.1682814	-22.33656279	-3.722760466 ignored
+Warning: card PT	11.1682814	-18.61380233	-7.445520931 ignored
+Warning: card PT	7.445520931	-22.33656279	0 ignored
+Warning: card PT	7.445520931	-18.61380233	3.722760466 ignored
+Warning: card PT	11.1682814	-22.33656279	3.722760466 ignored
+Warning: card PT	11.1682814	-18.61380233	0 ignored
+Warning: card PT	7.445520931	-22.33656279	7.445520931 ignored
+Warning: card PT	7.445520931	-18.61380233	11.1682814 ignored
+Warning: card PT	11.1682814	-22.33656279	11.1682814 ignored
+Warning: card PT	11.1682814	-18.61380233	7.445520931 ignored
+Warning: card PT	7.445520931	-22.33656279	14.89104186 ignored
+Warning: card PT	7.445520931	-18.61380233	18.61380233 ignored
+Warning: card PT	11.1682814	-22.33656279	18.61380233 ignored
+Warning: card PT	11.1682814	-18.61380233	14.89104186 ignored
+Warning: card PT	7.445520931	-22.33656279	22.33656279 ignored
+Warning: card PT	7.445520931	-18.61380233	26.05932326 ignored
+Warning: card PT	11.1682814	-18.61380233	22.33656279 ignored
+Warning: card PT	7.445520931	-11.1682814	-26.05932326 ignored
+Warning: card PT	11.1682814	-14.89104186	-26.05932326 ignored
+Warning: card PT	7.445520931	-14.89104186	-22.33656279 ignored
+Warning: card PT	7.445520931	-11.1682814	-18.61380233 ignored
+Warning: card PT	11.1682814	-14.89104186	-18.61380233 ignored
+Warning: card PT	11.1682814	-11.1682814	-22.33656279 ignored
+Warning: card PT	7.445520931	-14.89104186	-14.89104186 ignored
+Warning: card PT	7.445520931	-11.1682814	-11.1682814 ignored
+Warning: card PT	11.1682814	-14.89104186	-11.1682814 ignored
+Warning: card PT	11.1682814	-11.1682814	-14.89104186 ignored
+Warning: card PT	7.445520931	-14.89104186	-7.445520931 ignored
+Warning: card PT	7.445520931	-11.1682814	-3.722760466 ignored
+Warning: card PT	11.1682814	-14.89104186	-3.722760466 ignored
+Warning: card PT	11.1682814	-11.1682814	-7.445520931 ignored
+Warning: card PT	7.445520931	-14.89104186	0 ignored
+Warning: card PT	7.445520931	-11.1682814	3.722760466 ignored
+Warning: card PT	11.1682814	-14.89104186	3.722760466 ignored
+Warning: card PT	11.1682814	-11.1682814	0 ignored
+Warning: card PT	7.445520931	-14.89104186	7.445520931 ignored
+Warning: card PT	7.445520931	-11.1682814	11.1682814 ignored
+Warning: card PT	11.1682814	-14.89104186	11.1682814 ignored
+Warning: card PT	11.1682814	-11.1682814	7.445520931 ignored
+Warning: card PT	7.445520931	-14.89104186	14.89104186 ignored
+Warning: card PT	7.445520931	-11.1682814	18.61380233 ignored
+Warning: card PT	11.1682814	-14.89104186	18.61380233 ignored
+Warning: card PT	11.1682814	-11.1682814	14.89104186 ignored
+Warning: card PT	7.445520931	-14.89104186	22.33656279 ignored
+Warning: card PT	7.445520931	-11.1682814	26.05932326 ignored
+Warning: card PT	11.1682814	-14.89104186	26.05932326 ignored
+Warning: card PT	11.1682814	-11.1682814	22.33656279 ignored
+Warning: card PT	7.445520931	-3.722760466	-26.05932326 ignored
+Warning: card PT	11.1682814	-7.445520931	-26.05932326 ignored
+Warning: card PT	7.445520931	-7.445520931	-22.33656279 ignored
+Warning: card PT	7.445520931	-3.722760466	-18.61380233 ignored
+Warning: card PT	11.1682814	-7.445520931	-18.61380233 ignored
+Warning: card PT	11.1682814	-3.722760466	-22.33656279 ignored
+Warning: card PT	7.445520931	-7.445520931	-14.89104186 ignored
+Warning: card PT	7.445520931	-3.722760466	-11.1682814 ignored
+Warning: card PT	11.1682814	-7.445520931	-11.1682814 ignored
+Warning: card PT	11.1682814	-3.722760466	-14.89104186 ignored
+Warning: card PT	7.445520931	-7.445520931	-7.445520931 ignored
+Warning: card PT	7.445520931	-3.722760466	-3.722760466 ignored
+Warning: card PT	11.1682814	-7.445520931	-3.722760466 ignored
+Warning: card PT	11.1682814	-3.722760466	-7.445520931 ignored
+Warning: card PT	7.445520931	-7.445520931	0 ignored
+Warning: card PT	7.445520931	-3.722760466	3.722760466 ignored
+Warning: card PT	11.1682814	-7.445520931	3.722760466 ignored
+Warning: card PT	11.1682814	-3.722760466	0 ignored
+Warning: card PT	7.445520931	-7.445520931	7.445520931 ignored
+Warning: card PT	7.445520931	-3.722760466	11.1682814 ignored
+Warning: card PT	11.1682814	-7.445520931	11.1682814 ignored
+Warning: card PT	11.1682814	-3.722760466	7.445520931 ignored
+Warning: card PT	7.445520931	-7.445520931	14.89104186 ignored
+Warning: card PT	7.445520931	-3.722760466	18.61380233 ignored
+Warning: card PT	11.1682814	-7.445520931	18.61380233 ignored
+Warning: card PT	11.1682814	-3.722760466	14.89104186 ignored
+Warning: card PT	7.445520931	-7.445520931	22.33656279 ignored
+Warning: card PT	7.445520931	-3.722760466	26.05932326 ignored
+Warning: card PT	11.1682814	-7.445520931	26.05932326 ignored
+Warning: card PT	11.1682814	-3.722760466	22.33656279 ignored
+Warning: card PT	7.445520931	3.722760466	-26.05932326 ignored
+Warning: card PT	11.1682814	0	-26.05932326 ignored
+Warning: card PT	7.445520931	0	-22.33656279 ignored
+Warning: card PT	7.445520931	3.722760466	-18.61380233 ignored
+Warning: card PT	11.1682814	0	-18.61380233 ignored
+Warning: card PT	11.1682814	3.722760466	-22.33656279 ignored
+Warning: card PT	7.445520931	0	-14.89104186 ignored
+Warning: card PT	7.445520931	3.722760466	-11.1682814 ignored
+Warning: card PT	11.1682814	0	-11.1682814 ignored
+Warning: card PT	11.1682814	3.722760466	-14.89104186 ignored
+Warning: card PT	7.445520931	0	-7.445520931 ignored
+Warning: card PT	7.445520931	3.722760466	-3.722760466 ignored
+Warning: card PT	11.1682814	0	-3.722760466 ignored
+Warning: card PT	11.1682814	3.722760466	-7.445520931 ignored
+Warning: card PT	7.445520931	0	0 ignored
+Warning: card PT	7.445520931	3.722760466	3.722760466 ignored
+Warning: card PT	11.1682814	0	3.722760466 ignored
+Warning: card PT	11.1682814	3.722760466	0 ignored
+Warning: card PT	7.445520931	0	7.445520931 ignored
+Warning: card PT	7.445520931	3.722760466	11.1682814 ignored
+Warning: card PT	11.1682814	0	11.1682814 ignored
+Warning: card PT	11.1682814	3.722760466	7.445520931 ignored
+Warning: card PT	7.445520931	0	14.89104186 ignored
+Warning: card PT	7.445520931	3.722760466	18.61380233 ignored
+Warning: card PT	11.1682814	0	18.61380233 ignored
+Warning: card PT	11.1682814	3.722760466	14.89104186 ignored
+Warning: card PT	7.445520931	0	22.33656279 ignored
+Warning: card PT	7.445520931	3.722760466	26.05932326 ignored
+Warning: card PT	11.1682814	0	26.05932326 ignored
+Warning: card PT	11.1682814	3.722760466	22.33656279 ignored
+Warning: card PT	7.445520931	11.1682814	-26.05932326 ignored
+Warning: card PT	11.1682814	7.445520931	-26.05932326 ignored
+Warning: card PT	7.445520931	7.445520931	-22.33656279 ignored
+Warning: card PT	7.445520931	11.1682814	-18.61380233 ignored
+Warning: card PT	11.1682814	7.445520931	-18.61380233 ignored
+Warning: card PT	11.1682814	11.1682814	-22.33656279 ignored
+Warning: card PT	7.445520931	7.445520931	-14.89104186 ignored
+Warning: card PT	7.445520931	11.1682814	-11.1682814 ignored
+Warning: card PT	11.1682814	7.445520931	-11.1682814 ignored
+Warning: card PT	11.1682814	11.1682814	-14.89104186 ignored
+Warning: card PT	7.445520931	7.445520931	-7.445520931 ignored
+Warning: card PT	7.445520931	11.1682814	-3.722760466 ignored
+Warning: card PT	11.1682814	7.445520931	-3.722760466 ignored
+Warning: card PT	11.1682814	11.1682814	-7.445520931 ignored
+Warning: card PT	7.445520931	7.445520931	0 ignored
+Warning: card PT	7.445520931	11.1682814	3.722760466 ignored
+Warning: card PT	11.1682814	7.445520931	3.722760466 ignored
+Warning: card PT	11.1682814	11.1682814	0 ignored
+Warning: card PT	7.445520931	7.445520931	7.445520931 ignored
+Warning: card PT	7.445520931	11.1682814	11.1682814 ignored
+Warning: card PT	11.1682814	7.445520931	11.1682814 ignored
+Warning: card PT	11.1682814	11.1682814	7.445520931 ignored
+Warning: card PT	7.445520931	7.445520931	14.89104186 ignored
+Warning: card PT	7.445520931	11.1682814	18.61380233 ignored
+Warning: card PT	11.1682814	7.445520931	18.61380233 ignored
+Warning: card PT	11.1682814	11.1682814	14.89104186 ignored
+Warning: card PT	7.445520931	7.445520931	22.33656279 ignored
+Warning: card PT	7.445520931	11.1682814	26.05932326 ignored
+Warning: card PT	11.1682814	7.445520931	26.05932326 ignored
+Warning: card PT	11.1682814	11.1682814	22.33656279 ignored
+Warning: card PT	7.445520931	18.61380233	-26.05932326 ignored
+Warning: card PT	11.1682814	14.89104186	-26.05932326 ignored
+Warning: card PT	7.445520931	14.89104186	-22.33656279 ignored
+Warning: card PT	7.445520931	18.61380233	-18.61380233 ignored
+Warning: card PT	11.1682814	14.89104186	-18.61380233 ignored
+Warning: card PT	11.1682814	18.61380233	-22.33656279 ignored
+Warning: card PT	7.445520931	14.89104186	-14.89104186 ignored
+Warning: card PT	7.445520931	18.61380233	-11.1682814 ignored
+Warning: card PT	11.1682814	14.89104186	-11.1682814 ignored
+Warning: card PT	11.1682814	18.61380233	-14.89104186 ignored
+Warning: card PT	7.445520931	14.89104186	-7.445520931 ignored
+Warning: card PT	7.445520931	18.61380233	-3.722760466 ignored
+Warning: card PT	11.1682814	14.89104186	-3.722760466 ignored
+Warning: card PT	11.1682814	18.61380233	-7.445520931 ignored
+Warning: card PT	7.445520931	14.89104186	0 ignored
+Warning: card PT	7.445520931	18.61380233	3.722760466 ignored
+Warning: card PT	11.1682814	14.89104186	3.722760466 ignored
+Warning: card PT	11.1682814	18.61380233	0 ignored
+Warning: card PT	7.445520931	14.89104186	7.445520931 ignored
+Warning: card PT	7.445520931	18.61380233	11.1682814 ignored
+Warning: card PT	11.1682814	14.89104186	11.1682814 ignored
+Warning: card PT	11.1682814	18.61380233	7.445520931 ignored
+Warning: card PT	7.445520931	14.89104186	14.89104186 ignored
+Warning: card PT	7.445520931	18.61380233	18.61380233 ignored
+Warning: card PT	11.1682814	14.89104186	18.61380233 ignored
+Warning: card PT	11.1682814	18.61380233	14.89104186 ignored
+Warning: card PT	7.445520931	14.89104186	22.33656279 ignored
+Warning: card PT	7.445520931	18.61380233	26.05932326 ignored
+Warning: card PT	11.1682814	14.89104186	26.05932326 ignored
+Warning: card PT	11.1682814	18.61380233	22.33656279 ignored
+Warning: card PT	7.445520931	22.33656279	-22.33656279 ignored
+Warning: card PT	7.445520931	26.05932326	-18.61380233 ignored
+Warning: card PT	11.1682814	22.33656279	-18.61380233 ignored
+Warning: card PT	7.445520931	22.33656279	-14.89104186 ignored
+Warning: card PT	7.445520931	26.05932326	-11.1682814 ignored
+Warning: card PT	11.1682814	22.33656279	-11.1682814 ignored
+Warning: card PT	11.1682814	26.05932326	-14.89104186 ignored
+Warning: card PT	7.445520931	22.33656279	-7.445520931 ignored
+Warning: card PT	7.445520931	26.05932326	-3.722760466 ignored
+Warning: card PT	11.1682814	22.33656279	-3.722760466 ignored
+Warning: card PT	11.1682814	26.05932326	-7.445520931 ignored
+Warning: card PT	7.445520931	22.33656279	0 ignored
+Warning: card PT	7.445520931	26.05932326	3.722760466 ignored
+Warning: card PT	11.1682814	22.33656279	3.722760466 ignored
+Warning: card PT	11.1682814	26.05932326	0 ignored
+Warning: card PT	7.445520931	22.33656279	7.445520931 ignored
+Warning: card PT	7.445520931	26.05932326	11.1682814 ignored
+Warning: card PT	11.1682814	22.33656279	11.1682814 ignored
+Warning: card PT	11.1682814	26.05932326	7.445520931 ignored
+Warning: card PT	7.445520931	22.33656279	14.89104186 ignored
+Warning: card PT	7.445520931	26.05932326	18.61380233 ignored
+Warning: card PT	11.1682814	22.33656279	18.61380233 ignored
+Warning: card PT	11.1682814	26.05932326	14.89104186 ignored
+Warning: card PT	7.445520931	22.33656279	22.33656279 ignored
+Warning: card PT	14.89104186	-26.05932326	-11.1682814 ignored
+Warning: card PT	14.89104186	-26.05932326	-3.722760466 ignored
+Warning: card PT	18.61380233	-26.05932326	-7.445520931 ignored
+Warning: card PT	14.89104186	-26.05932326	3.722760466 ignored
+Warning: card PT	18.61380233	-26.05932326	0 ignored
+Warning: card PT	14.89104186	-26.05932326	11.1682814 ignored
+Warning: card PT	18.61380233	-26.05932326	7.445520931 ignored
+Warning: card PT	14.89104186	-18.61380233	-18.61380233 ignored
+Warning: card PT	14.89104186	-22.33656279	-14.89104186 ignored
+Warning: card PT	14.89104186	-18.61380233	-11.1682814 ignored
+Warning: card PT	18.61380233	-22.33656279	-11.1682814 ignored
+Warning: card PT	18.61380233	-18.61380233	-14.89104186 ignored
+Warning: card PT	14.89104186	-22.33656279	-7.445520931 ignored
+Warning: card PT	14.89104186	-18.61380233	-3.722760466 ignored
+Warning: card PT	18.61380233	-22.33656279	-3.722760466 ignored
+Warning: card PT	18.61380233	-18.61380233	-7.445520931 ignored
+Warning: card PT	14.89104186	-22.33656279	0 ignored
+Warning: card PT	14.89104186	-18.61380233	3.722760466 ignored
+Warning: card PT	18.61380233	-22.33656279	3.722760466 ignored
+Warning: card PT	18.61380233	-18.61380233	0 ignored
+Warning: card PT	14.89104186	-22.33656279	7.445520931 ignored
+Warning: card PT	14.89104186	-18.61380233	11.1682814 ignored
+Warning: card PT	18.61380233	-22.33656279	11.1682814 ignored
+Warning: card PT	18.61380233	-18.61380233	7.445520931 ignored
+Warning: card PT	14.89104186	-22.33656279	14.89104186 ignored
+Warning: card PT	14.89104186	-18.61380233	18.61380233 ignored
+Warning: card PT	18.61380233	-18.61380233	14.89104186 ignored
+Warning: card PT	14.89104186	-11.1682814	-26.05932326 ignored
+Warning: card PT	14.89104186	-14.89104186	-22.33656279 ignored
+Warning: card PT	14.89104186	-11.1682814	-18.61380233 ignored
+Warning: card PT	18.61380233	-14.89104186	-18.61380233 ignored
+Warning: card PT	18.61380233	-11.1682814	-22.33656279 ignored
+Warning: card PT	14.89104186	-14.89104186	-14.89104186 ignored
+Warning: card PT	14.89104186	-11.1682814	-11.1682814 ignored
+Warning: card PT	18.61380233	-14.89104186	-11.1682814 ignored
+Warning: card PT	18.61380233	-11.1682814	-14.89104186 ignored
+Warning: card PT	14.89104186	-14.89104186	-7.445520931 ignored
+Warning: card PT	14.89104186	-11.1682814	-3.722760466 ignored
+Warning: card PT	18.61380233	-14.89104186	-3.722760466 ignored
+Warning: card PT	18.61380233	-11.1682814	-7.445520931 ignored
+Warning: card PT	14.89104186	-14.89104186	0 ignored
+Warning: card PT	14.89104186	-11.1682814	3.722760466 ignored
+Warning: card PT	18.61380233	-14.89104186	3.722760466 ignored
+Warning: card PT	18.61380233	-11.1682814	0 ignored
+Warning: card PT	14.89104186	-14.89104186	7.445520931 ignored
+Warning: card PT	14.89104186	-11.1682814	11.1682814 ignored
+Warning: card PT	18.61380233	-14.89104186	11.1682814 ignored
+Warning: card PT	18.61380233	-11.1682814	7.445520931 ignored
+Warning: card PT	14.89104186	-14.89104186	14.89104186 ignored
+Warning: card PT	14.89104186	-11.1682814	18.61380233 ignored
+Warning: card PT	18.61380233	-14.89104186	18.61380233 ignored
+Warning: card PT	18.61380233	-11.1682814	14.89104186 ignored
+Warning: card PT	14.89104186	-14.89104186	22.33656279 ignored
+Warning: card PT	14.89104186	-11.1682814	26.05932326 ignored
+Warning: card PT	18.61380233	-11.1682814	22.33656279 ignored
+Warning: card PT	14.89104186	-3.722760466	-26.05932326 ignored
+Warning: card PT	18.61380233	-7.445520931	-26.05932326 ignored
+Warning: card PT	14.89104186	-7.445520931	-22.33656279 ignored
+Warning: card PT	14.89104186	-3.722760466	-18.61380233 ignored
+Warning: card PT	18.61380233	-7.445520931	-18.61380233 ignored
+Warning: card PT	18.61380233	-3.722760466	-22.33656279 ignored
+Warning: card PT	14.89104186	-7.445520931	-14.89104186 ignored
+Warning: card PT	14.89104186	-3.722760466	-11.1682814 ignored
+Warning: card PT	18.61380233	-7.445520931	-11.1682814 ignored
+Warning: card PT	18.61380233	-3.722760466	-14.89104186 ignored
+Warning: card PT	14.89104186	-7.445520931	-7.445520931 ignored
+Warning: card PT	14.89104186	-3.722760466	-3.722760466 ignored
+Warning: card PT	18.61380233	-7.445520931	-3.722760466 ignored
+Warning: card PT	18.61380233	-3.722760466	-7.445520931 ignored
+Warning: card PT	14.89104186	-7.445520931	0 ignored
+Warning: card PT	14.89104186	-3.722760466	3.722760466 ignored
+Warning: card PT	18.61380233	-7.445520931	3.722760466 ignored
+Warning: card PT	18.61380233	-3.722760466	0 ignored
+Warning: card PT	14.89104186	-7.445520931	7.445520931 ignored
+Warning: card PT	14.89104186	-3.722760466	11.1682814 ignored
+Warning: card PT	18.61380233	-7.445520931	11.1682814 ignored
+Warning: card PT	18.61380233	-3.722760466	7.445520931 ignored
+Warning: card PT	14.89104186	-7.445520931	14.89104186 ignored
+Warning: card PT	14.89104186	-3.722760466	18.61380233 ignored
+Warning: card PT	18.61380233	-7.445520931	18.61380233 ignored
+Warning: card PT	18.61380233	-3.722760466	14.89104186 ignored
+Warning: card PT	14.89104186	-7.445520931	22.33656279 ignored
+Warning: card PT	14.89104186	-3.722760466	26.05932326 ignored
+Warning: card PT	18.61380233	-7.445520931	26.05932326 ignored
+Warning: card PT	18.61380233	-3.722760466	22.33656279 ignored
+Warning: card PT	14.89104186	3.722760466	-26.05932326 ignored
+Warning: card PT	18.61380233	0	-26.05932326 ignored
+Warning: card PT	14.89104186	0	-22.33656279 ignored
+Warning: card PT	14.89104186	3.722760466	-18.61380233 ignored
+Warning: card PT	18.61380233	0	-18.61380233 ignored
+Warning: card PT	18.61380233	3.722760466	-22.33656279 ignored
+Warning: card PT	14.89104186	0	-14.89104186 ignored
+Warning: card PT	14.89104186	3.722760466	-11.1682814 ignored
+Warning: card PT	18.61380233	0	-11.1682814 ignored
+Warning: card PT	18.61380233	3.722760466	-14.89104186 ignored
+Warning: card PT	14.89104186	0	-7.445520931 ignored
+Warning: card PT	14.89104186	3.722760466	-3.722760466 ignored
+Warning: card PT	18.61380233	0	-3.722760466 ignored
+Warning: card PT	18.61380233	3.722760466	-7.445520931 ignored
+Warning: card PT	14.89104186	0	0 ignored
+Warning: card PT	14.89104186	3.722760466	3.722760466 ignored
+Warning: card PT	18.61380233	0	3.722760466 ignored
+Warning: card PT	18.61380233	3.722760466	0 ignored
+Warning: card PT	14.89104186	0	7.445520931 ignored
+Warning: card PT	14.89104186	3.722760466	11.1682814 ignored
+Warning: card PT	18.61380233	0	11.1682814 ignored
+Warning: card PT	18.61380233	3.722760466	7.445520931 ignored
+Warning: card PT	14.89104186	0	14.89104186 ignored
+Warning: card PT	14.89104186	3.722760466	18.61380233 ignored
+Warning: card PT	18.61380233	0	18.61380233 ignored
+Warning: card PT	18.61380233	3.722760466	14.89104186 ignored
+Warning: card PT	14.89104186	0	22.33656279 ignored
+Warning: card PT	14.89104186	3.722760466	26.05932326 ignored
+Warning: card PT	18.61380233	0	26.05932326 ignored
+Warning: card PT	18.61380233	3.722760466	22.33656279 ignored
+Warning: card PT	14.89104186	11.1682814	-26.05932326 ignored
+Warning: card PT	18.61380233	7.445520931	-26.05932326 ignored
+Warning: card PT	14.89104186	7.445520931	-22.33656279 ignored
+Warning: card PT	14.89104186	11.1682814	-18.61380233 ignored
+Warning: card PT	18.61380233	7.445520931	-18.61380233 ignored
+Warning: card PT	18.61380233	11.1682814	-22.33656279 ignored
+Warning: card PT	14.89104186	7.445520931	-14.89104186 ignored
+Warning: card PT	14.89104186	11.1682814	-11.1682814 ignored
+Warning: card PT	18.61380233	7.445520931	-11.1682814 ignored
+Warning: card PT	18.61380233	11.1682814	-14.89104186 ignored
+Warning: card PT	14.89104186	7.445520931	-7.445520931 ignored
+Warning: card PT	14.89104186	11.1682814	-3.722760466 ignored
+Warning: card PT	18.61380233	7.445520931	-3.722760466 ignored
+Warning: card PT	18.61380233	11.1682814	-7.445520931 ignored
+Warning: card PT	14.89104186	7.445520931	0 ignored
+Warning: card PT	14.89104186	11.1682814	3.722760466 ignored
+Warning: card PT	18.61380233	7.445520931	3.722760466 ignored
+Warning: card PT	18.61380233	11.1682814	0 ignored
+Warning: card PT	14.89104186	7.445520931	7.445520931 ignored
+Warning: card PT	14.89104186	11.1682814	11.1682814 ignored
+Warning: card PT	18.61380233	7.445520931	11.1682814 ignored
+Warning: card PT	18.61380233	11.1682814	7.445520931 ignored
+Warning: card PT	14.89104186	7.445520931	14.89104186 ignored
+Warning: card PT	14.89104186	11.1682814	18.61380233 ignored
+Warning: card PT	18.61380233	7.445520931	18.61380233 ignored
+Warning: card PT	18.61380233	11.1682814	14.89104186 ignored
+Warning: card PT	14.89104186	7.445520931	22.33656279 ignored
+Warning: card PT	14.89104186	11.1682814	26.05932326 ignored
+Warning: card PT	18.61380233	7.445520931	26.05932326 ignored
+Warning: card PT	18.61380233	11.1682814	22.33656279 ignored
+Warning: card PT	14.89104186	14.89104186	-22.33656279 ignored
+Warning: card PT	14.89104186	18.61380233	-18.61380233 ignored
+Warning: card PT	18.61380233	14.89104186	-18.61380233 ignored
+Warning: card PT	14.89104186	14.89104186	-14.89104186 ignored
+Warning: card PT	14.89104186	18.61380233	-11.1682814 ignored
+Warning: card PT	18.61380233	14.89104186	-11.1682814 ignored
+Warning: card PT	18.61380233	18.61380233	-14.89104186 ignored
+Warning: card PT	14.89104186	14.89104186	-7.445520931 ignored
+Warning: card PT	14.89104186	18.61380233	-3.722760466 ignored
+Warning: card PT	18.61380233	14.89104186	-3.722760466 ignored
+Warning: card PT	18.61380233	18.61380233	-7.445520931 ignored
+Warning: card PT	14.89104186	14.89104186	0 ignored
+Warning: card PT	14.89104186	18.61380233	3.722760466 ignored
+Warning: card PT	18.61380233	14.89104186	3.722760466 ignored
+Warning: card PT	18.61380233	18.61380233	0 ignored
+Warning: card PT	14.89104186	14.89104186	7.445520931 ignored
+Warning: card PT	14.89104186	18.61380233	11.1682814 ignored
+Warning: card PT	18.61380233	14.89104186	11.1682814 ignored
+Warning: card PT	18.61380233	18.61380233	7.445520931 ignored
+Warning: card PT	14.89104186	14.89104186	14.89104186 ignored
+Warning: card PT	14.89104186	18.61380233	18.61380233 ignored
+Warning: card PT	18.61380233	14.89104186	18.61380233 ignored
+Warning: card PT	18.61380233	18.61380233	14.89104186 ignored
+Warning: card PT	14.89104186	14.89104186	22.33656279 ignored
+Warning: card PT	14.89104186	22.33656279	-14.89104186 ignored
+Warning: card PT	14.89104186	26.05932326	-11.1682814 ignored
+Warning: card PT	18.61380233	22.33656279	-11.1682814 ignored
+Warning: card PT	14.89104186	22.33656279	-7.445520931 ignored
+Warning: card PT	14.89104186	26.05932326	-3.722760466 ignored
+Warning: card PT	18.61380233	22.33656279	-3.722760466 ignored
+Warning: card PT	18.61380233	26.05932326	-7.445520931 ignored
+Warning: card PT	14.89104186	22.33656279	0 ignored
+Warning: card PT	14.89104186	26.05932326	3.722760466 ignored
+Warning: card PT	18.61380233	22.33656279	3.722760466 ignored
+Warning: card PT	18.61380233	26.05932326	0 ignored
+Warning: card PT	14.89104186	22.33656279	7.445520931 ignored
+Warning: card PT	14.89104186	26.05932326	11.1682814 ignored
+Warning: card PT	18.61380233	22.33656279	11.1682814 ignored
+Warning: card PT	18.61380233	26.05932326	7.445520931 ignored
+Warning: card PT	14.89104186	22.33656279	14.89104186 ignored
+Warning: card PT	22.33656279	-26.05932326	-3.722760466 ignored
+Warning: card PT	22.33656279	-26.05932326	3.722760466 ignored
+Warning: card PT	26.05932326	-26.05932326	0 ignored
+Warning: card PT	22.33656279	-18.61380233	-11.1682814 ignored
+Warning: card PT	22.33656279	-22.33656279	-7.445520931 ignored
+Warning: card PT	22.33656279	-18.61380233	-3.722760466 ignored
+Warning: card PT	26.05932326	-22.33656279	-3.722760466 ignored
+Warning: card PT	26.05932326	-18.61380233	-7.445520931 ignored
+Warning: card PT	22.33656279	-22.33656279	0 ignored
+Warning: card PT	22.33656279	-18.61380233	3.722760466 ignored
+Warning: card PT	26.05932326	-22.33656279	3.722760466 ignored
+Warning: card PT	26.05932326	-18.61380233	0 ignored
+Warning: card PT	22.33656279	-22.33656279	7.445520931 ignored
+Warning: card PT	22.33656279	-18.61380233	11.1682814 ignored
+Warning: card PT	26.05932326	-18.61380233	7.445520931 ignored
+Warning: card PT	22.33656279	-11.1682814	-18.61380233 ignored
+Warning: card PT	22.33656279	-14.89104186	-14.89104186 ignored
+Warning: card PT	22.33656279	-11.1682814	-11.1682814 ignored
+Warning: card PT	26.05932326	-14.89104186	-11.1682814 ignored
+Warning: card PT	26.05932326	-11.1682814	-14.89104186 ignored
+Warning: card PT	22.33656279	-14.89104186	-7.445520931 ignored
+Warning: card PT	22.33656279	-11.1682814	-3.722760466 ignored
+Warning: card PT	26.05932326	-14.89104186	-3.722760466 ignored
+Warning: card PT	26.05932326	-11.1682814	-7.445520931 ignored
+Warning: card PT	22.33656279	-14.89104186	0 ignored
+Warning: card PT	22.33656279	-11.1682814	3.722760466 ignored
+Warning: card PT	26.05932326	-14.89104186	3.722760466 ignored
+Warning: card PT	26.05932326	-11.1682814	0 ignored
+Warning: card PT	22.33656279	-14.89104186	7.445520931 ignored
+Warning: card PT	22.33656279	-11.1682814	11.1682814 ignored
+Warning: card PT	26.05932326	-14.89104186	11.1682814 ignored
+Warning: card PT	26.05932326	-11.1682814	7.445520931 ignored
+Warning: card PT	22.33656279	-14.89104186	14.89104186 ignored
+Warning: card PT	22.33656279	-11.1682814	18.61380233 ignored
+Warning: card PT	26.05932326	-11.1682814	14.89104186 ignored
+Warning: card PT	22.33656279	-3.722760466	-26.05932326 ignored
+Warning: card PT	22.33656279	-7.445520931	-22.33656279 ignored
+Warning: card PT	22.33656279	-3.722760466	-18.61380233 ignored
+Warning: card PT	26.05932326	-7.445520931	-18.61380233 ignored
+Warning: card PT	26.05932326	-3.722760466	-22.33656279 ignored
+Warning: card PT	22.33656279	-7.445520931	-14.89104186 ignored
+Warning: card PT	22.33656279	-3.722760466	-11.1682814 ignored
+Warning: card PT	26.05932326	-7.445520931	-11.1682814 ignored
+Warning: card PT	26.05932326	-3.722760466	-14.89104186 ignored
+Warning: card PT	22.33656279	-7.445520931	-7.445520931 ignored
+Warning: card PT	22.33656279	-3.722760466	-3.722760466 ignored
+Warning: card PT	26.05932326	-7.445520931	-3.722760466 ignored
+Warning: card PT	26.05932326	-3.722760466	-7.445520931 ignored
+Warning: card PT	22.33656279	-7.445520931	0 ignored
+Warning: card PT	22.33656279	-3.722760466	3.722760466 ignored
+Warning: card PT	26.05932326	-7.445520931	3.722760466 ignored
+Warning: card PT	26.05932326	-3.722760466	0 ignored
+Warning: card PT	22.33656279	-7.445520931	7.445520931 ignored
+Warning: card PT	22.33656279	-3.722760466	11.1682814 ignored
+Warning: card PT	26.05932326	-7.445520931	11.1682814 ignored
+Warning: card PT	26.05932326	-3.722760466	7.445520931 ignored
+Warning: card PT	22.33656279	-7.445520931	14.89104186 ignored
+Warning: card PT	22.33656279	-3.722760466	18.61380233 ignored
+Warning: card PT	26.05932326	-7.445520931	18.61380233 ignored
+Warning: card PT	26.05932326	-3.722760466	14.89104186 ignored
+Warning: card PT	22.33656279	-7.445520931	22.33656279 ignored
+Warning: card PT	22.33656279	-3.722760466	26.05932326 ignored
+Warning: card PT	26.05932326	-3.722760466	22.33656279 ignored
+Warning: card PT	22.33656279	3.722760466	-26.05932326 ignored
+Warning: card PT	26.05932326	0	-26.05932326 ignored
+Warning: card PT	22.33656279	0	-22.33656279 ignored
+Warning: card PT	22.33656279	3.722760466	-18.61380233 ignored
+Warning: card PT	26.05932326	0	-18.61380233 ignored
+Warning: card PT	26.05932326	3.722760466	-22.33656279 ignored
+Warning: card PT	22.33656279	0	-14.89104186 ignored
+Warning: card PT	22.33656279	3.722760466	-11.1682814 ignored
+Warning: card PT	26.05932326	0	-11.1682814 ignored
+Warning: card PT	26.05932326	3.722760466	-14.89104186 ignored
+Warning: card PT	22.33656279	0	-7.445520931 ignored
+Warning: card PT	22.33656279	3.722760466	-3.722760466 ignored
+Warning: card PT	26.05932326	0	-3.722760466 ignored
+Warning: card PT	26.05932326	3.722760466	-7.445520931 ignored
+Warning: card PT	22.33656279	0	0 ignored
+Warning: card PT	22.33656279	3.722760466	3.722760466 ignored
+Warning: card PT	26.05932326	0	3.722760466 ignored
+Warning: card PT	26.05932326	3.722760466	0 ignored
+Warning: card PT	22.33656279	0	7.445520931 ignored
+Warning: card PT	22.33656279	3.722760466	11.1682814 ignored
+Warning: card PT	26.05932326	0	11.1682814 ignored
+Warning: card PT	26.05932326	3.722760466	7.445520931 ignored
+Warning: card PT	22.33656279	0	14.89104186 ignored
+Warning: card PT	22.33656279	3.722760466	18.61380233 ignored
+Warning: card PT	26.05932326	0	18.61380233 ignored
+Warning: card PT	26.05932326	3.722760466	14.89104186 ignored
+Warning: card PT	22.33656279	0	22.33656279 ignored
+Warning: card PT	22.33656279	3.722760466	26.05932326 ignored
+Warning: card PT	26.05932326	0	26.05932326 ignored
+Warning: card PT	26.05932326	3.722760466	22.33656279 ignored
+Warning: card PT	22.33656279	7.445520931	-22.33656279 ignored
+Warning: card PT	22.33656279	11.1682814	-18.61380233 ignored
+Warning: card PT	26.05932326	7.445520931	-18.61380233 ignored
+Warning: card PT	22.33656279	7.445520931	-14.89104186 ignored
+Warning: card PT	22.33656279	11.1682814	-11.1682814 ignored
+Warning: card PT	26.05932326	7.445520931	-11.1682814 ignored
+Warning: card PT	26.05932326	11.1682814	-14.89104186 ignored
+Warning: card PT	22.33656279	7.445520931	-7.445520931 ignored
+Warning: card PT	22.33656279	11.1682814	-3.722760466 ignored
+Warning: card PT	26.05932326	7.445520931	-3.722760466 ignored
+Warning: card PT	26.05932326	11.1682814	-7.445520931 ignored
+Warning: card PT	22.33656279	7.445520931	0 ignored
+Warning: card PT	22.33656279	11.1682814	3.722760466 ignored
+Warning: card PT	26.05932326	7.445520931	3.722760466 ignored
+Warning: card PT	26.05932326	11.1682814	0 ignored
+Warning: card PT	22.33656279	7.445520931	7.445520931 ignored
+Warning: card PT	22.33656279	11.1682814	11.1682814 ignored
+Warning: card PT	26.05932326	7.445520931	11.1682814 ignored
+Warning: card PT	26.05932326	11.1682814	7.445520931 ignored
+Warning: card PT	22.33656279	7.445520931	14.89104186 ignored
+Warning: card PT	22.33656279	11.1682814	18.61380233 ignored
+Warning: card PT	26.05932326	7.445520931	18.61380233 ignored
+Warning: card PT	26.05932326	11.1682814	14.89104186 ignored
+Warning: card PT	22.33656279	7.445520931	22.33656279 ignored
+Warning: card PT	22.33656279	14.89104186	-14.89104186 ignored
+Warning: card PT	22.33656279	18.61380233	-11.1682814 ignored
+Warning: card PT	26.05932326	14.89104186	-11.1682814 ignored
+Warning: card PT	22.33656279	14.89104186	-7.445520931 ignored
+Warning: card PT	22.33656279	18.61380233	-3.722760466 ignored
+Warning: card PT	26.05932326	14.89104186	-3.722760466 ignored
+Warning: card PT	26.05932326	18.61380233	-7.445520931 ignored
+Warning: card PT	22.33656279	14.89104186	0 ignored
+Warning: card PT	22.33656279	18.61380233	3.722760466 ignored
+Warning: card PT	26.05932326	14.89104186	3.722760466 ignored
+Warning: card PT	26.05932326	18.61380233	0 ignored
+Warning: card PT	22.33656279	14.89104186	7.445520931 ignored
+Warning: card PT	22.33656279	18.61380233	11.1682814 ignored
+Warning: card PT	26.05932326	14.89104186	11.1682814 ignored
+Warning: card PT	26.05932326	18.61380233	7.445520931 ignored
+Warning: card PT	22.33656279	14.89104186	14.89104186 ignored
+Warning: card PT	22.33656279	22.33656279	-7.445520931 ignored
+Warning: card PT	22.33656279	26.05932326	-3.722760466 ignored
+Warning: card PT	26.05932326	22.33656279	-3.722760466 ignored
+Warning: card PT	22.33656279	22.33656279	0 ignored
+Warning: card PT	22.33656279	26.05932326	3.722760466 ignored
+Warning: card PT	26.05932326	22.33656279	3.722760466 ignored
+Warning: card PT	26.05932326	26.05932326	0 ignored
+Warning: card PT	22.33656279	22.33656279	7.445520931 ignored
+
+     Current dimensions of program PWSCF are:
+     Max number of different atomic species (ntypx) = 10
+     Max number of k-points (npk) =  40000
+     Max angular momentum in pseudopotentials (lmaxx) =  4
+     file Pt.GGA_PBE-JTH.UPF: wavefunction(s)  6S 0S 6P 0P 5D 0D renormalized
+
+     gamma-point specific algorithms are used
+ 
+     R & G space division:  proc/nbgrp/npool/nimage =      80
+     Subspace diagonalization in iterative solution of the eigenvalue problem:
+     a serial algorithm will be used
+
+ 
+     Parallelization info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Min        1656    1072    267               453904   236288   29520
+     Max        1658    1074    270               453926   236302   29544
+     Sum      132609   85821  21441             36313179 18903383 2362949
+ 
+     Using Slab Decomposition
+ 
+
+
+     bravais-lattice index     =            0
+     lattice parameter (alat)  =      70.0000  a.u.
+     unit-cell volume          =  343000.0000 (a.u.)^3
+     number of atoms/cell      =          309
+     number of atomic types    =            1
+     number of electrons       =      3090.00
+     number of Kohn-Sham states=         1854
+     kinetic-energy cutoff     =      55.0000  Ry
+     charge density cutoff     =     340.0000  Ry
+     scf convergence threshold =      1.0E-08
+     mixing beta               =       0.1200
+     number of iterations used =            8  plain     mixing
+     Exchange-correlation= SLA PW PBX PBC
+                           (   1   4   3   4   0   0   0)
+
+     GPU acceleration is ACTIVE.  1 visible GPUs per MPI rank
+
+     Message from routine print_cuda_info:
+     High GPU oversubscription detected. Are you sure this is what you want?
+
+     celldm(1)=  70.000000  celldm(2)=   0.000000  celldm(3)=   0.000000
+     celldm(4)=   0.000000  celldm(5)=   0.000000  celldm(6)=   0.000000
+
+     crystal axes: (cart. coord. in units of alat)
+               a(1) = (   1.000000   0.000000   0.000000 )  
+               a(2) = (   0.000000   1.000000   0.000000 )  
+               a(3) = (   0.000000   0.000000   1.000000 )  
+
+     reciprocal axes: (cart. coord. in units 2 pi/alat)
+               b(1) = (  1.000000  0.000000  0.000000 )  
+               b(2) = (  0.000000  1.000000  0.000000 )  
+               b(3) = (  0.000000  0.000000  1.000000 )  
+
+
+     PseudoPot. # 1 for Pt read from file:
+     ./Pt.GGA_PBE-JTH.UPF
+     MD5 check sum: bc5026afa453449fec97a2bb58d5ffce
+     Pseudo is Projector augmented-wave + core cor, Zval = 10.0
+     Generated using ATOMPAW code
+     Shape of augmentation charge: SINC**2
+     Using radial grid of 1126 points,  6 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+                l(5) =   2
+                l(6) =   2
+     Q(r) pseudized with 0 coefficients 
+
+
+     atomic species   valence    mass     pseudopotential
+     Pt               10.00    78.00000     Pt( 1.00)
+
+     No symmetry found
+
+
+
+   Cartesian axes
+
+     site n.     atom                  positions (alat units)
+         1        Pt     tau(   1) = (  -0.3722760  -0.3722760   0.0000000  )
+         2        Pt     tau(   2) = (  -0.3722760  -0.3190938  -0.0531823  )
+         3        Pt     tau(   3) = (  -0.3722760  -0.2659115  -0.1063646  )
+         4        Pt     tau(   4) = (  -0.3722760  -0.3190938   0.0531823  )
+         5        Pt     tau(   5) = (  -0.3722760  -0.2659115   0.0000000  )
+         6        Pt     tau(   6) = (  -0.3722760  -0.2659115   0.1063646  )
+         7        Pt     tau(   7) = (  -0.3722760  -0.2127292  -0.1595469  )
+         8        Pt     tau(   8) = (  -0.3722760  -0.1595469  -0.2127292  )
+         9        Pt     tau(   9) = (  -0.3722760  -0.2127292  -0.0531823  )
+        10        Pt     tau(  10) = (  -0.3722760  -0.1595469  -0.1063646  )
+        11        Pt     tau(  11) = (  -0.3722760  -0.2127292   0.0531823  )
+        12        Pt     tau(  12) = (  -0.3722760  -0.1595469   0.0000000  )
+        13        Pt     tau(  13) = (  -0.3722760  -0.2127292   0.1595469  )
+        14        Pt     tau(  14) = (  -0.3722760  -0.1595469   0.1063646  )
+        15        Pt     tau(  15) = (  -0.3722760  -0.1595469   0.2127292  )
+        16        Pt     tau(  16) = (  -0.3722760  -0.1063646  -0.2659115  )
+        17        Pt     tau(  17) = (  -0.3722760  -0.0531823  -0.3190938  )
+        18        Pt     tau(  18) = (  -0.3722760  -0.1063646  -0.1595469  )
+        19        Pt     tau(  19) = (  -0.3722760  -0.0531823  -0.2127292  )
+        20        Pt     tau(  20) = (  -0.3722760  -0.1063646  -0.0531823  )
+        21        Pt     tau(  21) = (  -0.3722760  -0.0531823  -0.1063646  )
+        22        Pt     tau(  22) = (  -0.3722760  -0.1063646   0.0531823  )
+        23        Pt     tau(  23) = (  -0.3722760  -0.0531823   0.0000000  )
+        24        Pt     tau(  24) = (  -0.3722760  -0.1063646   0.1595469  )
+        25        Pt     tau(  25) = (  -0.3722760  -0.0531823   0.1063646  )
+        26        Pt     tau(  26) = (  -0.3722760  -0.1063646   0.2659115  )
+        27        Pt     tau(  27) = (  -0.3722760  -0.0531823   0.2127292  )
+        28        Pt     tau(  28) = (  -0.3722760  -0.0531823   0.3190938  )
+        29        Pt     tau(  29) = (  -0.3722760   0.0000000  -0.3722760  )
+        30        Pt     tau(  30) = (  -0.3722760   0.0000000  -0.2659115  )
+        31        Pt     tau(  31) = (  -0.3722760   0.0531823  -0.3190938  )
+        32        Pt     tau(  32) = (  -0.3722760   0.0000000  -0.1595469  )
+        33        Pt     tau(  33) = (  -0.3722760   0.0531823  -0.2127292  )
+        34        Pt     tau(  34) = (  -0.3722760   0.0000000  -0.0531823  )
+        35        Pt     tau(  35) = (  -0.3722760   0.0531823  -0.1063646  )
+        36        Pt     tau(  36) = (  -0.3722760   0.0000000   0.0531823  )
+        37        Pt     tau(  37) = (  -0.3722760   0.0531823   0.0000000  )
+        38        Pt     tau(  38) = (  -0.3722760   0.0000000   0.1595469  )
+        39        Pt     tau(  39) = (  -0.3722760   0.0531823   0.1063646  )
+        40        Pt     tau(  40) = (  -0.3722760   0.0000000   0.2659115  )
+        41        Pt     tau(  41) = (  -0.3722760   0.0531823   0.2127292  )
+        42        Pt     tau(  42) = (  -0.3722760   0.0000000   0.3722760  )
+        43        Pt     tau(  43) = (  -0.3722760   0.0531823   0.3190938  )
+        44        Pt     tau(  44) = (  -0.3722760   0.1063646  -0.2659115  )
+        45        Pt     tau(  45) = (  -0.3722760   0.1063646  -0.1595469  )
+        46        Pt     tau(  46) = (  -0.3722760   0.1595469  -0.2127292  )
+        47        Pt     tau(  47) = (  -0.3722760   0.1063646  -0.0531823  )
+        48        Pt     tau(  48) = (  -0.3722760   0.1595469  -0.1063646  )
+        49        Pt     tau(  49) = (  -0.3722760   0.1063646   0.0531823  )
+        50        Pt     tau(  50) = (  -0.3722760   0.1595469   0.0000000  )
+        51        Pt     tau(  51) = (  -0.3722760   0.1063646   0.1595469  )
+        52        Pt     tau(  52) = (  -0.3722760   0.1595469   0.1063646  )
+        53        Pt     tau(  53) = (  -0.3722760   0.1063646   0.2659115  )
+        54        Pt     tau(  54) = (  -0.3722760   0.1595469   0.2127292  )
+        55        Pt     tau(  55) = (  -0.3722760   0.2127292  -0.1595469  )
+        56        Pt     tau(  56) = (  -0.3722760   0.2127292  -0.0531823  )
+        57        Pt     tau(  57) = (  -0.3722760   0.2659115  -0.1063646  )
+        58        Pt     tau(  58) = (  -0.3722760   0.2127292   0.0531823  )
+        59        Pt     tau(  59) = (  -0.3722760   0.2659115   0.0000000  )
+        60        Pt     tau(  60) = (  -0.3722760   0.2127292   0.1595469  )
+        61        Pt     tau(  61) = (  -0.3722760   0.2659115   0.1063646  )
+        62        Pt     tau(  62) = (  -0.3722760   0.3190938  -0.0531823  )
+        63        Pt     tau(  63) = (  -0.3722760   0.3190938   0.0531823  )
+        64        Pt     tau(  64) = (  -0.3722760   0.3722760   0.0000000  )
+        65        Pt     tau(  65) = (  -0.3190938  -0.3722760  -0.0531823  )
+        66        Pt     tau(  66) = (  -0.2659115  -0.3722760  -0.1063646  )
+        67        Pt     tau(  67) = (  -0.3190938  -0.3722760   0.0531823  )
+        68        Pt     tau(  68) = (  -0.2659115  -0.3722760   0.0000000  )
+        69        Pt     tau(  69) = (  -0.2659115  -0.3722760   0.1063646  )
+        70        Pt     tau(  70) = (  -0.3190938  -0.2659115  -0.1595469  )
+        71        Pt     tau(  71) = (  -0.2659115  -0.3190938  -0.1595469  )
+        72        Pt     tau(  72) = (  -0.2659115  -0.2659115  -0.2127292  )
+        73        Pt     tau(  73) = (  -0.3190938  -0.3190938  -0.1063646  )
+        74        Pt     tau(  74) = (  -0.3190938  -0.2659115  -0.0531823  )
+        75        Pt     tau(  75) = (  -0.2659115  -0.3190938  -0.0531823  )
+        76        Pt     tau(  76) = (  -0.2659115  -0.2659115  -0.1063646  )
+        77        Pt     tau(  77) = (  -0.3190938  -0.3190938   0.0000000  )
+        78        Pt     tau(  78) = (  -0.3190938  -0.2659115   0.0531823  )
+        79        Pt     tau(  79) = (  -0.2659115  -0.3190938   0.0531823  )
+        80        Pt     tau(  80) = (  -0.2659115  -0.2659115   0.0000000  )
+        81        Pt     tau(  81) = (  -0.3190938  -0.3190938   0.1063646  )
+        82        Pt     tau(  82) = (  -0.3190938  -0.2659115   0.1595469  )
+        83        Pt     tau(  83) = (  -0.2659115  -0.3190938   0.1595469  )
+        84        Pt     tau(  84) = (  -0.2659115  -0.2659115   0.1063646  )
+        85        Pt     tau(  85) = (  -0.2659115  -0.2659115   0.2127292  )
+        86        Pt     tau(  86) = (  -0.3190938  -0.1595469  -0.2659115  )
+        87        Pt     tau(  87) = (  -0.2659115  -0.2127292  -0.2659115  )
+        88        Pt     tau(  88) = (  -0.2659115  -0.1595469  -0.3190938  )
+        89        Pt     tau(  89) = (  -0.3190938  -0.2127292  -0.2127292  )
+        90        Pt     tau(  90) = (  -0.3190938  -0.1595469  -0.1595469  )
+        91        Pt     tau(  91) = (  -0.2659115  -0.2127292  -0.1595469  )
+        92        Pt     tau(  92) = (  -0.2659115  -0.1595469  -0.2127292  )
+        93        Pt     tau(  93) = (  -0.3190938  -0.2127292  -0.1063646  )
+        94        Pt     tau(  94) = (  -0.3190938  -0.1595469  -0.0531823  )
+        95        Pt     tau(  95) = (  -0.2659115  -0.2127292  -0.0531823  )
+        96        Pt     tau(  96) = (  -0.2659115  -0.1595469  -0.1063646  )
+        97        Pt     tau(  97) = (  -0.3190938  -0.2127292   0.0000000  )
+        98        Pt     tau(  98) = (  -0.3190938  -0.1595469   0.0531823  )
+        99        Pt     tau(  99) = (  -0.2659115  -0.2127292   0.0531823  )
+       100        Pt     tau( 100) = (  -0.2659115  -0.1595469   0.0000000  )
+       101        Pt     tau( 101) = (  -0.3190938  -0.2127292   0.1063646  )
+       102        Pt     tau( 102) = (  -0.3190938  -0.1595469   0.1595469  )
+       103        Pt     tau( 103) = (  -0.2659115  -0.2127292   0.1595469  )
+       104        Pt     tau( 104) = (  -0.2659115  -0.1595469   0.1063646  )
+       105        Pt     tau( 105) = (  -0.3190938  -0.2127292   0.2127292  )
+       106        Pt     tau( 106) = (  -0.3190938  -0.1595469   0.2659115  )
+       107        Pt     tau( 107) = (  -0.2659115  -0.2127292   0.2659115  )
+       108        Pt     tau( 108) = (  -0.2659115  -0.1595469   0.2127292  )
+       109        Pt     tau( 109) = (  -0.2659115  -0.1595469   0.3190938  )
+       110        Pt     tau( 110) = (  -0.3190938  -0.0531823  -0.3722760  )
+       111        Pt     tau( 111) = (  -0.2659115  -0.1063646  -0.3722760  )
+       112        Pt     tau( 112) = (  -0.3190938  -0.1063646  -0.3190938  )
+       113        Pt     tau( 113) = (  -0.3190938  -0.0531823  -0.2659115  )
+       114        Pt     tau( 114) = (  -0.2659115  -0.1063646  -0.2659115  )
+       115        Pt     tau( 115) = (  -0.2659115  -0.0531823  -0.3190938  )
+       116        Pt     tau( 116) = (  -0.3190938  -0.1063646  -0.2127292  )
+       117        Pt     tau( 117) = (  -0.3190938  -0.0531823  -0.1595469  )
+       118        Pt     tau( 118) = (  -0.2659115  -0.1063646  -0.1595469  )
+       119        Pt     tau( 119) = (  -0.2659115  -0.0531823  -0.2127292  )
+       120        Pt     tau( 120) = (  -0.3190938  -0.1063646  -0.1063646  )
+       121        Pt     tau( 121) = (  -0.3190938  -0.0531823  -0.0531823  )
+       122        Pt     tau( 122) = (  -0.2659115  -0.1063646  -0.0531823  )
+       123        Pt     tau( 123) = (  -0.2659115  -0.0531823  -0.1063646  )
+       124        Pt     tau( 124) = (  -0.3190938  -0.1063646   0.0000000  )
+       125        Pt     tau( 125) = (  -0.3190938  -0.0531823   0.0531823  )
+       126        Pt     tau( 126) = (  -0.2659115  -0.1063646   0.0531823  )
+       127        Pt     tau( 127) = (  -0.2659115  -0.0531823   0.0000000  )
+       128        Pt     tau( 128) = (  -0.3190938  -0.1063646   0.1063646  )
+       129        Pt     tau( 129) = (  -0.3190938  -0.0531823   0.1595469  )
+       130        Pt     tau( 130) = (  -0.2659115  -0.1063646   0.1595469  )
+       131        Pt     tau( 131) = (  -0.2659115  -0.0531823   0.1063646  )
+       132        Pt     tau( 132) = (  -0.3190938  -0.1063646   0.2127292  )
+       133        Pt     tau( 133) = (  -0.3190938  -0.0531823   0.2659115  )
+       134        Pt     tau( 134) = (  -0.2659115  -0.1063646   0.2659115  )
+       135        Pt     tau( 135) = (  -0.2659115  -0.0531823   0.2127292  )
+       136        Pt     tau( 136) = (  -0.3190938  -0.1063646   0.3190938  )
+       137        Pt     tau( 137) = (  -0.3190938  -0.0531823   0.3722760  )
+       138        Pt     tau( 138) = (  -0.2659115  -0.1063646   0.3722760  )
+       139        Pt     tau( 139) = (  -0.2659115  -0.0531823   0.3190938  )
+       140        Pt     tau( 140) = (  -0.3190938   0.0531823  -0.3722760  )
+       141        Pt     tau( 141) = (  -0.2659115   0.0000000  -0.3722760  )
+       142        Pt     tau( 142) = (  -0.3190938   0.0000000  -0.3190938  )
+       143        Pt     tau( 143) = (  -0.3190938   0.0531823  -0.2659115  )
+       144        Pt     tau( 144) = (  -0.2659115   0.0000000  -0.2659115  )
+       145        Pt     tau( 145) = (  -0.2659115   0.0531823  -0.3190938  )
+       146        Pt     tau( 146) = (  -0.3190938   0.0000000  -0.2127292  )
+       147        Pt     tau( 147) = (  -0.3190938   0.0531823  -0.1595469  )
+       148        Pt     tau( 148) = (  -0.2659115   0.0000000  -0.1595469  )
+       149        Pt     tau( 149) = (  -0.2659115   0.0531823  -0.2127292  )
+       150        Pt     tau( 150) = (  -0.3190938   0.0000000  -0.1063646  )
+       151        Pt     tau( 151) = (  -0.3190938   0.0531823  -0.0531823  )
+       152        Pt     tau( 152) = (  -0.2659115   0.0000000  -0.0531823  )
+       153        Pt     tau( 153) = (  -0.2659115   0.0531823  -0.1063646  )
+       154        Pt     tau( 154) = (  -0.3190938   0.0000000   0.0000000  )
+       155        Pt     tau( 155) = (  -0.3190938   0.0531823   0.0531823  )
+       156        Pt     tau( 156) = (  -0.2659115   0.0000000   0.0531823  )
+       157        Pt     tau( 157) = (  -0.2659115   0.0531823   0.0000000  )
+       158        Pt     tau( 158) = (  -0.3190938   0.0000000   0.1063646  )
+       159        Pt     tau( 159) = (  -0.3190938   0.0531823   0.1595469  )
+       160        Pt     tau( 160) = (  -0.2659115   0.0000000   0.1595469  )
+       161        Pt     tau( 161) = (  -0.2659115   0.0531823   0.1063646  )
+       162        Pt     tau( 162) = (  -0.3190938   0.0000000   0.2127292  )
+       163        Pt     tau( 163) = (  -0.3190938   0.0531823   0.2659115  )
+       164        Pt     tau( 164) = (  -0.2659115   0.0000000   0.2659115  )
+       165        Pt     tau( 165) = (  -0.2659115   0.0531823   0.2127292  )
+       166        Pt     tau( 166) = (  -0.3190938   0.0000000   0.3190938  )
+       167        Pt     tau( 167) = (  -0.3190938   0.0531823   0.3722760  )
+       168        Pt     tau( 168) = (  -0.2659115   0.0000000   0.3722760  )
+       169        Pt     tau( 169) = (  -0.2659115   0.0531823   0.3190938  )
+       170        Pt     tau( 170) = (  -0.2659115   0.1063646  -0.3722760  )
+       171        Pt     tau( 171) = (  -0.3190938   0.1063646  -0.3190938  )
+       172        Pt     tau( 172) = (  -0.3190938   0.1595469  -0.2659115  )
+       173        Pt     tau( 173) = (  -0.2659115   0.1063646  -0.2659115  )
+       174        Pt     tau( 174) = (  -0.2659115   0.1595469  -0.3190938  )
+       175        Pt     tau( 175) = (  -0.3190938   0.1063646  -0.2127292  )
+       176        Pt     tau( 176) = (  -0.3190938   0.1595469  -0.1595469  )
+       177        Pt     tau( 177) = (  -0.2659115   0.1063646  -0.1595469  )
+       178        Pt     tau( 178) = (  -0.2659115   0.1595469  -0.2127292  )
+       179        Pt     tau( 179) = (  -0.3190938   0.1063646  -0.1063646  )
+       180        Pt     tau( 180) = (  -0.3190938   0.1595469  -0.0531823  )
+       181        Pt     tau( 181) = (  -0.2659115   0.1063646  -0.0531823  )
+       182        Pt     tau( 182) = (  -0.2659115   0.1595469  -0.1063646  )
+       183        Pt     tau( 183) = (  -0.3190938   0.1063646   0.0000000  )
+       184        Pt     tau( 184) = (  -0.3190938   0.1595469   0.0531823  )
+       185        Pt     tau( 185) = (  -0.2659115   0.1063646   0.0531823  )
+       186        Pt     tau( 186) = (  -0.2659115   0.1595469   0.0000000  )
+       187        Pt     tau( 187) = (  -0.3190938   0.1063646   0.1063646  )
+       188        Pt     tau( 188) = (  -0.3190938   0.1595469   0.1595469  )
+       189        Pt     tau( 189) = (  -0.2659115   0.1063646   0.1595469  )
+       190        Pt     tau( 190) = (  -0.2659115   0.1595469   0.1063646  )
+       191        Pt     tau( 191) = (  -0.3190938   0.1063646   0.2127292  )
+       192        Pt     tau( 192) = (  -0.3190938   0.1595469   0.2659115  )
+       193        Pt     tau( 193) = (  -0.2659115   0.1063646   0.2659115  )
+       194        Pt     tau( 194) = (  -0.2659115   0.1595469   0.2127292  )
+       195        Pt     tau( 195) = (  -0.3190938   0.1063646   0.3190938  )
+       196        Pt     tau( 196) = (  -0.2659115   0.1063646   0.3722760  )
+       197        Pt     tau( 197) = (  -0.2659115   0.1595469   0.3190938  )
+       198        Pt     tau( 198) = (  -0.2659115   0.2127292  -0.2659115  )
+       199        Pt     tau( 199) = (  -0.3190938   0.2127292  -0.2127292  )
+       200        Pt     tau( 200) = (  -0.3190938   0.2659115  -0.1595469  )
+       201        Pt     tau( 201) = (  -0.2659115   0.2127292  -0.1595469  )
+       202        Pt     tau( 202) = (  -0.2659115   0.2659115  -0.2127292  )
+       203        Pt     tau( 203) = (  -0.3190938   0.2127292  -0.1063646  )
+       204        Pt     tau( 204) = (  -0.3190938   0.2659115  -0.0531823  )
+       205        Pt     tau( 205) = (  -0.2659115   0.2127292  -0.0531823  )
+       206        Pt     tau( 206) = (  -0.2659115   0.2659115  -0.1063646  )
+       207        Pt     tau( 207) = (  -0.3190938   0.2127292   0.0000000  )
+       208        Pt     tau( 208) = (  -0.3190938   0.2659115   0.0531823  )
+       209        Pt     tau( 209) = (  -0.2659115   0.2127292   0.0531823  )
+       210        Pt     tau( 210) = (  -0.2659115   0.2659115   0.0000000  )
+       211        Pt     tau( 211) = (  -0.3190938   0.2127292   0.1063646  )
+       212        Pt     tau( 212) = (  -0.3190938   0.2659115   0.1595469  )
+       213        Pt     tau( 213) = (  -0.2659115   0.2127292   0.1595469  )
+       214        Pt     tau( 214) = (  -0.2659115   0.2659115   0.1063646  )
+       215        Pt     tau( 215) = (  -0.3190938   0.2127292   0.2127292  )
+       216        Pt     tau( 216) = (  -0.2659115   0.2127292   0.2659115  )
+       217        Pt     tau( 217) = (  -0.2659115   0.2659115   0.2127292  )
+       218        Pt     tau( 218) = (  -0.2659115   0.3190938  -0.1595469  )
+       219        Pt     tau( 219) = (  -0.3190938   0.3190938  -0.1063646  )
+       220        Pt     tau( 220) = (  -0.3190938   0.3722760  -0.0531823  )
+       221        Pt     tau( 221) = (  -0.2659115   0.3190938  -0.0531823  )
+       222        Pt     tau( 222) = (  -0.2659115   0.3722760  -0.1063646  )
+       223        Pt     tau( 223) = (  -0.3190938   0.3190938   0.0000000  )
+       224        Pt     tau( 224) = (  -0.3190938   0.3722760   0.0531823  )
+       225        Pt     tau( 225) = (  -0.2659115   0.3190938   0.0531823  )
+       226        Pt     tau( 226) = (  -0.2659115   0.3722760   0.0000000  )
+       227        Pt     tau( 227) = (  -0.3190938   0.3190938   0.1063646  )
+       228        Pt     tau( 228) = (  -0.2659115   0.3190938   0.1595469  )
+       229        Pt     tau( 229) = (  -0.2659115   0.3722760   0.1063646  )
+       230        Pt     tau( 230) = (  -0.2127292  -0.3722760  -0.1595469  )
+       231        Pt     tau( 231) = (  -0.1595469  -0.3722760  -0.2127292  )
+       232        Pt     tau( 232) = (  -0.2127292  -0.3722760  -0.0531823  )
+       233        Pt     tau( 233) = (  -0.1595469  -0.3722760  -0.1063646  )
+       234        Pt     tau( 234) = (  -0.2127292  -0.3722760   0.0531823  )
+       235        Pt     tau( 235) = (  -0.1595469  -0.3722760   0.0000000  )
+       236        Pt     tau( 236) = (  -0.2127292  -0.3722760   0.1595469  )
+       237        Pt     tau( 237) = (  -0.1595469  -0.3722760   0.1063646  )
+       238        Pt     tau( 238) = (  -0.1595469  -0.3722760   0.2127292  )
+       239        Pt     tau( 239) = (  -0.2127292  -0.2659115  -0.2659115  )
+       240        Pt     tau( 240) = (  -0.1595469  -0.3190938  -0.2659115  )
+       241        Pt     tau( 241) = (  -0.1595469  -0.2659115  -0.3190938  )
+       242        Pt     tau( 242) = (  -0.2127292  -0.3190938  -0.2127292  )
+       243        Pt     tau( 243) = (  -0.2127292  -0.2659115  -0.1595469  )
+       244        Pt     tau( 244) = (  -0.1595469  -0.3190938  -0.1595469  )
+       245        Pt     tau( 245) = (  -0.1595469  -0.2659115  -0.2127292  )
+       246        Pt     tau( 246) = (  -0.2127292  -0.3190938  -0.1063646  )
+       247        Pt     tau( 247) = (  -0.2127292  -0.2659115  -0.0531823  )
+       248        Pt     tau( 248) = (  -0.1595469  -0.3190938  -0.0531823  )
+       249        Pt     tau( 249) = (  -0.1595469  -0.2659115  -0.1063646  )
+       250        Pt     tau( 250) = (  -0.2127292  -0.3190938   0.0000000  )
+       251        Pt     tau( 251) = (  -0.2127292  -0.2659115   0.0531823  )
+       252        Pt     tau( 252) = (  -0.1595469  -0.3190938   0.0531823  )
+       253        Pt     tau( 253) = (  -0.1595469  -0.2659115   0.0000000  )
+       254        Pt     tau( 254) = (  -0.2127292  -0.3190938   0.1063646  )
+       255        Pt     tau( 255) = (  -0.2127292  -0.2659115   0.1595469  )
+       256        Pt     tau( 256) = (  -0.1595469  -0.3190938   0.1595469  )
+       257        Pt     tau( 257) = (  -0.1595469  -0.2659115   0.1063646  )
+       258        Pt     tau( 258) = (  -0.2127292  -0.3190938   0.2127292  )
+       259        Pt     tau( 259) = (  -0.2127292  -0.2659115   0.2659115  )
+       260        Pt     tau( 260) = (  -0.1595469  -0.3190938   0.2659115  )
+       261        Pt     tau( 261) = (  -0.1595469  -0.2659115   0.2127292  )
+       262        Pt     tau( 262) = (  -0.1595469  -0.2659115   0.3190938  )
+       263        Pt     tau( 263) = (  -0.2127292  -0.1595469  -0.3722760  )
+       264        Pt     tau( 264) = (  -0.1595469  -0.2127292  -0.3722760  )
+       265        Pt     tau( 265) = (  -0.2127292  -0.2127292  -0.3190938  )
+       266        Pt     tau( 266) = (  -0.2127292  -0.1595469  -0.2659115  )
+       267        Pt     tau( 267) = (  -0.1595469  -0.2127292  -0.2659115  )
+       268        Pt     tau( 268) = (  -0.1595469  -0.1595469  -0.3190938  )
+       269        Pt     tau( 269) = (  -0.2127292  -0.2127292  -0.2127292  )
+       270        Pt     tau( 270) = (  -0.2127292  -0.1595469  -0.1595469  )
+       271        Pt     tau( 271) = (  -0.1595469  -0.2127292  -0.1595469  )
+       272        Pt     tau( 272) = (  -0.1595469  -0.1595469  -0.2127292  )
+       273        Pt     tau( 273) = (  -0.2127292  -0.2127292  -0.1063646  )
+       274        Pt     tau( 274) = (  -0.2127292  -0.1595469  -0.0531823  )
+       275        Pt     tau( 275) = (  -0.1595469  -0.2127292  -0.0531823  )
+       276        Pt     tau( 276) = (  -0.1595469  -0.1595469  -0.1063646  )
+       277        Pt     tau( 277) = (  -0.2127292  -0.2127292   0.0000000  )
+       278        Pt     tau( 278) = (  -0.2127292  -0.1595469   0.0531823  )
+       279        Pt     tau( 279) = (  -0.1595469  -0.2127292   0.0531823  )
+       280        Pt     tau( 280) = (  -0.1595469  -0.1595469   0.0000000  )
+       281        Pt     tau( 281) = (  -0.2127292  -0.2127292   0.1063646  )
+       282        Pt     tau( 282) = (  -0.2127292  -0.1595469   0.1595469  )
+       283        Pt     tau( 283) = (  -0.1595469  -0.2127292   0.1595469  )
+       284        Pt     tau( 284) = (  -0.1595469  -0.1595469   0.1063646  )
+       285        Pt     tau( 285) = (  -0.2127292  -0.2127292   0.2127292  )
+       286        Pt     tau( 286) = (  -0.2127292  -0.1595469   0.2659115  )
+       287        Pt     tau( 287) = (  -0.1595469  -0.2127292   0.2659115  )
+       288        Pt     tau( 288) = (  -0.1595469  -0.1595469   0.2127292  )
+       289        Pt     tau( 289) = (  -0.2127292  -0.2127292   0.3190938  )
+       290        Pt     tau( 290) = (  -0.2127292  -0.1595469   0.3722760  )
+       291        Pt     tau( 291) = (  -0.1595469  -0.2127292   0.3722760  )
+       292        Pt     tau( 292) = (  -0.1595469  -0.1595469   0.3190938  )
+       293        Pt     tau( 293) = (  -0.2127292  -0.0531823  -0.3722760  )
+       294        Pt     tau( 294) = (  -0.1595469  -0.1063646  -0.3722760  )
+       295        Pt     tau( 295) = (  -0.2127292  -0.1063646  -0.3190938  )
+       296        Pt     tau( 296) = (  -0.2127292  -0.0531823  -0.2659115  )
+       297        Pt     tau( 297) = (  -0.1595469  -0.1063646  -0.2659115  )
+       298        Pt     tau( 298) = (  -0.1595469  -0.0531823  -0.3190938  )
+       299        Pt     tau( 299) = (  -0.2127292  -0.1063646  -0.2127292  )
+       300        Pt     tau( 300) = (  -0.2127292  -0.0531823  -0.1595469  )
+       301        Pt     tau( 301) = (  -0.1595469  -0.1063646  -0.1595469  )
+       302        Pt     tau( 302) = (  -0.1595469  -0.0531823  -0.2127292  )
+       303        Pt     tau( 303) = (  -0.2127292  -0.1063646  -0.1063646  )
+       304        Pt     tau( 304) = (  -0.2127292  -0.0531823  -0.0531823  )
+       305        Pt     tau( 305) = (  -0.1595469  -0.1063646  -0.0531823  )
+       306        Pt     tau( 306) = (  -0.1595469  -0.0531823  -0.1063646  )
+       307        Pt     tau( 307) = (  -0.2127292  -0.1063646   0.0000000  )
+       308        Pt     tau( 308) = (  -0.2127292  -0.0531823   0.0531823  )
+       309        Pt     tau( 309) = (  -0.1595469  -0.1063646   0.0531823  )
+
+     number of k points=     1  Fermi-Dirac smearing, width (Ry)=  0.0032
+                       cart. coord. in units 2pi/alat
+        k(    1) = (   0.0000000   0.0000000   0.0000000), wk =   2.0000000
+
+     Dense  grid: 18156590 G-vectors     FFT dimensions: ( 432, 432, 432)
+
+     Smooth grid:  9451692 G-vectors     FFT dimensions: ( 360, 360, 360)
+
+     Estimated max dynamical RAM per process >       5.56 GB
+
+     Estimated total dynamical RAM >     444.78 GB
+
+     Initial potential from superposition of free atoms
+
+     starting charge    3089.9459, renormalised to    3090.0000
+
+     negative rho (up, down):  5.302E-02 0.000E+00
+     Starting wfcs are 5562 randomized atomic wfcs
+     Checking if some PAW data can be deallocated... 
+
+     total cpu time spent up to now is       21.1 secs
+
+     per-process dynamical memory:   890.5 Mb
+
+     Self-consistent Calculation
+
+     iteration #  1     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  1.00E-02,  avg # of iterations =  2.0
+
+     negative rho (up, down):  4.853E-02 0.000E+00
+
+     total cpu time spent up to now is       27.7 secs
+
+     total energy              = -230886.00086811 Ry
+     estimated scf accuracy    <      56.42558268 Ry
+
+     iteration #  2     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  1.83E-03,  avg # of iterations =  4.0
+
+     negative rho (up, down):  4.786E-02 0.000E+00
+
+     total cpu time spent up to now is       35.1 secs
+
+     total energy              = -230871.80947975 Ry
+     estimated scf accuracy    <    2920.50122928 Ry
+
+     iteration #  3     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  1.83E-03,  avg # of iterations =  2.0
+
+     negative rho (up, down):  4.760E-02 0.000E+00
+
+     total cpu time spent up to now is       41.5 secs
+
+     total energy              = -230892.02310123 Ry
+     estimated scf accuracy    <     698.21136322 Ry
+
+     iteration #  4     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  1.83E-03,  avg # of iterations =  1.0
+
+     negative rho (up, down):  4.741E-02 0.000E+00
+
+     total cpu time spent up to now is       47.8 secs
+
+     total energy              = -230896.63774145 Ry
+     estimated scf accuracy    <     475.51841557 Ry
+
+     iteration #  5     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  1.83E-03,  avg # of iterations =  1.0
+
+     negative rho (up, down):  4.728E-02 0.000E+00
+
+     total cpu time spent up to now is       54.0 secs
+
+     total energy              = -230899.22096196 Ry
+     estimated scf accuracy    <      73.77304309 Ry
+
+     iteration #  6     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  1.83E-03,  avg # of iterations =  1.0
+
+     negative rho (up, down):  4.723E-02 0.000E+00
+
+     total cpu time spent up to now is       60.2 secs
+
+     total energy              = -230900.16013760 Ry
+     estimated scf accuracy    <      41.86001908 Ry
+
+     iteration #  7     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  1.35E-03,  avg # of iterations =  1.0
+
+     negative rho (up, down):  4.721E-02 0.000E+00
+
+     total cpu time spent up to now is       66.4 secs
+
+     total energy              = -230899.91405866 Ry
+     estimated scf accuracy    <      80.54955841 Ry
+
+     iteration #  8     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  1.35E-03,  avg # of iterations =  1.0
+
+     negative rho (up, down):  4.723E-02 0.000E+00
+
+     total cpu time spent up to now is       72.7 secs
+
+     total energy              = -230899.53268173 Ry
+     estimated scf accuracy    <      75.40567994 Ry
+
+     iteration #  9     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  1.35E-03,  avg # of iterations =  1.0
+
+     negative rho (up, down):  4.728E-02 0.000E+00
+
+     total cpu time spent up to now is       78.9 secs
+
+     total energy              = -230899.01072410 Ry
+     estimated scf accuracy    <      83.27307903 Ry
+
+     iteration # 10     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  1.35E-03,  avg # of iterations =  1.0
+
+     negative rho (up, down):  4.733E-02 0.000E+00
+
+     total cpu time spent up to now is       85.2 secs
+
+     total energy              = -230899.22512687 Ry
+     estimated scf accuracy    <      34.51211704 Ry
+
+     iteration # 11     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  1.12E-03,  avg # of iterations =  1.0
+
+     negative rho (up, down):  4.744E-02 0.000E+00
+
+     total cpu time spent up to now is       91.4 secs
+
+     total energy              = -230898.66560874 Ry
+     estimated scf accuracy    <      98.96204023 Ry
+
+     iteration # 12     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  1.12E-03,  avg # of iterations =  1.0
+
+     negative rho (up, down):  4.794E-02 0.000E+00
+
+     total cpu time spent up to now is       97.7 secs
+
+     total energy              = -230897.98683544 Ry
+     estimated scf accuracy    <      43.19922312 Ry
+
+     iteration # 13     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  1.12E-03,  avg # of iterations =  1.0
+
+     negative rho (up, down):  4.835E-02 0.000E+00
+
+     total cpu time spent up to now is      103.9 secs
+
+     total energy              = -230897.27641246 Ry
+     estimated scf accuracy    <      84.60108401 Ry
+
+     iteration # 14     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  1.12E-03,  avg # of iterations =  1.0
+
+     negative rho (up, down):  4.814E-02 0.000E+00
+
+     total cpu time spent up to now is      110.1 secs
+
+     total energy              = -230897.36461641 Ry
+     estimated scf accuracy    <     164.41058668 Ry
+
+     iteration # 15     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  1.12E-03,  avg # of iterations =  1.0
+
+     negative rho (up, down):  4.780E-02 0.000E+00
+
+     total cpu time spent up to now is      116.4 secs
+
+     total energy              = -230897.72829067 Ry
+     estimated scf accuracy    <      87.06056489 Ry
+
+     iteration # 16     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  1.12E-03,  avg # of iterations =  1.0
+
+     negative rho (up, down):  4.788E-02 0.000E+00
+
+     total cpu time spent up to now is      122.6 secs
+
+     total energy              = -230897.90729315 Ry
+     estimated scf accuracy    <     137.87017208 Ry
+
+     iteration # 17     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  1.12E-03,  avg # of iterations =  1.0
+
+     negative rho (up, down):  4.795E-02 0.000E+00
+
+     total cpu time spent up to now is      128.9 secs
+
+     total energy              = -230897.89564619 Ry
+     estimated scf accuracy    <     142.68105318 Ry
+
+     iteration # 18     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  1.12E-03,  avg # of iterations =  1.0
+
+     negative rho (up, down):  4.806E-02 0.000E+00
+
+     total cpu time spent up to now is      135.1 secs
+
+     total energy              = -230897.82694558 Ry
+     estimated scf accuracy    <     160.43623607 Ry
+
+     iteration # 19     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  1.12E-03,  avg # of iterations =  1.0
+
+     negative rho (up, down):  4.823E-02 0.000E+00
+
+     total cpu time spent up to now is      141.4 secs
+
+     total energy              = -230898.28007534 Ry
+     estimated scf accuracy    <      45.64876806 Ry
+
+     iteration # 20     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  1.12E-03,  avg # of iterations =  1.0
+
+     negative rho (up, down):  4.823E-02 0.000E+00
+
+     total cpu time spent up to now is      147.6 secs
+
+     total energy              = -230898.47653954 Ry
+     estimated scf accuracy    <      11.73022428 Ry
+
+     iteration # 21     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  3.80E-04,  avg # of iterations =  1.0
+
+     negative rho (up, down):  4.829E-02 0.000E+00
+
+     total cpu time spent up to now is      153.9 secs
+
+     total energy              = -230898.45916163 Ry
+     estimated scf accuracy    <      26.01200810 Ry
+
+     iteration # 22     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  3.80E-04,  avg # of iterations =  1.0
+
+     negative rho (up, down):  4.851E-02 0.000E+00
+
+     total cpu time spent up to now is      160.1 secs
+
+     total energy              = -230898.47197189 Ry
+     estimated scf accuracy    <       6.32213183 Ry
+
+     iteration # 23     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  2.05E-04,  avg # of iterations =  1.0
+
+     negative rho (up, down):  4.862E-02 0.000E+00
+
+     total cpu time spent up to now is      166.3 secs
+
+     total energy              = -230898.27048476 Ry
+     estimated scf accuracy    <      19.64738690 Ry
+
+     iteration # 24     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  2.05E-04,  avg # of iterations =  1.0
+
+     negative rho (up, down):  4.858E-02 0.000E+00
+
+     total cpu time spent up to now is      172.6 secs
+
+     total energy              = -230898.19431959 Ry
+     estimated scf accuracy    <      57.55580788 Ry
+
+     iteration # 25     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  2.05E-04,  avg # of iterations =  1.0
+
+     negative rho (up, down):  4.858E-02 0.000E+00
+
+     total cpu time spent up to now is      178.8 secs
+
+     total energy              = -230898.42970520 Ry
+     estimated scf accuracy    <       7.76219588 Ry
+
+     iteration # 26     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  2.05E-04,  avg # of iterations =  1.0
+
+     negative rho (up, down):  4.856E-02 0.000E+00
+
+     total cpu time spent up to now is      185.0 secs
+
+     total energy              = -230898.31141080 Ry
+     estimated scf accuracy    <      27.63835516 Ry
+
+     iteration # 27     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  2.05E-04,  avg # of iterations =  1.0
+
+     negative rho (up, down):  4.860E-02 0.000E+00
+
+     total cpu time spent up to now is      191.3 secs
+
+     total energy              = -230898.40493806 Ry
+     estimated scf accuracy    <      23.33881940 Ry
+
+     iteration # 28     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  2.05E-04,  avg # of iterations =  1.0
+
+     negative rho (up, down):  4.865E-02 0.000E+00
+
+     total cpu time spent up to now is      197.6 secs
+
+     total energy              = -230898.47743228 Ry
+     estimated scf accuracy    <       7.48626411 Ry
+
+     iteration # 29     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  2.05E-04,  avg # of iterations =  1.0
+
+     negative rho (up, down):  4.880E-02 0.000E+00
+
+     total cpu time spent up to now is      203.8 secs
+
+     total energy              = -230898.45204401 Ry
+     estimated scf accuracy    <       8.67041896 Ry
+
+     iteration # 30     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  2.05E-04,  avg # of iterations =  1.0
+
+     negative rho (up, down):  4.879E-02 0.000E+00
+
+     total cpu time spent up to now is      210.0 secs
+
+     total energy              = -230898.46628144 Ry
+     estimated scf accuracy    <       3.04045553 Ry
+
+     iteration # 31     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  9.84E-05,  avg # of iterations =  1.0
+
+     negative rho (up, down):  4.881E-02 0.000E+00
+
+     total cpu time spent up to now is      216.3 secs
+
+     total energy              = -230898.44156667 Ry
+     estimated scf accuracy    <       9.55914471 Ry
+
+     iteration # 32     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  9.84E-05,  avg # of iterations =  1.0
+
+     negative rho (up, down):  4.893E-02 0.000E+00
+
+     total cpu time spent up to now is      222.5 secs
+
+     total energy              = -230898.47885197 Ry
+     estimated scf accuracy    <       1.12496680 Ry
+
+     iteration # 33     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  3.64E-05,  avg # of iterations =  1.0
+
+     negative rho (up, down):  4.906E-02 0.000E+00
+
+     total cpu time spent up to now is      228.8 secs
+
+     total energy              = -230898.45139723 Ry
+     estimated scf accuracy    <       3.15952801 Ry
+
+     iteration # 34     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  3.64E-05,  avg # of iterations =  1.0
+
+     negative rho (up, down):  4.903E-02 0.000E+00
+
+     total cpu time spent up to now is      235.0 secs
+
+     total energy              = -230898.44017152 Ry
+     estimated scf accuracy    <       5.56004064 Ry
+
+     iteration # 35     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  3.64E-05,  avg # of iterations =  1.0
+
+     negative rho (up, down):  4.911E-02 0.000E+00
+
+     total cpu time spent up to now is      241.3 secs
+
+     total energy              = -230898.45494415 Ry
+     estimated scf accuracy    <       2.75687891 Ry
+
+     iteration # 36     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  3.64E-05,  avg # of iterations =  1.0
+
+     negative rho (up, down):  4.907E-02 0.000E+00
+
+     total cpu time spent up to now is      247.5 secs
+
+     total energy              = -230898.43320170 Ry
+     estimated scf accuracy    <       4.67240341 Ry
+
+     iteration # 37     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  3.64E-05,  avg # of iterations =  1.0
+
+     negative rho (up, down):  4.903E-02 0.000E+00
+
+     total cpu time spent up to now is      253.7 secs
+
+     total energy              = -230898.40635772 Ry
+     estimated scf accuracy    <      13.99122117 Ry
+
+     iteration # 38     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  3.64E-05,  avg # of iterations =  1.0
+
+     negative rho (up, down):  4.910E-02 0.000E+00
+
+     total cpu time spent up to now is      260.0 secs
+
+     total energy              = -230898.44708995 Ry
+     estimated scf accuracy    <       5.50080571 Ry
+
+     iteration # 39     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  3.64E-05,  avg # of iterations =  1.0
+
+     negative rho (up, down):  4.920E-02 0.000E+00
+
+     total cpu time spent up to now is      266.2 secs
+
+     total energy              = -230898.45646412 Ry
+     estimated scf accuracy    <       2.18476784 Ry
+
+     iteration # 40     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  3.64E-05,  avg # of iterations =  1.0
+
+     negative rho (up, down):  4.923E-02 0.000E+00
+
+     total cpu time spent up to now is      272.5 secs
+
+     total energy              = -230898.45847053 Ry
+     estimated scf accuracy    <       1.02238727 Ry
+
+     iteration # 41     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  3.31E-05,  avg # of iterations =  1.0
+
+     negative rho (up, down):  4.921E-02 0.000E+00
+
+     total cpu time spent up to now is      278.7 secs
+
+     total energy              = -230898.44804296 Ry
+     estimated scf accuracy    <       3.56764496 Ry
+
+     iteration # 42     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  3.31E-05,  avg # of iterations =  1.0
+
+     negative rho (up, down):  4.929E-02 0.000E+00
+
+     total cpu time spent up to now is      285.0 secs
+
+     total energy              = -230898.46289552 Ry
+     estimated scf accuracy    <       0.59302664 Ry
+
+     iteration # 43     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  1.92E-05,  avg # of iterations =  1.0
+
+     negative rho (up, down):  4.935E-02 0.000E+00
+
+     total cpu time spent up to now is      291.2 secs
+
+     total energy              = -230898.45917552 Ry
+     estimated scf accuracy    <       0.71361365 Ry
+
+     iteration # 44     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  1.92E-05,  avg # of iterations =  1.0
+
+     negative rho (up, down):  4.936E-02 0.000E+00
+
+     total cpu time spent up to now is      297.4 secs
+
+     total energy              = -230898.45323669 Ry
+     estimated scf accuracy    <       1.88607028 Ry
+
+     iteration # 45     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  1.92E-05,  avg # of iterations =  1.0
+
+     negative rho (up, down):  4.939E-02 0.000E+00
+
+     total cpu time spent up to now is      303.7 secs
+
+     total energy              = -230898.45521363 Ry
+     estimated scf accuracy    <       1.55405665 Ry
+
+     iteration # 46     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  1.92E-05,  avg # of iterations =  1.0
+
+     negative rho (up, down):  4.944E-02 0.000E+00
+
+     total cpu time spent up to now is      309.9 secs
+
+     total energy              = -230898.45809768 Ry
+     estimated scf accuracy    <       0.68938582 Ry
+
+     iteration # 47     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  1.92E-05,  avg # of iterations =  1.0
+
+     negative rho (up, down):  4.942E-02 0.000E+00
+
+     total cpu time spent up to now is      316.2 secs
+
+     total energy              = -230898.45568655 Ry
+     estimated scf accuracy    <       1.06580512 Ry
+
+     iteration # 48     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  1.92E-05,  avg # of iterations =  1.0
+
+     negative rho (up, down):  4.945E-02 0.000E+00
+
+     total cpu time spent up to now is      322.4 secs
+
+     total energy              = -230898.45327145 Ry
+     estimated scf accuracy    <       2.08120236 Ry
+
+     iteration # 49     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  1.92E-05,  avg # of iterations =  1.0
+
+     negative rho (up, down):  4.952E-02 0.000E+00
+
+     total cpu time spent up to now is      328.6 secs
+
+     total energy              = -230898.45515047 Ry
+     estimated scf accuracy    <       1.04916178 Ry
+
+     iteration # 50     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  1.92E-05,  avg # of iterations =  1.0
+
+     negative rho (up, down):  4.956E-02 0.000E+00
+
+     total cpu time spent up to now is      334.9 secs
+
+     total energy              = -230898.45808536 Ry
+     estimated scf accuracy    <       0.34879565 Ry
+
+     iteration # 51     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  1.13E-05,  avg # of iterations =  2.0
+
+     negative rho (up, down):  4.952E-02 0.000E+00
+
+     total cpu time spent up to now is      341.4 secs
+
+     total energy              = -230898.45449112 Ry
+     estimated scf accuracy    <       1.10036142 Ry
+
+     iteration # 52     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  1.13E-05,  avg # of iterations =  2.0
+
+     negative rho (up, down):  4.958E-02 0.000E+00
+
+     total cpu time spent up to now is      347.8 secs
+
+     total energy              = -230898.45881933 Ry
+     estimated scf accuracy    <       0.35038511 Ry
+
+     iteration # 53     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  1.13E-05,  avg # of iterations =  2.0
+
+     negative rho (up, down):  4.964E-02 0.000E+00
+
+     total cpu time spent up to now is      354.3 secs
+
+     total energy              = -230898.45859796 Ry
+     estimated scf accuracy    <       0.22712934 Ry
+
+     iteration # 54     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  7.35E-06,  avg # of iterations = 15.0
+
+     negative rho (up, down):  4.966E-02 0.000E+00
+
+     total cpu time spent up to now is      362.6 secs
+
+     total energy              = -230898.45708572 Ry
+     estimated scf accuracy    <       0.46520307 Ry
+
+     iteration # 55     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  7.35E-06,  avg # of iterations =  1.0
+
+     negative rho (up, down):  4.966E-02 0.000E+00
+
+     total cpu time spent up to now is      368.9 secs
+
+     total energy              = -230898.45650218 Ry
+     estimated scf accuracy    <       0.76842019 Ry
+
+     iteration # 56     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  7.35E-06,  avg # of iterations =  1.0
+
+     negative rho (up, down):  4.969E-02 0.000E+00
+
+     total cpu time spent up to now is      375.1 secs
+
+     total energy              = -230898.45812399 Ry
+     estimated scf accuracy    <       0.36183053 Ry
+
+     iteration # 57     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  7.35E-06,  avg # of iterations =  1.0
+
+     negative rho (up, down):  4.969E-02 0.000E+00
+
+     total cpu time spent up to now is      381.3 secs
+
+     total energy              = -230898.45707107 Ry
+     estimated scf accuracy    <       0.47247636 Ry
+
+     iteration # 58     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  7.35E-06,  avg # of iterations =  1.0
+
+     negative rho (up, down):  4.972E-02 0.000E+00
+
+     total cpu time spent up to now is      387.6 secs
+
+     total energy              = -230898.45568930 Ry
+     estimated scf accuracy    <       0.93087348 Ry
+
+     iteration # 59     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  7.35E-06,  avg # of iterations =  1.0
+
+     negative rho (up, down):  4.976E-02 0.000E+00
+
+     total cpu time spent up to now is      393.8 secs
+
+     total energy              = -230898.45760872 Ry
+     estimated scf accuracy    <       0.36068674 Ry
+
+     iteration # 60     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  7.35E-06,  avg # of iterations =  1.0
+
+     negative rho (up, down):  4.980E-02 0.000E+00
+
+     total cpu time spent up to now is      400.1 secs
+
+     total energy              = -230898.45832081 Ry
+     estimated scf accuracy    <       0.18514889 Ry
+
+     iteration # 61     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  5.99E-06,  avg # of iterations =  1.0
+
+     negative rho (up, down):  4.977E-02 0.000E+00
+
+     total cpu time spent up to now is      406.3 secs
+
+     total energy              = -230898.45744749 Ry
+     estimated scf accuracy    <       0.30214001 Ry
+
+     iteration # 62     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  5.99E-06,  avg # of iterations =  1.0
+
+     negative rho (up, down):  4.982E-02 0.000E+00
+
+     total cpu time spent up to now is      412.6 secs
+
+     total energy              = -230898.45820424 Ry
+     estimated scf accuracy    <       0.24811880 Ry
+
+     iteration # 63     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  5.99E-06,  avg # of iterations =  1.0
+
+     negative rho (up, down):  4.985E-02 0.000E+00
+
+     total cpu time spent up to now is      418.8 secs
+
+     total energy              = -230898.45879381 Ry
+     estimated scf accuracy    <       0.10490340 Ry
+
+     iteration # 64     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  3.39E-06,  avg # of iterations =  1.0
+
+     negative rho (up, down):  4.986E-02 0.000E+00
+
+     total cpu time spent up to now is      425.1 secs
+
+     total energy              = -230898.45845704 Ry
+     estimated scf accuracy    <       0.14959907 Ry
+
+     iteration # 65     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  3.39E-06,  avg # of iterations =  1.0
+
+     negative rho (up, down):  4.986E-02 0.000E+00
+
+     total cpu time spent up to now is      431.4 secs
+
+     total energy              = -230898.45780043 Ry
+     estimated scf accuracy    <       0.37433328 Ry
+
+     iteration # 66     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  3.39E-06,  avg # of iterations =  1.0
+
+     negative rho (up, down):  4.990E-02 0.000E+00
+
+     total cpu time spent up to now is      437.7 secs
+
+     total energy              = -230898.45877954 Ry
+     estimated scf accuracy    <       0.17654375 Ry
+
+     iteration # 67     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  3.39E-06,  avg # of iterations =  1.0
+
+     negative rho (up, down):  4.991E-02 0.000E+00
+
+     total cpu time spent up to now is      444.0 secs
+
+     total energy              = -230898.45871365 Ry
+     estimated scf accuracy    <       0.14269652 Ry
+
+     iteration # 68     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  3.39E-06,  avg # of iterations =  1.0
+
+     negative rho (up, down):  4.992E-02 0.000E+00
+
+     total cpu time spent up to now is      450.4 secs
+
+     total energy              = -230898.45774932 Ry
+     estimated scf accuracy    <       0.44368690 Ry
+
+     iteration # 69     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  3.39E-06,  avg # of iterations =  1.0
+
+     negative rho (up, down):  4.995E-02 0.000E+00
+
+     total cpu time spent up to now is      456.7 secs
+
+     total energy              = -230898.45871193 Ry
+     estimated scf accuracy    <       0.17269863 Ry
+
+     iteration # 70     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  3.39E-06,  avg # of iterations =  1.0
+
+     negative rho (up, down):  4.997E-02 0.000E+00
+
+     total cpu time spent up to now is      463.0 secs
+
+     total energy              = -230898.45932082 Ry
+     estimated scf accuracy    <       0.07160692 Ry
+
+     iteration # 71     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  2.32E-06,  avg # of iterations =  1.0
+
+     negative rho (up, down):  4.996E-02 0.000E+00
+
+     total cpu time spent up to now is      469.4 secs
+
+     total energy              = -230898.45885755 Ry
+     estimated scf accuracy    <       0.11963045 Ry
+
+     iteration # 72     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  2.32E-06,  avg # of iterations =  1.0
+
+     negative rho (up, down):  4.998E-02 0.000E+00
+
+     total cpu time spent up to now is      475.7 secs
+
+     total energy              = -230898.45889202 Ry
+     estimated scf accuracy    <       0.16288959 Ry
+
+     iteration # 73     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  2.32E-06,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.001E-02 0.000E+00
+
+     total cpu time spent up to now is      482.0 secs
+
+     total energy              = -230898.45941134 Ry
+     estimated scf accuracy    <       0.09036310 Ry
+
+     iteration # 74     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  2.32E-06,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.003E-02 0.000E+00
+
+     total cpu time spent up to now is      488.4 secs
+
+     total energy              = -230898.45956532 Ry
+     estimated scf accuracy    <       0.06886405 Ry
+
+     iteration # 75     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  2.23E-06,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.003E-02 0.000E+00
+
+     total cpu time spent up to now is      494.7 secs
+
+     total energy              = -230898.45945327 Ry
+     estimated scf accuracy    <       0.10775839 Ry
+
+     iteration # 76     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  2.23E-06,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.005E-02 0.000E+00
+
+     total cpu time spent up to now is      501.1 secs
+
+     total energy              = -230898.45968096 Ry
+     estimated scf accuracy    <       0.09875420 Ry
+
+     iteration # 77     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  2.23E-06,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.006E-02 0.000E+00
+
+     total cpu time spent up to now is      507.4 secs
+
+     total energy              = -230898.45976661 Ry
+     estimated scf accuracy    <       0.05885232 Ry
+
+     iteration # 78     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  1.90E-06,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.007E-02 0.000E+00
+
+     total cpu time spent up to now is      513.7 secs
+
+     total energy              = -230898.45935581 Ry
+     estimated scf accuracy    <       0.20669987 Ry
+
+     iteration # 79     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  1.90E-06,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.008E-02 0.000E+00
+
+     total cpu time spent up to now is      520.0 secs
+
+     total energy              = -230898.45983640 Ry
+     estimated scf accuracy    <       0.07614061 Ry
+
+     iteration # 80     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  1.90E-06,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.010E-02 0.000E+00
+
+     total cpu time spent up to now is      526.4 secs
+
+     total energy              = -230898.46012059 Ry
+     estimated scf accuracy    <       0.04065364 Ry
+
+     iteration # 81     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  1.32E-06,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.010E-02 0.000E+00
+
+     total cpu time spent up to now is      532.7 secs
+
+     total energy              = -230898.46003080 Ry
+     estimated scf accuracy    <       0.04140791 Ry
+
+     iteration # 82     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  1.32E-06,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.011E-02 0.000E+00
+
+     total cpu time spent up to now is      539.0 secs
+
+     total energy              = -230898.45975771 Ry
+     estimated scf accuracy    <       0.12160889 Ry
+
+     iteration # 83     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  1.32E-06,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.013E-02 0.000E+00
+
+     total cpu time spent up to now is      545.3 secs
+
+     total energy              = -230898.46032859 Ry
+     estimated scf accuracy    <       0.03250297 Ry
+
+     iteration # 84     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  1.05E-06,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.014E-02 0.000E+00
+
+     total cpu time spent up to now is      551.7 secs
+
+     total energy              = -230898.46034033 Ry
+     estimated scf accuracy    <       0.03893906 Ry
+
+     iteration # 85     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  1.05E-06,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.014E-02 0.000E+00
+
+     total cpu time spent up to now is      558.0 secs
+
+     total energy              = -230898.46033219 Ry
+     estimated scf accuracy    <       0.04938179 Ry
+
+     iteration # 86     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  1.05E-06,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.016E-02 0.000E+00
+
+     total cpu time spent up to now is      564.3 secs
+
+     total energy              = -230898.46041980 Ry
+     estimated scf accuracy    <       0.06651597 Ry
+
+     iteration # 87     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  1.05E-06,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.017E-02 0.000E+00
+
+     total cpu time spent up to now is      570.6 secs
+
+     total energy              = -230898.46062440 Ry
+     estimated scf accuracy    <       0.02148764 Ry
+
+     iteration # 88     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  6.95E-07,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.017E-02 0.000E+00
+
+     total cpu time spent up to now is      576.9 secs
+
+     total energy              = -230898.46042736 Ry
+     estimated scf accuracy    <       0.08329285 Ry
+
+     iteration # 89     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  6.95E-07,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.019E-02 0.000E+00
+
+     total cpu time spent up to now is      583.3 secs
+
+     total energy              = -230898.46067472 Ry
+     estimated scf accuracy    <       0.03567492 Ry
+
+     iteration # 90     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  6.95E-07,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.020E-02 0.000E+00
+
+     total cpu time spent up to now is      589.6 secs
+
+     total energy              = -230898.46080409 Ry
+     estimated scf accuracy    <       0.01973252 Ry
+
+     iteration # 91     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  6.39E-07,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.021E-02 0.000E+00
+
+     total cpu time spent up to now is      595.9 secs
+
+     total energy              = -230898.46084505 Ry
+     estimated scf accuracy    <       0.01673070 Ry
+
+     iteration # 92     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  5.41E-07,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.021E-02 0.000E+00
+
+     total cpu time spent up to now is      602.2 secs
+
+     total energy              = -230898.46062287 Ry
+     estimated scf accuracy    <       0.06321593 Ry
+
+     iteration # 93     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  5.41E-07,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.022E-02 0.000E+00
+
+     total cpu time spent up to now is      608.6 secs
+
+     total energy              = -230898.46097725 Ry
+     estimated scf accuracy    <       0.01728442 Ry
+
+     iteration # 94     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  5.41E-07,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.023E-02 0.000E+00
+
+     total cpu time spent up to now is      614.9 secs
+
+     total energy              = -230898.46097699 Ry
+     estimated scf accuracy    <       0.02418189 Ry
+
+     iteration # 95     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  5.41E-07,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.023E-02 0.000E+00
+
+     total cpu time spent up to now is      621.2 secs
+
+     total energy              = -230898.46100007 Ry
+     estimated scf accuracy    <       0.02277707 Ry
+
+     iteration # 96     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  5.41E-07,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.024E-02 0.000E+00
+
+     total cpu time spent up to now is      627.5 secs
+
+     total energy              = -230898.46098924 Ry
+     estimated scf accuracy    <       0.04596232 Ry
+
+     iteration # 97     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  5.41E-07,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.025E-02 0.000E+00
+
+     total cpu time spent up to now is      633.9 secs
+
+     total energy              = -230898.46116541 Ry
+     estimated scf accuracy    <       0.01095261 Ry
+
+     iteration # 98     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  3.54E-07,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.025E-02 0.000E+00
+
+     total cpu time spent up to now is      640.2 secs
+
+     total energy              = -230898.46111404 Ry
+     estimated scf accuracy    <       0.03031247 Ry
+
+     iteration # 99     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  3.54E-07,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.026E-02 0.000E+00
+
+     total cpu time spent up to now is      646.5 secs
+
+     total energy              = -230898.46118325 Ry
+     estimated scf accuracy    <       0.02231570 Ry
+
+     iteration #100     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  3.54E-07,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.027E-02 0.000E+00
+
+     total cpu time spent up to now is      652.8 secs
+
+     total energy              = -230898.46129950 Ry
+     estimated scf accuracy    <       0.00921459 Ry
+
+     iteration #101     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  2.98E-07,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.028E-02 0.000E+00
+
+     total cpu time spent up to now is      659.1 secs
+
+     total energy              = -230898.46135402 Ry
+     estimated scf accuracy    <       0.00919067 Ry
+
+     iteration #102     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  2.97E-07,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.028E-02 0.000E+00
+
+     total cpu time spent up to now is      665.5 secs
+
+     total energy              = -230898.46127360 Ry
+     estimated scf accuracy    <       0.02087572 Ry
+
+     iteration #103     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  2.97E-07,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.028E-02 0.000E+00
+
+     total cpu time spent up to now is      671.8 secs
+
+     total energy              = -230898.46138620 Ry
+     estimated scf accuracy    <       0.01039967 Ry
+
+     iteration #104     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  2.97E-07,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.029E-02 0.000E+00
+
+     total cpu time spent up to now is      678.1 secs
+
+     total energy              = -230898.46142235 Ry
+     estimated scf accuracy    <       0.00987862 Ry
+
+     iteration #105     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  2.97E-07,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.029E-02 0.000E+00
+
+     total cpu time spent up to now is      684.4 secs
+
+     total energy              = -230898.46142838 Ry
+     estimated scf accuracy    <       0.01472451 Ry
+
+     iteration #106     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  2.97E-07,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.030E-02 0.000E+00
+
+     total cpu time spent up to now is      690.8 secs
+
+     total energy              = -230898.46142471 Ry
+     estimated scf accuracy    <       0.02173577 Ry
+
+     iteration #107     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  2.97E-07,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.030E-02 0.000E+00
+
+     total cpu time spent up to now is      697.1 secs
+
+     total energy              = -230898.46152804 Ry
+     estimated scf accuracy    <       0.00859932 Ry
+
+     iteration #108     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  2.78E-07,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.031E-02 0.000E+00
+
+     total cpu time spent up to now is      703.4 secs
+
+     total energy              = -230898.46152559 Ry
+     estimated scf accuracy    <       0.00968642 Ry
+
+     iteration #109     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  2.78E-07,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.031E-02 0.000E+00
+
+     total cpu time spent up to now is      709.7 secs
+
+     total energy              = -230898.46151647 Ry
+     estimated scf accuracy    <       0.02102324 Ry
+
+     iteration #110     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  2.78E-07,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.031E-02 0.000E+00
+
+     total cpu time spent up to now is      716.1 secs
+
+     total energy              = -230898.46160900 Ry
+     estimated scf accuracy    <       0.00429240 Ry
+
+     iteration #111     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  1.39E-07,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.033E-02 0.000E+00
+
+     total cpu time spent up to now is      722.4 secs
+
+     total energy              = -230898.46166679 Ry
+     estimated scf accuracy    <       0.00365780 Ry
+
+     iteration #112     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  1.18E-07,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.032E-02 0.000E+00
+
+     total cpu time spent up to now is      728.7 secs
+
+     total energy              = -230898.46162395 Ry
+     estimated scf accuracy    <       0.00910546 Ry
+
+     iteration #113     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  1.18E-07,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.033E-02 0.000E+00
+
+     total cpu time spent up to now is      735.1 secs
+
+     total energy              = -230898.46167552 Ry
+     estimated scf accuracy    <       0.00586959 Ry
+
+     iteration #114     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  1.18E-07,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.033E-02 0.000E+00
+
+     total cpu time spent up to now is      741.4 secs
+
+     total energy              = -230898.46169042 Ry
+     estimated scf accuracy    <       0.00585454 Ry
+
+     iteration #115     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  1.18E-07,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.034E-02 0.000E+00
+
+     total cpu time spent up to now is      747.7 secs
+
+     total energy              = -230898.46170654 Ry
+     estimated scf accuracy    <       0.00747912 Ry
+
+     iteration #116     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  1.18E-07,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.034E-02 0.000E+00
+
+     total cpu time spent up to now is      754.1 secs
+
+     total energy              = -230898.46171285 Ry
+     estimated scf accuracy    <       0.01016824 Ry
+
+     iteration #117     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  1.18E-07,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.034E-02 0.000E+00
+
+     total cpu time spent up to now is      760.4 secs
+
+     total energy              = -230898.46175790 Ry
+     estimated scf accuracy    <       0.00555525 Ry
+
+     iteration #118     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  1.18E-07,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.035E-02 0.000E+00
+
+     total cpu time spent up to now is      766.7 secs
+
+     total energy              = -230898.46177322 Ry
+     estimated scf accuracy    <       0.00399094 Ry
+
+     iteration #119     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  1.18E-07,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.035E-02 0.000E+00
+
+     total cpu time spent up to now is      773.0 secs
+
+     total energy              = -230898.46174662 Ry
+     estimated scf accuracy    <       0.01298794 Ry
+
+     iteration #120     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  1.18E-07,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.035E-02 0.000E+00
+
+     total cpu time spent up to now is      779.4 secs
+
+     total energy              = -230898.46181306 Ry
+     estimated scf accuracy    <       0.00247150 Ry
+
+     iteration #121     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  8.00E-08,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.036E-02 0.000E+00
+
+     total cpu time spent up to now is      785.7 secs
+
+     total energy              = -230898.46184620 Ry
+     estimated scf accuracy    <       0.00183307 Ry
+
+     iteration #122     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  5.93E-08,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.036E-02 0.000E+00
+
+     total cpu time spent up to now is      792.0 secs
+
+     total energy              = -230898.46183244 Ry
+     estimated scf accuracy    <       0.00428928 Ry
+
+     iteration #123     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  5.93E-08,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.036E-02 0.000E+00
+
+     total cpu time spent up to now is      798.4 secs
+
+     total energy              = -230898.46185466 Ry
+     estimated scf accuracy    <       0.00298805 Ry
+
+     iteration #124     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  5.93E-08,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.037E-02 0.000E+00
+
+     total cpu time spent up to now is      804.7 secs
+
+     total energy              = -230898.46186911 Ry
+     estimated scf accuracy    <       0.00279640 Ry
+
+     iteration #125     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  5.93E-08,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.037E-02 0.000E+00
+
+     total cpu time spent up to now is      811.0 secs
+
+     total energy              = -230898.46187460 Ry
+     estimated scf accuracy    <       0.00378768 Ry
+
+     iteration #126     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  5.93E-08,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.037E-02 0.000E+00
+
+     total cpu time spent up to now is      817.4 secs
+
+     total energy              = -230898.46187351 Ry
+     estimated scf accuracy    <       0.00564833 Ry
+
+     iteration #127     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  5.93E-08,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.037E-02 0.000E+00
+
+     total cpu time spent up to now is      823.7 secs
+
+     total energy              = -230898.46191016 Ry
+     estimated scf accuracy    <       0.00297575 Ry
+
+     iteration #128     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  5.93E-08,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.038E-02 0.000E+00
+
+     total cpu time spent up to now is      830.0 secs
+
+     total energy              = -230898.46191979 Ry
+     estimated scf accuracy    <       0.00188988 Ry
+
+     iteration #129     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  5.93E-08,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.038E-02 0.000E+00
+
+     total cpu time spent up to now is      836.4 secs
+
+     total energy              = -230898.46189895 Ry
+     estimated scf accuracy    <       0.00722838 Ry
+
+     iteration #130     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  5.93E-08,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.038E-02 0.000E+00
+
+     total cpu time spent up to now is      842.7 secs
+
+     total energy              = -230898.46193233 Ry
+     estimated scf accuracy    <       0.00167409 Ry
+
+     iteration #131     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  5.42E-08,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.038E-02 0.000E+00
+
+     total cpu time spent up to now is      849.0 secs
+
+     total energy              = -230898.46195774 Ry
+     estimated scf accuracy    <       0.00094343 Ry
+
+     iteration #132     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  3.05E-08,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.038E-02 0.000E+00
+
+     total cpu time spent up to now is      855.3 secs
+
+     total energy              = -230898.46195480 Ry
+     estimated scf accuracy    <       0.00184513 Ry
+
+     iteration #133     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  3.05E-08,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.039E-02 0.000E+00
+
+     total cpu time spent up to now is      861.7 secs
+
+     total energy              = -230898.46196173 Ry
+     estimated scf accuracy    <       0.00168424 Ry
+
+     iteration #134     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  3.05E-08,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.039E-02 0.000E+00
+
+     total cpu time spent up to now is      868.0 secs
+
+     total energy              = -230898.46196974 Ry
+     estimated scf accuracy    <       0.00152507 Ry
+
+     iteration #135     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  3.05E-08,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.039E-02 0.000E+00
+
+     total cpu time spent up to now is      874.3 secs
+
+     total energy              = -230898.46197942 Ry
+     estimated scf accuracy    <       0.00167801 Ry
+
+     iteration #136     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  3.05E-08,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.039E-02 0.000E+00
+
+     total cpu time spent up to now is      880.7 secs
+
+     total energy              = -230898.46198101 Ry
+     estimated scf accuracy    <       0.00261714 Ry
+
+     iteration #137     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  3.05E-08,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.039E-02 0.000E+00
+
+     total cpu time spent up to now is      887.0 secs
+
+     total energy              = -230898.46199649 Ry
+     estimated scf accuracy    <       0.00164160 Ry
+
+     iteration #138     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  3.05E-08,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.040E-02 0.000E+00
+
+     total cpu time spent up to now is      893.4 secs
+
+     total energy              = -230898.46200453 Ry
+     estimated scf accuracy    <       0.00089069 Ry
+
+     iteration #139     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  2.88E-08,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.040E-02 0.000E+00
+
+     total cpu time spent up to now is      899.7 secs
+
+     total energy              = -230898.46199251 Ry
+     estimated scf accuracy    <       0.00320179 Ry
+
+     iteration #140     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  2.88E-08,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.040E-02 0.000E+00
+
+     total cpu time spent up to now is      906.0 secs
+
+     total energy              = -230898.46200984 Ry
+     estimated scf accuracy    <       0.00110377 Ry
+
+     iteration #141     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  2.88E-08,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.040E-02 0.000E+00
+
+     total cpu time spent up to now is      912.3 secs
+
+     total energy              = -230898.46202294 Ry
+     estimated scf accuracy    <       0.00055745 Ry
+
+     iteration #142     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  1.80E-08,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.040E-02 0.000E+00
+
+     total cpu time spent up to now is      918.7 secs
+
+     total energy              = -230898.46202593 Ry
+     estimated scf accuracy    <       0.00086458 Ry
+
+     iteration #143     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  1.80E-08,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.040E-02 0.000E+00
+
+     total cpu time spent up to now is      925.0 secs
+
+     total energy              = -230898.46202788 Ry
+     estimated scf accuracy    <       0.00085173 Ry
+
+     iteration #144     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  1.80E-08,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.040E-02 0.000E+00
+
+     total cpu time spent up to now is      931.3 secs
+
+     total energy              = -230898.46203299 Ry
+     estimated scf accuracy    <       0.00087818 Ry
+
+     iteration #145     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  1.80E-08,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.041E-02 0.000E+00
+
+     total cpu time spent up to now is      937.6 secs
+
+     total energy              = -230898.46203782 Ry
+     estimated scf accuracy    <       0.00085430 Ry
+
+     iteration #146     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  1.80E-08,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.041E-02 0.000E+00
+
+     total cpu time spent up to now is      944.0 secs
+
+     total energy              = -230898.46203894 Ry
+     estimated scf accuracy    <       0.00124916 Ry
+
+     iteration #147     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  1.80E-08,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.041E-02 0.000E+00
+
+     total cpu time spent up to now is      950.3 secs
+
+     total energy              = -230898.46204866 Ry
+     estimated scf accuracy    <       0.00082598 Ry
+
+     iteration #148     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  1.80E-08,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.041E-02 0.000E+00
+
+     total cpu time spent up to now is      956.7 secs
+
+     total energy              = -230898.46205380 Ry
+     estimated scf accuracy    <       0.00044213 Ry
+
+     iteration #149     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  1.43E-08,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.041E-02 0.000E+00
+
+     total cpu time spent up to now is      963.0 secs
+
+     total energy              = -230898.46204770 Ry
+     estimated scf accuracy    <       0.00146472 Ry
+
+     iteration #150     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  1.43E-08,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.041E-02 0.000E+00
+
+     total cpu time spent up to now is      969.3 secs
+
+     total energy              = -230898.46205494 Ry
+     estimated scf accuracy    <       0.00069134 Ry
+
+     iteration #151     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  1.43E-08,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.041E-02 0.000E+00
+
+     total cpu time spent up to now is      975.7 secs
+
+     total energy              = -230898.46206334 Ry
+     estimated scf accuracy    <       0.00030972 Ry
+
+     iteration #152     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  1.00E-08,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.042E-02 0.000E+00
+
+     total cpu time spent up to now is      982.0 secs
+
+     total energy              = -230898.46206626 Ry
+     estimated scf accuracy    <       0.00042926 Ry
+
+     iteration #153     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  1.00E-08,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.042E-02 0.000E+00
+
+     total cpu time spent up to now is      988.3 secs
+
+     total energy              = -230898.46206597 Ry
+     estimated scf accuracy    <       0.00043679 Ry
+
+     iteration #154     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  1.00E-08,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.042E-02 0.000E+00
+
+     total cpu time spent up to now is      994.7 secs
+
+     total energy              = -230898.46206853 Ry
+     estimated scf accuracy    <       0.00048612 Ry
+
+     iteration #155     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  1.00E-08,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.042E-02 0.000E+00
+
+     total cpu time spent up to now is     1001.0 secs
+
+     total energy              = -230898.46207286 Ry
+     estimated scf accuracy    <       0.00042152 Ry
+
+     iteration #156     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  1.00E-08,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.042E-02 0.000E+00
+
+     total cpu time spent up to now is     1007.3 secs
+
+     total energy              = -230898.46207432 Ry
+     estimated scf accuracy    <       0.00060799 Ry
+
+     iteration #157     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  1.00E-08,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.042E-02 0.000E+00
+
+     total cpu time spent up to now is     1013.7 secs
+
+     total energy              = -230898.46207791 Ry
+     estimated scf accuracy    <       0.00043382 Ry
+
+     iteration #158     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  1.00E-08,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.042E-02 0.000E+00
+
+     total cpu time spent up to now is     1020.0 secs
+
+     total energy              = -230898.46208140 Ry
+     estimated scf accuracy    <       0.00021192 Ry
+
+     iteration #159     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  6.86E-09,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.042E-02 0.000E+00
+
+     total cpu time spent up to now is     1026.3 secs
+
+     total energy              = -230898.46207904 Ry
+     estimated scf accuracy    <       0.00063670 Ry
+
+     iteration #160     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  6.86E-09,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.042E-02 0.000E+00
+
+     total cpu time spent up to now is     1032.6 secs
+
+     total energy              = -230898.46208247 Ry
+     estimated scf accuracy    <       0.00043469 Ry
+
+     iteration #161     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  6.86E-09,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.042E-02 0.000E+00
+
+     total cpu time spent up to now is     1039.0 secs
+
+     total energy              = -230898.46208631 Ry
+     estimated scf accuracy    <       0.00017209 Ry
+
+     iteration #162     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  5.57E-09,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.042E-02 0.000E+00
+
+     total cpu time spent up to now is     1045.3 secs
+
+     total energy              = -230898.46208923 Ry
+     estimated scf accuracy    <       0.00020780 Ry
+
+     iteration #163     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  5.57E-09,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.042E-02 0.000E+00
+
+     total cpu time spent up to now is     1051.6 secs
+
+     total energy              = -230898.46208885 Ry
+     estimated scf accuracy    <       0.00021962 Ry
+
+     iteration #164     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  5.57E-09,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.042E-02 0.000E+00
+
+     total cpu time spent up to now is     1058.0 secs
+
+     total energy              = -230898.46209024 Ry
+     estimated scf accuracy    <       0.00027393 Ry
+
+     iteration #165     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  5.57E-09,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.043E-02 0.000E+00
+
+     total cpu time spent up to now is     1064.3 secs
+
+     total energy              = -230898.46209233 Ry
+     estimated scf accuracy    <       0.00022233 Ry
+
+     iteration #166     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  5.57E-09,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.043E-02 0.000E+00
+
+     total cpu time spent up to now is     1070.6 secs
+
+     total energy              = -230898.46209336 Ry
+     estimated scf accuracy    <       0.00031551 Ry
+
+     iteration #167     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  5.57E-09,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.043E-02 0.000E+00
+
+     total cpu time spent up to now is     1076.9 secs
+
+     total energy              = -230898.46209534 Ry
+     estimated scf accuracy    <       0.00022604 Ry
+
+     iteration #168     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  5.57E-09,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.043E-02 0.000E+00
+
+     total cpu time spent up to now is     1083.3 secs
+
+     total energy              = -230898.46209758 Ry
+     estimated scf accuracy    <       0.00010538 Ry
+
+     iteration #169     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  3.41E-09,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.043E-02 0.000E+00
+
+     total cpu time spent up to now is     1089.6 secs
+
+     total energy              = -230898.46209678 Ry
+     estimated scf accuracy    <       0.00028300 Ry
+
+     iteration #170     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  3.41E-09,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.043E-02 0.000E+00
+
+     total cpu time spent up to now is     1095.9 secs
+
+     total energy              = -230898.46209812 Ry
+     estimated scf accuracy    <       0.00025241 Ry
+
+     iteration #171     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  3.41E-09,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.043E-02 0.000E+00
+
+     total cpu time spent up to now is     1102.3 secs
+
+     total energy              = -230898.46210030 Ry
+     estimated scf accuracy    <       0.00009101 Ry
+
+     iteration #172     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  2.95E-09,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.043E-02 0.000E+00
+
+     total cpu time spent up to now is     1108.6 secs
+
+     total energy              = -230898.46210207 Ry
+     estimated scf accuracy    <       0.00010808 Ry
+
+     iteration #173     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  2.95E-09,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.043E-02 0.000E+00
+
+     total cpu time spent up to now is     1114.9 secs
+
+     total energy              = -230898.46210177 Ry
+     estimated scf accuracy    <       0.00011087 Ry
+
+     iteration #174     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  2.95E-09,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.043E-02 0.000E+00
+
+     total cpu time spent up to now is     1121.2 secs
+
+     total energy              = -230898.46210240 Ry
+     estimated scf accuracy    <       0.00015475 Ry
+
+     iteration #175     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  2.95E-09,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.043E-02 0.000E+00
+
+     total cpu time spent up to now is     1127.6 secs
+
+     total energy              = -230898.46210393 Ry
+     estimated scf accuracy    <       0.00011574 Ry
+
+     iteration #176     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  2.95E-09,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.043E-02 0.000E+00
+
+     total cpu time spent up to now is     1133.9 secs
+
+     total energy              = -230898.46210469 Ry
+     estimated scf accuracy    <       0.00016521 Ry
+
+     iteration #177     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  2.95E-09,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.043E-02 0.000E+00
+
+     total cpu time spent up to now is     1140.3 secs
+
+     total energy              = -230898.46210527 Ry
+     estimated scf accuracy    <       0.00012010 Ry
+
+     iteration #178     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  2.95E-09,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.043E-02 0.000E+00
+
+     total cpu time spent up to now is     1146.6 secs
+
+     total energy              = -230898.46210658 Ry
+     estimated scf accuracy    <       0.00005558 Ry
+
+     iteration #179     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  1.80E-09,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.043E-02 0.000E+00
+
+     total cpu time spent up to now is     1152.9 secs
+
+     total energy              = -230898.46210678 Ry
+     estimated scf accuracy    <       0.00011984 Ry
+
+     iteration #180     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  1.80E-09,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.043E-02 0.000E+00
+
+     total cpu time spent up to now is     1159.3 secs
+
+     total energy              = -230898.46210737 Ry
+     estimated scf accuracy    <       0.00014127 Ry
+
+     iteration #181     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  1.80E-09,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.043E-02 0.000E+00
+
+     total cpu time spent up to now is     1165.6 secs
+
+     total energy              = -230898.46210818 Ry
+     estimated scf accuracy    <       0.00004846 Ry
+
+     iteration #182     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  1.57E-09,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.043E-02 0.000E+00
+
+     total cpu time spent up to now is     1171.9 secs
+
+     total energy              = -230898.46210936 Ry
+     estimated scf accuracy    <       0.00005659 Ry
+
+     iteration #183     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  1.57E-09,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.043E-02 0.000E+00
+
+     total cpu time spent up to now is     1178.3 secs
+
+     total energy              = -230898.46210941 Ry
+     estimated scf accuracy    <       0.00005360 Ry
+
+     iteration #184     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  1.57E-09,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.044E-02 0.000E+00
+
+     total cpu time spent up to now is     1184.6 secs
+
+     total energy              = -230898.46210968 Ry
+     estimated scf accuracy    <       0.00008667 Ry
+
+     iteration #185     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  1.57E-09,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.044E-02 0.000E+00
+
+     total cpu time spent up to now is     1191.0 secs
+
+     total energy              = -230898.46211039 Ry
+     estimated scf accuracy    <       0.00006488 Ry
+
+     iteration #186     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  1.57E-09,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.044E-02 0.000E+00
+
+     total cpu time spent up to now is     1197.3 secs
+
+     total energy              = -230898.46211090 Ry
+     estimated scf accuracy    <       0.00009154 Ry
+
+     iteration #187     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  1.57E-09,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.044E-02 0.000E+00
+
+     total cpu time spent up to now is     1203.7 secs
+
+     total energy              = -230898.46211118 Ry
+     estimated scf accuracy    <       0.00006299 Ry
+
+     iteration #188     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  1.57E-09,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.044E-02 0.000E+00
+
+     total cpu time spent up to now is     1210.0 secs
+
+     total energy              = -230898.46211199 Ry
+     estimated scf accuracy    <       0.00003101 Ry
+
+     iteration #189     ecut=    55.00 Ry     beta= 0.12
+     Davidson diagonalization with overlap
+     ethr =  1.00E-09,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.044E-02 0.000E+00
+
+     total cpu time spent up to now is     1216.3 secs
+
+     total energy              = -230898.46211221 Ry
+     estimated scf accuracy    <       0.00005469 Ry
+
+     iteration #190     ecut=    55.00 Ry     beta= 0.12

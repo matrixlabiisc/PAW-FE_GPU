@@ -1,0 +1,49 @@
+#!/bin/bash -l
+#PBS -l select=140:system=polaris
+#PBS -l place=scatter
+#PBS -l walltime=00:05:00
+#PBS -l filesystems=home:eagle
+#PBS -q prod
+#PBS -A DFTCalculations
+#PBS -o job.out
+#PBS -e job.err
+module use /soft/modulefiles
+module load spack-pe-base cmake
+module load PrgEnv-gnu/8.6.0
+module load gcc-native/13.2
+module load cuda/12.9
+module load craype-accel-nvidia80
+
+
+
+
+export NCCL_NET_GDR_LEVEL=PHB
+export NCCL_CROSS_NIC=1
+#export NCCL_COLLNET_ENABLE=0
+export NCCL_NET="AWS Libfabric"
+#export NCCL_DEBUG=INFO
+export LD_LIBRARY_PATH=/soft/libraries/aws-ofi-nccl/v1.9.1-aws-libfabric-1.22.0/lib:$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=/soft/libraries/hwloc/lib/:$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/phanim/softwares/DFTFEinstallationCuda12.9/dependencies/lib64
+export LIBRARY_PATH=$LD_LIBRARY_PATH:$LIBRARY_PATH
+# Enable GPU-MPI (if supported by application)
+export MPICH_GPU_SUPPORT_ENABLED=0
+#export MPICH_OFI_INJECT_MAX_SIZE=0
+#export FI_CXI_TX_SIZE=8192
+
+# Change to working directory
+cd ${PBS_O_WORKDIR}
+ls ${PBS_O_WORKDIR}
+# MPI and OpenMP settings
+NNODES=`wc -l < $PBS_NODEFILE`
+NRANKS_PER_NODE=$(nvidia-smi -L | wc -l)
+NDEPTH=8
+NTHREADS=8
+export DFTFE_NUM_THREADS=8
+NTOTRANKS=$(( NNODES * NRANKS_PER_NODE ))
+echo "NUM_OF_NODES= ${NNODES} TOTAL_NUM_RANKS= ${NTOTRANKS} RANKS_PER_NODE= ${NRANKS_PER_NODE} THREADS_PER_RANK= ${NTHREADS}"
+#exe=/home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAWjctc/installGPUAwareOFF/real/dftfe
+exe=/home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/dftfe
+
+mpiexec -n ${NTOTRANKS} --ppn ${NRANKS_PER_NODE} --depth=${NDEPTH} --cpu-bind depth --env OMP_NUM_THREADS=${NTHREADS} -env OMP_PLACES=threads ./set_affinity_gpu_polaris.sh $exe Final2.prm > Final_140Nodes_600WFC_elpaCPU.op
+#mpiexec -n ${NTOTRANKS} --ppn ${NRANKS_PER_NODE} --depth=${NDEPTH} --cpu-bind depth --env OMP_NUM_THREADS=${NTHREADS} -env OMP_PLACES=threads ./set_affinity_gpu_polaris.sh $exe FinalFP64.prm > Final_NewFP64_16Nodes_1140WFC.op

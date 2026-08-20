@@ -1,0 +1,198 @@
+Out of memory allocating 12373631128 bytes of device memory
+Failing in Thread:8
+total/free CUDA memory: 42406903808/1661075456
+Present table dump for device[1]: NVIDIA Tesla GPU 0, compute capability 8.0, threadid=8
+Hint: specify 0x800 bit in NV_ACC_DEBUG for verbose info.
+host:0x2503580 device:0x150ecf202c00 size:2040 presentcount:0+1 line:-1 name:_xdm_module_21
+host:0x2545cc0 device:0x150ecf203400 size:184 presentcount:0+1 line:-1 name:_cell_base_21
+host:0x2546c00 device:0x150ecf203500 size:32 presentcount:0+1 line:-1 name:_constraints_module_21
+host:0x2547bc0 device:0x150eb999b600 size:8680 presentcount:0+1 line:98 name:dfft
+host:0x2549da8 device:0x150eb999d800 size:8680 presentcount:0+1 line:98 name:dfft
+host:0x2777840 device:0x150ecf203700 size:160 presentcount:0+1 line:-1 name:_vdw_df_21
+host:0x2777a00 device:0x150ecf203800 size:160 presentcount:0+1 line:-1 name:_rvv10_21
+host:0x2994760 device:0x150ecf203d00 size:240 presentcount:0+1 line:-1 name:_st_37160027435a6c0a2b614350057a064f614653760200705e4261413b0773054b6c4453780200_mi
+host:0x2996658 device:0x150ecf203e00 size:4 presentcount:0+1 line:-1 name:_st_37160027435a6c0a2b614350057a064f614653760200705e4261413b0773054b6c4453780200_beeforder
+host:0x29b48e0 device:0x150eb999b400 size:176 presentcount:0+1 line:69 name:descriptor
+host:0x29bc180 device:0x150eb9800400 size:656 presentcount:0+1 line:655 name:bec
+host:0x2a098e0 device:0x150ecf203f00 size:4 presentcount:0+1 line:-1 name:_st_37160027435a6c0a2b614350057a064f614653760200705e4261413b0773054b6c4453780200_beeftype
+host:0x2a17e40 device:0x150ecf202800 size:624 presentcount:0+1 line:-1 name:_exx_16
+host:0x2c30610 device:0x150ecfffb800 size:176 presentcount:0+1 line:88 name:descriptor
+host:0x2c30d80 device:0x150ecf202b00 size:192 presentcount:0+1 line:-1 name:_force_mod_16
+host:0x2c31b90 device:0x150ecfffb600 size:176 presentcount:0+1 line:142 name:descriptor
+host:0x2c31d10 device:0x150ecfffbe00 size:128 presentcount:0+1 line:50 name:descriptor
+host:0x2da0cc0 device:0x150ecf202600 size:192 presentcount:0+1 line:-1 name:_exx_band_16
+host:0x2da3540 device:0x150ecf203600 size:144 presentcount:0+1 line:-1 name:_electrons_base_16
+host:0x2da4800 device:0x150ecf202700 size:144 presentcount:0+1 line:-1 name:_mp_exx_16
+host:0x2da5d60 device:0x150eb999b000 size:128 presentcount:0+1 line:102 name:descriptor
+host:0x2da5df0 device:0x150eb999b200 size:128 presentcount:0+1 line:102 name:descriptor
+host:0x2da5e80 device:0x150eb999ae00 size:176 presentcount:0+1 line:102 name:descriptor
+host:0x2da5f40 device:0x150eb999ac00 size:176 presentcount:0+1 line:102 name:descriptor
+host:0x2da6150 device:0x150ecfffb000 size:176 presentcount:0+1 line:36 name:descriptor
+host:0x2da6210 device:0x150ecfffb200 size:176 presentcount:0+1 line:36 name:descriptor
+host:0x2da62d0 device:0x150ecfffb400 size:176 presentcount:0+1 line:36 name:descriptor
+host:0x2da8dd0 device:0x150ecfffba00 size:176 presentcount:0+1 line:57 name:descriptor
+host:0x3ab2350 device:0x150ecfffda00 size:224 presentcount:0+1 line:89 name:descriptor
+host:0x3ab2490 device:0x150ecfffd800 size:224 presentcount:0+1 line:96 name:descriptor
+host:0x3ab3450 device:0x150ecfff4c00 size:176 presentcount:0+1 line:312 name:descriptor
+host:0x3ab3510 device:0x150ecfff5000 size:176 presentcount:0+1 line:314 name:descriptor
+host:0x3ab3720 device:0x150ecfffbc00 size:176 presentcount:0+1 line:45 name:descriptor
+host:0x3ab37e0 device:0x150ecfff8c00 size:224 presentcount:0+1 line:339 name:descriptor
+host:0x3ab38d0 device:0x150ecfff6800 size:272 presentcount:0+1 line:320 name:descriptor
+host:0x3ab39f0 device:0x150ecfff6a00 size:224 presentcount:0+1 line:326 name:descriptor
+host:0x3ab3bd0 device:0x150ecfff5400 size:176 presentcount:0+1 line:316 name:descriptor
+host:0x3ab3c90 device:0x150ecfff6600 size:224 presentcount:0+1 line:318 name:descriptor
+host:0x3ab3d80 device:0x150ecfff8e00 size:224 presentcount:0+1 line:342 name:descriptor
+host:0x3b226d0 device:0x150ecfffc000 size:176 presentcount:0+1 line:106 name:descriptor
+host:0x3b227d0 device:0x150ecfffdc00 size:176 presentcount:0+1 line:89 name:descriptor
+host:0x3b22910 device:0x150ecfffe600 size:176 presentcount:0+1 line:86 name:descriptor
+host:0x3b229d0 device:0x150ecfffc200 size:272 presentcount:0+1 line:88 name:descriptor
+host:0x3c5f440 device:0x150ecf203900 size:288 presentcount:0+1 line:-1 name:_fft_buffers_16
+host:0x3c61f40 device:0x150ecf203b00 size:288 presentcount:0+1 line:-1 name:_data_buffer_16
+host:0x2be394a0 device:0x150ecff71e00 size:535552 presentcount:0+1 line:98 name:dfft%nl(:)
+host:0x2c07e870 device:0x150eb99d4600 size:72112 presentcount:0+1 line:142 name:et(:,:)
+host:0x2c095c30 device:0x150ebb000000 size:3029456 presentcount:0+1 line:102 name:gg(1:ngm)
+host:0x2c37eee0 device:0x150eba000000 size:4544184 presentcount:0+1 line:102 name:mill(1:3,1:ngm)
+host:0x2c951a60 device:0x150ecfe00000 size:1514728 presentcount:0+1 line:102 name:igtongl(1:ngm)
+host:0x2e444f80 device:0x150ebcb71e00 size:535552 presentcount:0+1 line:98 name:dfft%nlm(:)
+host:0x2e63dc60 device:0x150ec2c00000 size:2374848 presentcount:0+1 line:342 name:becsum(:,:,:)
+host:0x2e8a99c0 device:0x150ebca00000 size:1514728 presentcount:0+1 line:98 name:dfft%nl(:)
+host:0x2ea238c0 device:0x150ec0c00000 size:1514728 presentcount:0+1 line:98 name:dfft%nlm(:)
+host:0x2f2d7fb0 device:0x150eb999fa00 size:133872 presentcount:0+1 line:50 name:g2kin(:)
+host:0x2f2f9040 device:0x150ec11a6a00 size:48120 presentcount:0+1 line:106 name:tab_vloc(:,:)
+host:0x2f3136c0 device:0x150d43a00000 size:5050080 presentcount:0+1 line:88 name:tab_qrad(:,:,:,:)
+host:0x2f7e5000 device:0x150ec11b2600 size:102384 presentcount:0+1 line:96 name:tab_beta(:,:,:)
+host:0x2f7fe3a0 device:0x150ec11cb600 size:102384 presentcount:0+1 line:89 name:tab_atwfc(:,:,:)
+host:0x2f817740 device:0x150c09b74a00 size:48096 presentcount:0+1 line:89 name:tab_rhc(:,:)
+host:0x2f823350 device:0x150c09b80600 size:48096 presentcount:0+1 line:86 name:tab_rhoat(:,:)
+host:0x30017aa0 device:0x150a7ec34c00 size:157184 presentcount:0+1 line:426 name:etatom(:)
+host:0x3003e0d0 device:0x150a7ed70400 size:157184 presentcount:0+1 line:68 name:en(:)
+host:0x150077c236d0 device:0x14fe48000000 size:3088351232 presentcount:0+1 line:68 name:vr(:,:)
+host:0x15012fd6d4c0 device:0x14ff02000000 size:3088351232 presentcount:0+1 line:68 name:sr(:,:)
+host:0x1501e7eb72b0 device:0x14ffbc000000 size:3088351232 presentcount:0+1 line:68 name:hr(:,:)
+host:0x1503da7110a0 device:0x1502a0000000 size:5260634112 presentcount:0+1 line:68 name:aux(:,:)
+host:0x15071e711650 device:0x150514000000 size:5260634112 presentcount:1+0 line:313 name:wfcatom(:,:,:)
+host:0x1509a1eb7e90 device:0x150858000000 size:3088351232 presentcount:0+1 line:664 name:bec%r(:,:)
+host:0x150c0a000000 device:0x150ad0000000 size:5260634112 presentcount:0+1 line:45 name:vkb(:,:)
+host:0x150dd4610af0 device:0x150d44000000 size:2413444416 presentcount:0+1 line:57 name:evc(:,:)
+host:0x150e643b68e0 device:0x150ec9800000 size:11138176 presentcount:0+1 line:36 name:eigts3(-nr3:nr3,1:nat)
+host:0x150e64e576d0 device:0x150ec6400000 size:53357696 presentcount:0+1 line:36 name:eigts2(-nr2:nr2,1:nat)
+host:0x150e6813c4c0 device:0x150ec3000000 size:53357696 presentcount:0+1 line:36 name:eigts1(-nr1:nr1,1:nat)
+host:0x150e6c57e5b0 device:0x150ebb400000 size:22118400 presentcount:0+1 line:69 name:vrs(:,:)
+host:0x150ec1200200 device:0x150ecfff4a00 size:216 presentcount:0+1 line:312 name:indv(:,:)
+host:0x150ec1200400 device:0x150ecfff4e00 size:216 presentcount:0+1 line:314 name:nhtol(:,:)
+host:0x150ec1200600 device:0x150ecfff5200 size:432 presentcount:0+1 line:316 name:nhtoj(:,:)
+host:0x150ec1200800 device:0x150ecfff5600 size:3888 presentcount:0+1 line:318 name:ijtoh(:,:,:)
+host:0x150ec1203800 device:0x150ecfff6c00 size:7776 presentcount:0+1 line:339 name:dvan(:,:,:)
+host:0x150ec1207400 device:0x150eb99e6000 size:66936 presentcount:0+1 line:88 name:igk_k(1:npwx,1:nks)
+host:0x150ec1400000 device:0x150ec1a00000 size:4499712 presentcount:0+1 line:320 name:deeq(:,:,:,:)
+host:0x150ec2000000 device:0x150ec2600000 size:4499712 presentcount:0+1 line:326 name:qq_at(:,:,:)
+host:0x150ed85176c0 device:0x150eba600000 size:9088368 presentcount:0+1 line:102 name:g(1:3,1:ngm)
+host:0x7ffcf5b5e0b0 device:0x150ecfffe200 size:224 presentcount:1+0 line:313 name:descriptor
+allocated block device:0x14fb60000000 size:3088351232 thread:8
+allocated block device:0x14fcd4000000 size:3088351232 thread:8
+allocated block device:0x14fe48000000 size:3088351232 thread:8
+allocated block device:0x14ff02000000 size:3088351232 thread:8
+allocated block device:0x14ffbc000000 size:3088351232 thread:8
+allocated block device:0x1502a0000000 size:5260634112 thread:8
+allocated block device:0x150514000000 size:6979866624 thread:8
+allocated block device:0x1506f4000000 size:209715200 thread:8
+allocated block device:0x150858000000 size:3489933312 thread:8
+allocated block device:0x150a5a000000 size:218121216 thread:8
+allocated block device:0x150a7ec34c00 size:216064 thread:8
+allocated block device:0x150a7ed70400 size:216064 thread:8
+allocated block device:0x150ad0000000 size:5260634112 thread:8
+allocated block device:0x150c09b74a00 size:48128 thread:8
+allocated block device:0x150c09b80600 size:48128 thread:8
+allocated block device:0x150d43a00000 size:5050368 thread:8
+allocated block device:0x150d44000000 size:2413444608 thread:8
+allocated block device:0x150eafc00000 size:3686400 thread:8
+allocated block device:0x150eb8000000 size:16000000 thread:8
+allocated block device:0x150eb9000000 size:8000000 thread:8
+allocated block device:0x150eb9800000 size:512 thread:8
+allocated block device:0x150eb9800200 size:512 thread:8
+allocated block device:0x150eb9800400 size:1024 thread:8
+allocated block device:0x150eb9800800 size:2560 thread:8
+allocated block device:0x150eb9801200 size:2560 thread:8
+allocated block device:0x150eb9801c00 size:2560 thread:8
+allocated block device:0x150eb9802600 size:512 thread:8
+allocated block device:0x150eb9802800 size:2560 thread:8
+allocated block device:0x150eb9803200 size:2560 thread:8
+allocated block device:0x150eb9803c00 size:2560 thread:8
+allocated block device:0x150eb9804600 size:1638400 thread:8
+allocated block device:0x150eb9994600 size:4096 thread:8
+allocated block device:0x150eb9995600 size:4096 thread:8
+allocated block device:0x150eb9996600 size:4096 thread:8
+allocated block device:0x150eb9997600 size:512 thread:8
+allocated block device:0x150eb9997800 size:512 thread:8
+allocated block device:0x150eb9997a00 size:512 thread:8
+allocated block device:0x150eb9997c00 size:4096 thread:8
+allocated block device:0x150eb9998c00 size:4096 thread:8
+allocated block device:0x150eb9999c00 size:4096 thread:8
+allocated block device:0x150eb999ac00 size:512 thread:8
+allocated block device:0x150eb999ae00 size:512 thread:8
+allocated block device:0x150eb999b000 size:512 thread:8
+allocated block device:0x150eb999b200 size:512 thread:8
+allocated block device:0x150eb999b400 size:512 thread:8
+allocated block device:0x150eb999b600 size:8704 thread:8
+allocated block device:0x150eb999d800 size:8704 thread:8
+allocated block device:0x150eb999fa00 size:216064 thread:8
+allocated block device:0x150eb99d4600 size:72192 thread:8
+allocated block device:0x150eb99e6000 size:67072 thread:8
+allocated block device:0x150eba000000 size:4544512 thread:8
+allocated block device:0x150eba600000 size:9088512 thread:8
+allocated block device:0x150ebb000000 size:3029504 thread:8
+allocated block device:0x150ebb400000 size:22118400 thread:8
+allocated block device:0x150ebca00000 size:1515008 thread:8
+allocated block device:0x150ebcb71e00 size:535552 thread:8
+allocated block device:0x150ec0c00000 size:1515008 thread:8
+allocated block device:0x150ec0d71e00 size:535552 thread:8
+allocated block device:0x150ec0e00000 size:1515008 thread:8
+allocated block device:0x150ec0f71e00 size:535552 thread:8
+allocated block device:0x150ec1000000 size:1515008 thread:8
+allocated block device:0x150ec11a6a00 size:48128 thread:8
+allocated block device:0x150ec11b2600 size:102400 thread:8
+allocated block device:0x150ec11cb600 size:102400 thread:8
+allocated block device:0x150ec1a00000 size:4499968 thread:8
+allocated block device:0x150ec2600000 size:4499968 thread:8
+allocated block device:0x150ec2c00000 size:2375168 thread:8
+allocated block device:0x150ec3000000 size:53358080 thread:8
+allocated block device:0x150ec6400000 size:53358080 thread:8
+allocated block device:0x150ec9800000 size:11138560 thread:8
+allocated block device:0x150ecfe00000 size:1515008 thread:8
+allocated block device:0x150ecff71e00 size:535552 thread:8
+allocated block device:0x150ecfff4a00 size:512 thread:8
+allocated block device:0x150ecfff4c00 size:512 thread:8
+allocated block device:0x150ecfff4e00 size:512 thread:8
+allocated block device:0x150ecfff5000 size:512 thread:8
+allocated block device:0x150ecfff5200 size:512 thread:8
+allocated block device:0x150ecfff5400 size:512 thread:8
+allocated block device:0x150ecfff5600 size:4096 thread:8
+allocated block device:0x150ecfff6600 size:512 thread:8
+allocated block device:0x150ecfff6800 size:512 thread:8
+allocated block device:0x150ecfff6a00 size:512 thread:8
+allocated block device:0x150ecfff6c00 size:8192 thread:8
+allocated block device:0x150ecfff8c00 size:512 thread:8
+allocated block device:0x150ecfff8e00 size:512 thread:8
+allocated block device:0x150ecfffb000 size:512 thread:8
+allocated block device:0x150ecfffb200 size:512 thread:8
+allocated block device:0x150ecfffb400 size:512 thread:8
+allocated block device:0x150ecfffb600 size:512 thread:8
+allocated block device:0x150ecfffb800 size:512 thread:8
+allocated block device:0x150ecfffba00 size:512 thread:8
+allocated block device:0x150ecfffbc00 size:512 thread:8
+allocated block device:0x150ecfffbe00 size:512 thread:8
+allocated block device:0x150ecfffc000 size:512 thread:8
+allocated block device:0x150ecfffc200 size:512 thread:8
+allocated block device:0x150ecfffd800 size:512 thread:8
+allocated block device:0x150ecfffda00 size:512 thread:8
+allocated block device:0x150ecfffdc00 size:512 thread:8
+allocated block device:0x150ecfffe200 size:512 thread:8
+allocated block device:0x150ecfffe400 size:512 thread:8
+allocated block device:0x150ecfffe600 size:512 thread:8
+Accelerator Fatal Error: call to cuMemAlloc returned error 2 (CUDA_ERROR_OUT_OF_MEMORY): Out of memory
+ File: /home/yeluo/opt/q-e/q-e-repo/PW/src/s_psi_acc.f90
+ Function: s_psi_gamma_acc:191
+ Line: 259
+
+x3103c0s37b1n0.hsn.cm.polaris.alcf.anl.gov: rank 0 exited with code 1
+x3103c0s37b1n0.hsn.cm.polaris.alcf.anl.gov: rank 2 died from signal 15

@@ -1,0 +1,407 @@
+
+Lmod is automatically replacing "nvidia/25.5" with "gcc-native/14".
+
+
+Lmod is automatically replacing "PrgEnv-nvidia/8.6.0" with "PrgEnv-gnu/8.6.0".
+
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) cray-mpich/9.0.1
+
+
+The following have been reloaded with a version change:
+  1) gcc-native/14 => gcc-native/13.2
+
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ CUBLAS version:       120900
+ gpuMaxThreadsPerBlock:         1024
+ gpuDevMaxBlockDimX:         1024
+ gpuDevMaxBlockDimY:         1024
+ gpuDevMaxBlockDimZ:           64
+ gpuDevMaxGridDimX :   2147483647
+ gpuDevMaxGridDimY :        65535
+ gpuDevMaxGridDimZ :        65535
+ gpuSMcount:          108
+=>> PBS: job killed: walltime 988 exceeded limit 900
+
+Lmod is automatically replacing "nvidia/25.5" with "gcc-native/14".
+
+
+Lmod is automatically replacing "PrgEnv-nvidia/8.6.0" with "PrgEnv-gnu/8.6.0".
+
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) cray-mpich/9.0.1
+
+
+The following have been reloaded with a version change:
+  1) gcc-native/14 => gcc-native/13.2
+
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ CUBLAS version:       120900
+ gpuMaxThreadsPerBlock:         1024
+ gpuDevMaxBlockDimX:         1024
+ gpuDevMaxBlockDimY:         1024
+ gpuDevMaxBlockDimZ:           64
+ gpuDevMaxGridDimX :   2147483647
+ gpuDevMaxGridDimY :        65535
+ gpuDevMaxGridDimZ :        65535
+ gpuSMcount:          108
+terminate called after throwing an instance of 'dealii::StandardExceptions::ExcMessage'
+  what():  
+--------------------------------------------------------
+An error occurred in line <149> of file </home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/src/include/dftfe/MatrixFreeFactory.h> in function
+    std::unique_ptr<dftfe::MatrixFreeBase<T> > dftfe::mfbase_detail::dispatchNQ(uint32_t, bool, Args&& ...) [with T = double; bool isComplex = false; dftfe::operatorList opID = dftfe::Helmholtz; Args = {const int&, const dealii::MatrixFree<3, double, dealii::VectorizedArray<double, 1> >*&, const dealii::AffineConstraints<double>*&, std::shared_ptr<dftfe::linearAlgebra::BLASWrapper<dftfe::utils::MemorySpace::DEVICE> >&, long unsigned int&, long unsigned int&, const unsigned int&}; uint32_t = unsigned int]
+Additional information: 
+    Matrix-Free createMatrixFreeObject: nDofsPerDim not instantiated. Add
+    the FE order to MatrixFree.inst.def.
+
+Stacktrace:
+-----------
+#0  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/libdftfeReal.so: 
+#1  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/libdftfeReal.so: dftfe::kerkerSolverProblemDevice<12ul>::init(std::shared_ptr<dftfe::basis::FEBasisOperations<double, double, (dftfe::utils::MemorySpace)0> >&, dealii::AffineConstraints<double>&, dealii::LinearAlgebra::distributed::Vector<double, dealii::MemorySpace::Host>&, double, unsigned long, unsigned long, unsigned long, std::shared_ptr<dftfe::linearAlgebra::BLASWrapper<(dftfe::utils::MemorySpace)2> >)
+#2  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/libdftfeReal.so: std::__detail::__variant::__gen_vtable_impl<std::__detail::__variant::_Multi_array<std::__detail::__variant::__deduce_visit_result<void> (*)(dftfe::kerkerSolverProblemDeviceWrapperClass::init<std::shared_ptr<dftfe::basis::FEBasisOperations<double, double, (dftfe::utils::MemorySpace)0> >&, dealii::AffineConstraints<double>&, dealii::LinearAlgebra::distributed::Vector<double, dealii::MemorySpace::Host>&, double, unsigned long&, unsigned long&, unsigned long&, std::shared_ptr<dftfe::linearAlgebra::BLASWrapper<(dftfe::utils::MemorySpace)2> >&>(std::shared_ptr<dftfe::basis::FEBasisOperations<double, double, (dftfe::utils::MemorySpace)0> >&, dealii::AffineConstraints<double>&, dealii::LinearAlgebra::distributed::Vector<double, dealii::MemorySpace::Host>&, double&&, unsigned long&, unsigned long&, unsigned long&, std::shared_ptr<dftfe::linearAlgebra::BLASWrapper<(dftfe::utils::MemorySpace)2> >&)::{lambda(auto:1&)#1}&&, std::variant<std::shared_ptr<dftfe::kerkerSolverProblemDevice<1ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<2ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<3ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<4ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<5ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<6ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<7ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<8ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<9ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<10ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<11ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<12ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<13ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<14ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<15ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<16ul> > >&)>, std::integer_sequence<unsigned long, 11ul> >::__visit_invoke(dftfe::kerkerSolverProblemDeviceWrapperClass::init<std::shared_ptr<dftfe::basis::FEBasisOperations<double, double, (dftfe::utils::MemorySpace)0> >&, dealii::AffineConstraints<double>&, dealii::LinearAlgebra::distributed::Vector<double, dealii::MemorySpace::Host>&, double, unsigned long&, unsigned long&, unsigned long&, std::shared_ptr<dftfe::linearAlgebra::BLASWrapper<(dftfe::utils::MemorySpace)2> >&>(std::shared_ptr<dftfe::basis::FEBasisOperations<double, double, (dftfe::utils::MemorySpace)0> >&, dealii::AffineConstraints<double>&, dealii::LinearAlgebra::distributed::Vector<double, dealii::MemorySpace::Host>&, double&&, unsigned long&, unsigned long&, unsigned long&, std::shared_ptr<dftfe::linearAlgebra::BLASWrapper<(dftfe::utils::MemorySpace)2> >&)::{lambda(auto:1&)#1}&&, std::variant<std::shared_ptr<dftfe::kerkerSolverProblemDevice<1ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<2ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<3ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<4ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<5ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<6ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<7ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<8ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<9ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<10ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<11ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<12ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<13ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<14ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<15ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<16ul> > >&)
+#3  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/libdftfeReal.so: dftfe::dftClass<(dftfe::utils::MemorySpace)2>::solve(bool, bool, bool)
+#4  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/libdftfeReal.so: dftfe::dftClass<(dftfe::utils::MemorySpace)2>::run()
+#5  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/dftfe: ) [0x408132]
+#6  /lib64/libc.so.6: 
+#7  /lib64/libc.so.6: __libc_start_main
+#8  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/dftfe: ) [0x4083d1]
+--------------------------------------------------------
+
+terminate called after throwing an instance of 'dealii::StandardExceptions::ExcMessage'
+  what():  
+--------------------------------------------------------
+An error occurred in line <149> of file </home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/src/include/dftfe/MatrixFreeFactory.h> in function
+    std::unique_ptr<dftfe::MatrixFreeBase<T> > dftfe::mfbase_detail::dispatchNQ(uint32_t, bool, Args&& ...) [with T = double; bool isComplex = false; dftfe::operatorList opID = dftfe::Helmholtz; Args = {const int&, const dealii::MatrixFree<3, double, dealii::VectorizedArray<double, 1> >*&, const dealii::AffineConstraints<double>*&, std::shared_ptr<dftfe::linearAlgebra::BLASWrapper<dftfe::utils::MemorySpace::DEVICE> >&, long unsigned int&, long unsigned int&, const unsigned int&}; uint32_t = unsigned int]
+Additional information: 
+    Matrix-Free createMatrixFreeObject: nDofsPerDim not instantiated. Add
+    the FE order to MatrixFree.inst.def.
+
+Stacktrace:
+-----------
+#0  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/libdftfeReal.so: 
+#1  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/libdftfeReal.so: dftfe::kerkerSolverProblemDevice<12ul>::init(std::shared_ptr<dftfe::basis::FEBasisOperations<double, double, (dftfe::utils::MemorySpace)0> >&, dealii::AffineConstraints<double>&, dealii::LinearAlgebra::distributed::Vector<double, dealii::MemorySpace::Host>&, double, unsigned long, unsigned long, unsigned long, std::shared_ptr<dftfe::linearAlgebra::BLASWrapper<(dftfe::utils::MemorySpace)2> >)
+#2  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/libdftfeReal.so: std::__detail::__variant::__gen_vtable_impl<std::__detail::__variant::_Multi_array<std::__detail::__variant::__deduce_visit_result<void> (*)(dftfe::kerkerSolverProblemDeviceWrapperClass::init<std::shared_ptr<dftfe::basis::FEBasisOperations<double, double, (dftfe::utils::MemorySpace)0> >&, dealii::AffineConstraints<double>&, dealii::LinearAlgebra::distributed::Vector<double, dealii::MemorySpace::Host>&, double, unsigned long&, unsigned long&, unsigned long&, std::shared_ptr<dftfe::linearAlgebra::BLASWrapper<(dftfe::utils::MemorySpace)2> >&>(std::shared_ptr<dftfe::basis::FEBasisOperations<double, double, (dftfe::utils::MemorySpace)0> >&, dealii::AffineConstraints<double>&, dealii::LinearAlgebra::distributed::Vector<double, dealii::MemorySpace::Host>&, double&&, unsigned long&, unsigned long&, unsigned long&, std::shared_ptr<dftfe::linearAlgebra::BLASWrapper<(dftfe::utils::MemorySpace)2> >&)::{lambda(auto:1&)#1}&&, std::variant<std::shared_ptr<dftfe::kerkerSolverProblemDevice<1ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<2ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<3ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<4ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<5ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<6ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<7ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<8ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<9ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<10ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<11ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<12ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<13ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<14ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<15ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<16ul> > >&)>, std::integer_sequence<unsigned long, 11ul> >::__visit_invoke(dftfe::kerkerSolverProblemDeviceWrapperClass::init<std::shared_ptr<dftfe::basis::FEBasisOperations<double, double, (dftfe::utils::MemorySpace)0> >&, dealii::AffineConstraints<double>&, dealii::LinearAlgebra::distributed::Vector<double, dealii::MemorySpace::Host>&, double, unsigned long&, unsigned long&, unsigned long&, std::shared_ptr<dftfe::linearAlgebra::BLASWrapper<(dftfe::utils::MemorySpace)2> >&>(std::shared_ptr<dftfe::basis::FEBasisOperations<double, double, (dftfe::utils::MemorySpace)0> >&, dealii::AffineConstraints<double>&, dealii::LinearAlgebra::distributed::Vector<double, dealii::MemorySpace::Host>&, double&&, unsigned long&, unsigned long&, unsigned long&, std::shared_ptr<dftfe::linearAlgebra::BLASWrapper<(dftfe::utils::MemorySpace)2> >&)::{lambda(auto:1&)#1}&&, std::variant<std::shared_ptr<dftfe::kerkerSolverProblemDevice<1ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<2ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<3ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<4ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<5ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<6ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<7ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<8ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<9ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<10ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<11ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<12ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<13ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<14ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<15ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<16ul> > >&)
+#3  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/libdftfeReal.so: dftfe::dftClass<(dftfe::utils::MemorySpace)2>::solve(bool, bool, bool)
+#4  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/libdftfeReal.so: dftfe::dftClass<(dftfe::utils::MemorySpace)2>::run()
+#5  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/dftfe: ) [0x408132]
+#6  /lib64/libc.so.6: 
+#7  /lib64/libc.so.6: __libc_start_main
+#8  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/dftfe: ) [0x4083d1]
+--------------------------------------------------------
+
+terminate called after throwing an instance of 'dealii::StandardExceptions::ExcMessage'
+  what():  
+--------------------------------------------------------
+An error occurred in line <149> of file </home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/src/include/dftfe/MatrixFreeFactory.h> in function
+    std::unique_ptr<dftfe::MatrixFreeBase<T> > dftfe::mfbase_detail::dispatchNQ(uint32_t, bool, Args&& ...) [with T = double; bool isComplex = false; dftfe::operatorList opID = dftfe::Helmholtz; Args = {const int&, const dealii::MatrixFree<3, double, dealii::VectorizedArray<double, 1> >*&, const dealii::AffineConstraints<double>*&, std::shared_ptr<dftfe::linearAlgebra::BLASWrapper<dftfe::utils::MemorySpace::DEVICE> >&, long unsigned int&, long unsigned int&, const unsigned int&}; uint32_t = unsigned int]
+Additional information: 
+    Matrix-Free createMatrixFreeObject: nDofsPerDim not instantiated. Add
+    the FE order to MatrixFree.inst.def.
+
+Stacktrace:
+-----------
+#0  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/libdftfeReal.so: 
+#1  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/libdftfeReal.so: dftfe::kerkerSolverProblemDevice<12ul>::init(std::shared_ptr<dftfe::basis::FEBasisOperations<double, double, (dftfe::utils::MemorySpace)0> >&, dealii::AffineConstraints<double>&, dealii::LinearAlgebra::distributed::Vector<double, dealii::MemorySpace::Host>&, double, unsigned long, unsigned long, unsigned long, std::shared_ptr<dftfe::linearAlgebra::BLASWrapper<(dftfe::utils::MemorySpace)2> >)
+#2  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/libdftfeReal.so: std::__detail::__variant::__gen_vtable_impl<std::__detail::__variant::_Multi_array<std::__detail::__variant::__deduce_visit_result<void> (*)(dftfe::kerkerSolverProblemDeviceWrapperClass::init<std::shared_ptr<dftfe::basis::FEBasisOperations<double, double, (dftfe::utils::MemorySpace)0> >&, dealii::AffineConstraints<double>&, dealii::LinearAlgebra::distributed::Vector<double, dealii::MemorySpace::Host>&, double, unsigned long&, unsigned long&, unsigned long&, std::shared_ptr<dftfe::linearAlgebra::BLASWrapper<(dftfe::utils::MemorySpace)2> >&>(std::shared_ptr<dftfe::basis::FEBasisOperations<double, double, (dftfe::utils::MemorySpace)0> >&, dealii::AffineConstraints<double>&, dealii::LinearAlgebra::distributed::Vector<double, dealii::MemorySpace::Host>&, double&&, unsigned long&, unsigned long&, unsigned long&, std::shared_ptr<dftfe::linearAlgebra::BLASWrapper<(dftfe::utils::MemorySpace)2> >&)::{lambda(auto:1&)#1}&&, std::variant<std::shared_ptr<dftfe::kerkerSolverProblemDevice<1ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<2ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<3ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<4ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<5ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<6ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<7ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<8ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<9ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<10ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<11ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<12ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<13ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<14ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<15ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<16ul> > >&)>, std::integer_sequence<unsigned long, 11ul> >::__visit_invoke(dftfe::kerkerSolverProblemDeviceWrapperClass::init<std::shared_ptr<dftfe::basis::FEBasisOperations<double, double, (dftfe::utils::MemorySpace)0> >&, dealii::AffineConstraints<double>&, dealii::LinearAlgebra::distributed::Vector<double, dealii::MemorySpace::Host>&, double, unsigned long&, unsigned long&, unsigned long&, std::shared_ptr<dftfe::linearAlgebra::BLASWrapper<(dftfe::utils::MemorySpace)2> >&>(std::shared_ptr<dftfe::basis::FEBasisOperations<double, double, (dftfe::utils::MemorySpace)0> >&, dealii::AffineConstraints<double>&, dealii::LinearAlgebra::distributed::Vector<double, dealii::MemorySpace::Host>&, double&&, unsigned long&, unsigned long&, unsigned long&, std::shared_ptr<dftfe::linearAlgebra::BLASWrapper<(dftfe::utils::MemorySpace)2> >&)::{lambda(auto:1&)#1}&&, std::variant<std::shared_ptr<dftfe::kerkerSolverProblemDevice<1ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<2ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<3ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<4ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<5ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<6ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<7ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<8ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<9ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<10ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<11ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<12ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<13ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<14ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<15ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<16ul> > >&)
+#3  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/libdftfeReal.so: dftfe::dftClass<(dftfe::utils::MemorySpace)2>::solve(bool, bool, bool)
+#4  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/libdftfeReal.so: dftfe::dftClass<(dftfe::utils::MemorySpace)2>::run()
+#5  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/dftfe: ) [0x408132]
+#6  /lib64/libc.so.6: 
+#7  /lib64/libc.so.6: __libc_start_main
+#8  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/dftfe: ) [0x4083d1]
+--------------------------------------------------------
+
+terminate called after throwing an instance of 'dealii::StandardExceptions::ExcMessage'
+  what():  
+--------------------------------------------------------
+An error occurred in line <149> of file </home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/src/include/dftfe/MatrixFreeFactory.h> in function
+    std::unique_ptr<dftfe::MatrixFreeBase<T> > dftfe::mfbase_detail::dispatchNQ(uint32_t, bool, Args&& ...) [with T = double; bool isComplex = false; dftfe::operatorList opID = dftfe::Helmholtz; Args = {const int&, const dealii::MatrixFree<3, double, dealii::VectorizedArray<double, 1> >*&, const dealii::AffineConstraints<double>*&, std::shared_ptr<dftfe::linearAlgebra::BLASWrapper<dftfe::utils::MemorySpace::DEVICE> >&, long unsigned int&, long unsigned int&, const unsigned int&}; uint32_t = unsigned int]
+Additional information: 
+    Matrix-Free createMatrixFreeObject: nDofsPerDim not instantiated. Add
+    the FE order to MatrixFree.inst.def.
+
+Stacktrace:
+-----------
+#0  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/libdftfeReal.so: 
+#1  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/libdftfeReal.so: dftfe::kerkerSolverProblemDevice<12ul>::init(std::shared_ptr<dftfe::basis::FEBasisOperations<double, double, (dftfe::utils::MemorySpace)0> >&, dealii::AffineConstraints<double>&, dealii::LinearAlgebra::distributed::Vector<double, dealii::MemorySpace::Host>&, double, unsigned long, unsigned long, unsigned long, std::shared_ptr<dftfe::linearAlgebra::BLASWrapper<(dftfe::utils::MemorySpace)2> >)
+#2  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/libdftfeReal.so: std::__detail::__variant::__gen_vtable_impl<std::__detail::__variant::_Multi_array<std::__detail::__variant::__deduce_visit_result<void> (*)(dftfe::kerkerSolverProblemDeviceWrapperClass::init<std::shared_ptr<dftfe::basis::FEBasisOperations<double, double, (dftfe::utils::MemorySpace)0> >&, dealii::AffineConstraints<double>&, dealii::LinearAlgebra::distributed::Vector<double, dealii::MemorySpace::Host>&, double, unsigned long&, unsigned long&, unsigned long&, std::shared_ptr<dftfe::linearAlgebra::BLASWrapper<(dftfe::utils::MemorySpace)2> >&>(std::shared_ptr<dftfe::basis::FEBasisOperations<double, double, (dftfe::utils::MemorySpace)0> >&, dealii::AffineConstraints<double>&, dealii::LinearAlgebra::distributed::Vector<double, dealii::MemorySpace::Host>&, double&&, unsigned long&, unsigned long&, unsigned long&, std::shared_ptr<dftfe::linearAlgebra::BLASWrapper<(dftfe::utils::MemorySpace)2> >&)::{lambda(auto:1&)#1}&&, std::variant<std::shared_ptr<dftfe::kerkerSolverProblemDevice<1ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<2ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<3ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<4ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<5ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<6ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<7ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<8ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<9ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<10ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<11ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<12ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<13ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<14ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<15ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<16ul> > >&)>, std::integer_sequence<unsigned long, 11ul> >::__visit_invoke(dftfe::kerkerSolverProblemDeviceWrapperClass::init<std::shared_ptr<dftfe::basis::FEBasisOperations<double, double, (dftfe::utils::MemorySpace)0> >&, dealii::AffineConstraints<double>&, dealii::LinearAlgebra::distributed::Vector<double, dealii::MemorySpace::Host>&, double, unsigned long&, unsigned long&, unsigned long&, std::shared_ptr<dftfe::linearAlgebra::BLASWrapper<(dftfe::utils::MemorySpace)2> >&>(std::shared_ptr<dftfe::basis::FEBasisOperations<double, double, (dftfe::utils::MemorySpace)0> >&, dealii::AffineConstraints<double>&, dealii::LinearAlgebra::distributed::Vector<double, dealii::MemorySpace::Host>&, double&&, unsigned long&, unsigned long&, unsigned long&, std::shared_ptr<dftfe::linearAlgebra::BLASWrapper<(dftfe::utils::MemorySpace)2> >&)::{lambda(auto:1&)#1}&&, std::variant<std::shared_ptr<dftfe::kerkerSolverProblemDevice<1ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<2ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<3ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<4ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<5ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<6ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<7ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<8ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<9ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<10ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<11ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<12ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<13ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<14ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<15ul> >, std::shared_ptr<dftfe::kerkerSolverProblemDevice<16ul> > >&)
+#3  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/libdftfeReal.so: dftfe::dftClass<(dftfe::utils::MemorySpace)2>::solve(bool, bool, bool)
+#4  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/libdftfeReal.so: dftfe::dftClass<(dftfe::utils::MemorySpace)2>::run()
+#5  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/dftfe: ) [0x408132]
+#6  /lib64/libc.so.6: 
+#7  /lib64/libc.so.6: __libc_start_main
+#8  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/dftfe: ) [0x4083d1]
+--------------------------------------------------------
+
+x3205c0s13b0n0.hsn.cm.polaris.alcf.anl.gov: rank 1 died from signal 6
+
+Lmod is automatically replacing "nvidia/25.5" with "gcc-native/14".
+
+
+Lmod is automatically replacing "PrgEnv-nvidia/8.6.0" with "PrgEnv-gnu/8.6.0".
+
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) cray-mpich/9.0.1
+
+
+The following have been reloaded with a version change:
+  1) gcc-native/14 => gcc-native/13.2
+
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ CUBLAS version:       120900
+ gpuMaxThreadsPerBlock:         1024
+ gpuDevMaxBlockDimX:         1024
+ gpuDevMaxBlockDimY:         1024
+ gpuDevMaxBlockDimZ:           64
+ gpuDevMaxGridDimX :   2147483647
+ gpuDevMaxGridDimY :        65535
+ gpuDevMaxGridDimZ :        65535
+ gpuSMcount:          108
+
+Lmod is automatically replacing "nvidia/25.5" with "gcc-native/14".
+
+
+Lmod is automatically replacing "PrgEnv-nvidia/8.6.0" with "PrgEnv-gnu/8.6.0".
+
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) cray-mpich/9.0.1
+
+
+The following have been reloaded with a version change:
+  1) gcc-native/14 => gcc-native/13.2
+
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ CUBLAS version:       120900
+ gpuMaxThreadsPerBlock:         1024
+ gpuDevMaxBlockDimX:         1024
+ gpuDevMaxBlockDimY:         1024
+ gpuDevMaxBlockDimZ:           64
+ gpuDevMaxGridDimX :   2147483647
+ gpuDevMaxGridDimY :        65535
+ gpuDevMaxGridDimZ :        65535
+ gpuSMcount:          108
+
+Lmod is automatically replacing "nvidia/25.5" with "gcc-native/14".
+
+
+Lmod is automatically replacing "PrgEnv-nvidia/8.6.0" with "PrgEnv-gnu/8.6.0".
+
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) cray-mpich/9.0.1
+
+
+The following have been reloaded with a version change:
+  1) gcc-native/14 => gcc-native/13.2
+
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ CUBLAS version:       120900
+ gpuMaxThreadsPerBlock:         1024
+ gpuDevMaxBlockDimX:         1024
+ gpuDevMaxBlockDimY:         1024
+ gpuDevMaxBlockDimZ:           64
+ gpuDevMaxGridDimX :   2147483647
+ gpuDevMaxGridDimY :        65535
+ gpuDevMaxGridDimZ :        65535
+ gpuSMcount:          108
+
+Lmod is automatically replacing "nvidia/25.5" with "gcc-native/14".
+
+
+Lmod is automatically replacing "PrgEnv-nvidia/8.6.0" with "PrgEnv-gnu/8.6.0".
+
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) cray-mpich/9.0.1
+
+
+The following have been reloaded with a version change:
+  1) gcc-native/14 => gcc-native/13.2
+
+
+Lmod is automatically replacing "nvidia/25.5" with "gcc-native/14".
+
+
+Lmod is automatically replacing "PrgEnv-nvidia/8.6.0" with "PrgEnv-gnu/8.6.0".
+
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) cray-mpich/9.0.1
+
+
+The following have been reloaded with a version change:
+  1) gcc-native/14 => gcc-native/13.2
+
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ CUBLAS version:       120900
+ gpuMaxThreadsPerBlock:         1024
+ gpuDevMaxBlockDimX:         1024
+ gpuDevMaxBlockDimY:         1024
+ gpuDevMaxBlockDimZ:           64
+ gpuDevMaxGridDimX :   2147483647
+ gpuDevMaxGridDimY :        65535
+ gpuDevMaxGridDimZ :        65535
+ gpuSMcount:          108
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ CUBLAS version:       120900
+ gpuMaxThreadsPerBlock:         1024
+ gpuDevMaxBlockDimX:         1024
+ gpuDevMaxBlockDimY:         1024
+ gpuDevMaxBlockDimZ:           64
+ gpuDevMaxGridDimX :   2147483647
+ gpuDevMaxGridDimY :        65535
+ gpuDevMaxGridDimZ :        65535
+ gpuSMcount:          108

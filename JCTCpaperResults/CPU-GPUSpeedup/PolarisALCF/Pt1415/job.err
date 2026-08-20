@@ -1,0 +1,1611 @@
+
+Lmod is automatically replacing "nvidia/25.5" with "gcc-native/14".
+
+
+Lmod is automatically replacing "PrgEnv-nvidia/8.6.0" with "PrgEnv-gnu/8.6.0".
+
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) cray-mpich/9.0.1
+
+
+The following have been reloaded with a version change:
+  1) gcc-native/14 => gcc-native/13.2
+
+terminate called after throwing an instance of 'dealii::StandardExceptions::ExcFileNotOpen'
+terminate called after throwing an instance of 'dealii::StandardExceptions::ExcFileNotOpen'
+terminate called after throwing an instance of 'dealii::StandardExceptions::ExcFileNotOpen'
+terminate called after throwing an instance of 'dealii::StandardExceptions::ExcFileNotOpen'
+terminate called after throwing an instance of 'dealii::StandardExceptions::ExcFileNotOpen'
+terminate called after throwing an instance of 'dealii::StandardExceptions::ExcFileNotOpen'
+terminate called after throwing an instance of 'dealii::StandardExceptions::ExcFileNotOpen'
+terminate called after throwing an instance of 'dealii::StandardExceptions::ExcFileNotOpen'
+terminate called after throwing an instance of 'dealii::StandardExceptions::ExcFileNotOpen'
+terminate called after throwing an instance of 'dealii::StandardExceptions::ExcFileNotOpen'
+terminate called after throwing an instance of 'dealii::StandardExceptions::ExcFileNotOpen'
+terminate called after throwing an instance of 'dealii::StandardExceptions::ExcFileNotOpen'
+terminate called after throwing an instance of 'dealii::StandardExceptions::ExcFileNotOpen'
+terminate called after throwing an instance of 'dealii::StandardExceptions::ExcFileNotOpen'
+terminate called after throwing an instance of 'dealii::StandardExceptions::ExcFileNotOpen'
+terminate called after throwing an instance of 'dealii::StandardExceptions::ExcFileNotOpen'
+terminate called after throwing an instance of 'dealii::StandardExceptions::ExcFileNotOpen'
+terminate called after throwing an instance of 'dealii::StandardExceptions::ExcFileNotOpen'
+terminate called after throwing an instance of 'dealii::StandardExceptions::ExcFileNotOpen'
+terminate called after throwing an instance of 'dealii::StandardExceptions::ExcFileNotOpen'
+  what():  
+--------------------------------------------------------
+An error occurred in line <572> of file </home/phanim/softwares/DFTFEinstallationCuda12.9/dependencies/src/dealii-9.6.2/source/base/parameter_handler.cc> in function
+    virtual void dealii::ParameterHandler::parse_input(const std::string&, const std::string&, bool, bool)
+The violated condition was: 
+    is
+Additional information: 
+    Could not open file FinalFP64.prm.
+    
+    If this happens during an operation that tries to read data: you may
+    be trying to read from a file that doesn't exist or that is not
+    readable given its file permissions.
+    
+    If this happens during an operation that tries to write data: you may
+    be trying to write to a file to which file or directory permissions do
+    not allow you to write. A typical example is where you specify an
+    output file in a directory that does not exist.
+
+Stacktrace:
+-----------
+#0  /home/phanim/softwares/DFTFEinstallationCuda12.9/dependencies/lib/libdeal_II.so.9.6.2: dealii::ParameterHandler::parse_input(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool, bool)
+#1  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/libdftfeReal.so: dftfe::runParameters::parse_parameters(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+#2  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/dftfe: ) [0x4074f0]
+#3  /lib64/libc.so.6: 
+#4  /lib64/libc.so.6: __libc_start_main
+#5  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/dftfe: ) [0x4083d1]
+--------------------------------------------------------
+
+  what():  
+--------------------------------------------------------
+An error occurred in line <572> of file </home/phanim/softwares/DFTFEinstallationCuda12.9/dependencies/src/dealii-9.6.2/source/base/parameter_handler.cc> in function
+    virtual void dealii::ParameterHandler::parse_input(const std::string&, const std::string&, bool, bool)
+The violated condition was: 
+    is
+Additional information: 
+    Could not open file FinalFP64.prm.
+    
+    If this happens during an operation that tries to read data: you may
+    be trying to read from a file that doesn't exist or that is not
+    readable given its file permissions.
+    
+    If this happens during an operation that tries to write data: you may
+    be trying to write to a file to which file or directory permissions do
+    not allow you to write. A typical example is where you specify an
+    output file in a directory that does not exist.
+
+Stacktrace:
+-----------
+#0  /home/phanim/softwares/DFTFEinstallationCuda12.9/dependencies/lib/libdeal_II.so.9.6.2: dealii::ParameterHandler::parse_input(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool, bool)
+#1  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/libdftfeReal.so: dftfe::runParameters::parse_parameters(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+#2  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/dftfe: ) [0x4074f0]
+#3  /lib64/libc.so.6: 
+#4  /lib64/libc.so.6: __libc_start_main
+#5  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/dftfe: ) [0x4083d1]
+--------------------------------------------------------
+
+  what():  
+--------------------------------------------------------
+An error occurred in line <572> of file </home/phanim/softwares/DFTFEinstallationCuda12.9/dependencies/src/dealii-9.6.2/source/base/parameter_handler.cc> in function
+    virtual void dealii::ParameterHandler::parse_input(const std::string&, const std::string&, bool, bool)
+The violated condition was: 
+    is
+Additional information: 
+    Could not open file FinalFP64.prm.
+    
+    If this happens during an operation that tries to read data: you may
+    be trying to read from a file that doesn't exist or that is not
+    readable given its file permissions.
+    
+    If this happens during an operation that tries to write data: you may
+    be trying to write to a file to which file or directory permissions do
+    not allow you to write. A typical example is where you specify an
+    output file in a directory that does not exist.
+
+Stacktrace:
+-----------
+#0  /home/phanim/softwares/DFTFEinstallationCuda12.9/dependencies/lib/libdeal_II.so.9.6.2: dealii::ParameterHandler::parse_input(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool, bool)
+#1  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/libdftfeReal.so: dftfe::runParameters::parse_parameters(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+#2  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/dftfe: ) [0x4074f0]
+#3  /lib64/libc.so.6: 
+#4  /lib64/libc.so.6: __libc_start_main
+#5  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/dftfe: ) [0x4083d1]
+--------------------------------------------------------
+
+  what():  
+--------------------------------------------------------
+An error occurred in line <572> of file </home/phanim/softwares/DFTFEinstallationCuda12.9/dependencies/src/dealii-9.6.2/source/base/parameter_handler.cc> in function
+    virtual void dealii::ParameterHandler::parse_input(const std::string&, const std::string&, bool, bool)
+The violated condition was: 
+    is
+Additional information: 
+    Could not open file FinalFP64.prm.
+    
+    If this happens during an operation that tries to read data: you may
+    be trying to read from a file that doesn't exist or that is not
+    readable given its file permissions.
+    
+    If this happens during an operation that tries to write data: you may
+    be trying to write to a file to which file or directory permissions do
+    not allow you to write. A typical example is where you specify an
+    output file in a directory that does not exist.
+
+Stacktrace:
+-----------
+#0  /home/phanim/softwares/DFTFEinstallationCuda12.9/dependencies/lib/libdeal_II.so.9.6.2: dealii::ParameterHandler::parse_input(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool, bool)
+#1  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/libdftfeReal.so: dftfe::runParameters::parse_parameters(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+#2  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/dftfe: ) [0x4074f0]
+#3  /lib64/libc.so.6: 
+#4  /lib64/libc.so.6: __libc_start_main
+#5  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/dftfe: ) [0x4083d1]
+--------------------------------------------------------
+
+terminate called after throwing an instance of 'dealii::StandardExceptions::ExcFileNotOpen'
+terminate called after throwing an instance of 'dealii::StandardExceptions::ExcFileNotOpen'
+terminate called after throwing an instance of 'dealii::StandardExceptions::ExcFileNotOpen'
+terminate called after throwing an instance of 'dealii::StandardExceptions::ExcFileNotOpen'
+  what():    what():  
+--------------------------------------------------------
+An error occurred in line <572> of file </home/phanim/softwares/DFTFEinstallationCuda12.9/dependencies/src/dealii-9.6.2/source/base/parameter_handler.cc> in function
+    virtual void dealii::ParameterHandler::parse_input(const std::string&, const std::string&, bool, bool)
+The violated condition was: 
+    is
+Additional information: 
+    Could not open file FinalFP64.prm.
+    
+    If this happens during an operation that tries to read data: you may
+    be trying to read from a file that doesn't exist or that is not
+    readable given its file permissions.
+    
+    If this happens during an operation that tries to write data: you may
+    be trying to write to a file to which file or directory permissions do
+    not allow you to write. A typical example is where you specify an
+    output file in a directory that does not exist.
+
+Stacktrace:
+-----------
+#0  /home/phanim/softwares/DFTFEinstallationCuda12.9/dependencies/lib/libdeal_II.so.9.6.2: dealii::ParameterHandler::parse_input(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool, bool)
+#1  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/libdftfeReal.so: dftfe::runParameters::parse_parameters(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+#2  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/dftfe: ) [0x4074f0]
+#3  /lib64/libc.so.6: 
+#4  /lib64/libc.so.6: __libc_start_main
+#5  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/dftfe: ) [0x4083d1]
+--------------------------------------------------------
+
+  what():  
+--------------------------------------------------------
+An error occurred in line <572> of file </home/phanim/softwares/DFTFEinstallationCuda12.9/dependencies/src/dealii-9.6.2/source/base/parameter_handler.cc> in function
+    virtual void dealii::ParameterHandler::parse_input(const std::string&, const std::string&, bool, bool)
+The violated condition was: 
+    is
+Additional information: 
+    Could not open file FinalFP64.prm.
+    
+    If this happens during an operation that tries to read data: you may
+    be trying to read from a file that doesn't exist or that is not
+    readable given its file permissions.
+    
+    If this happens during an operation that tries to write data: you may
+    be trying to write to a file to which file or directory permissions do
+    not allow you to write. A typical example is where you specify an
+    output file in a directory that does not exist.
+
+Stacktrace:
+-----------
+#0  /home/phanim/softwares/DFTFEinstallationCuda12.9/dependencies/lib/libdeal_II.so.9.6.2: dealii::ParameterHandler::parse_input(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool, bool)
+#1  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/libdftfeReal.so: dftfe::runParameters::parse_parameters(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+#2  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/dftfe: ) [0x4074f0]
+#3  /lib64/libc.so.6: 
+#4  /lib64/libc.so.6: __libc_start_main
+#5  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/dftfe: ) [0x4083d1]
+--------------------------------------------------------
+
+
+--------------------------------------------------------
+An error occurred in line <572> of file </home/phanim/softwares/DFTFEinstallationCuda12.9/dependencies/src/dealii-9.6.2/source/base/parameter_handler.cc> in function
+    virtual void dealii::ParameterHandler::parse_input(const std::string&, const std::string&, bool, bool)
+The violated condition was: 
+    is
+Additional information: 
+    Could not open file FinalFP64.prm.
+    
+    If this happens during an operation that tries to read data: you may
+    be trying to read from a file that doesn't exist or that is not
+    readable given its file permissions.
+    
+    If this happens during an operation that tries to write data: you may
+    be trying to write to a file to which file or directory permissions do
+    not allow you to write. A typical example is where you specify an
+    output file in a directory that does not exist.
+
+Stacktrace:
+-----------
+#0  /home/phanim/softwares/DFTFEinstallationCuda12.9/dependencies/lib/libdeal_II.so.9.6.2: dealii::ParameterHandler::parse_input(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool, bool)
+#1  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/libdftfeReal.so: dftfe::runParameters::parse_parameters(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+#2  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/dftfe: ) [0x4074f0]
+#3  /lib64/libc.so.6: 
+#4  /lib64/libc.so.6: __libc_start_main
+#5  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/dftfe: ) [0x4083d1]
+--------------------------------------------------------
+
+  what():  
+--------------------------------------------------------
+An error occurred in line <572> of file </home/phanim/softwares/DFTFEinstallationCuda12.9/dependencies/src/dealii-9.6.2/source/base/parameter_handler.cc> in function
+    virtual void dealii::ParameterHandler::parse_input(const std::string&, const std::string&, bool, bool)
+The violated condition was: 
+    is
+Additional information: 
+    Could not open file FinalFP64.prm.
+    
+    If this happens during an operation that tries to read data: you may
+    be trying to read from a file that doesn't exist or that is not
+    readable given its file permissions.
+    
+    If this happens during an operation that tries to write data: you may
+    be trying to write to a file to which file or directory permissions do
+    not allow you to write. A typical example is where you specify an
+    output file in a directory that does not exist.
+
+Stacktrace:
+-----------
+#0  /home/phanim/softwares/DFTFEinstallationCuda12.9/dependencies/lib/libdeal_II.so.9.6.2: dealii::ParameterHandler::parse_input(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool, bool)
+#1  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/libdftfeReal.so: dftfe::runParameters::parse_parameters(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+#2  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/dftfe: ) [0x4074f0]
+#3  /lib64/libc.so.6: 
+#4  /lib64/libc.so.6: __libc_start_main
+#5  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/dftfe: ) [0x4083d1]
+--------------------------------------------------------
+
+  what():    what():  
+--------------------------------------------------------
+An error occurred in line <572> of file </home/phanim/softwares/DFTFEinstallationCuda12.9/dependencies/src/dealii-9.6.2/source/base/parameter_handler.cc> in function
+    virtual void dealii::ParameterHandler::parse_input(const std::string&, const std::string&, bool, bool)
+The violated condition was: 
+    is
+Additional information: 
+    Could not open file FinalFP64.prm.
+    
+    If this happens during an operation that tries to read data: you may
+    be trying to read from a file that doesn't exist or that is not
+    readable given its file permissions.
+    
+    If this happens during an operation that tries to write data: you may
+    be trying to write to a file to which file or directory permissions do
+    not allow you to write. A typical example is where you specify an
+    output file in a directory that does not exist.
+
+Stacktrace:
+-----------
+#0  /home/phanim/softwares/DFTFEinstallationCuda12.9/dependencies/lib/libdeal_II.so.9.6.2: dealii::ParameterHandler::parse_input(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool, bool)
+#1  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/libdftfeReal.so: dftfe::runParameters::parse_parameters(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+#2  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/dftfe: ) [0x4074f0]
+#3  /lib64/libc.so.6: 
+#4  /lib64/libc.so.6: __libc_start_main
+#5  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/dftfe: ) [0x4083d1]
+--------------------------------------------------------
+
+  what():  
+--------------------------------------------------------
+An error occurred in line <572> of file </home/phanim/softwares/DFTFEinstallationCuda12.9/dependencies/src/dealii-9.6.2/source/base/parameter_handler.cc> in function
+    virtual void dealii::ParameterHandler::parse_input(const std::string&, const std::string&, bool, bool)
+The violated condition was: 
+    is
+Additional information: 
+    Could not open file FinalFP64.prm.
+    
+    If this happens during an operation that tries to read data: you may
+    be trying to read from a file that doesn't exist or that is not
+    readable given its file permissions.
+    
+    If this happens during an operation that tries to write data: you may
+    be trying to write to a file to which file or directory permissions do
+    not allow you to write. A typical example is where you specify an
+    output file in a directory that does not exist.
+
+Stacktrace:
+-----------
+#0  /home/phanim/softwares/DFTFEinstallationCuda12.9/dependencies/lib/libdeal_II.so.9.6.2: dealii::ParameterHandler::parse_input(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool, bool)
+#1  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/libdftfeReal.so: dftfe::runParameters::parse_parameters(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+#2  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/dftfe: ) [0x4074f0]
+#3  /lib64/libc.so.6: 
+#4  /lib64/libc.so.6: __libc_start_main
+#5  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/dftfe: ) [0x4083d1]
+--------------------------------------------------------
+
+
+--------------------------------------------------------
+An error occurred in line <572> of file </home/phanim/softwares/DFTFEinstallationCuda12.9/dependencies/src/dealii-9.6.2/source/base/parameter_handler.cc> in function
+    virtual void dealii::ParameterHandler::parse_input(const std::string&, const std::string&, bool, bool)
+The violated condition was: 
+    is
+Additional information: 
+    Could not open file FinalFP64.prm.
+    
+    If this happens during an operation that tries to read data: you may
+    be trying to read from a file that doesn't exist or that is not
+    readable given its file permissions.
+    
+    If this happens during an operation that tries to write data: you may
+    be trying to write to a file to which file or directory permissions do
+    not allow you to write. A typical example is where you specify an
+    output file in a directory that does not exist.
+
+Stacktrace:
+-----------
+#0  /home/phanim/softwares/DFTFEinstallationCuda12.9/dependencies/lib/libdeal_II.so.9.6.2: dealii::ParameterHandler::parse_input(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool, bool)
+#1  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/libdftfeReal.so: dftfe::runParameters::parse_parameters(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+#2  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/dftfe: ) [0x4074f0]
+#3  /lib64/libc.so.6: 
+#4  /lib64/libc.so.6: __libc_start_main
+#5  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/dftfe: ) [0x4083d1]
+--------------------------------------------------------
+
+  what():  
+--------------------------------------------------------
+An error occurred in line <572> of file </home/phanim/softwares/DFTFEinstallationCuda12.9/dependencies/src/dealii-9.6.2/source/base/parameter_handler.cc> in function
+    virtual void dealii::ParameterHandler::parse_input(const std::string&, const std::string&, bool, bool)
+The violated condition was: 
+    is
+Additional information: 
+    Could not open file FinalFP64.prm.
+    
+    If this happens during an operation that tries to read data: you may
+    be trying to read from a file that doesn't exist or that is not
+    readable given its file permissions.
+    
+    If this happens during an operation that tries to write data: you may
+    be trying to write to a file to which file or directory permissions do
+    not allow you to write. A typical example is where you specify an
+    output file in a directory that does not exist.
+
+Stacktrace:
+-----------
+#0  /home/phanim/softwares/DFTFEinstallationCuda12.9/dependencies/lib/libdeal_II.so.9.6.2: dealii::ParameterHandler::parse_input(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool, bool)
+#1  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/libdftfeReal.so: dftfe::runParameters::parse_parameters(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+#2  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/dftfe: ) [0x4074f0]
+#3  /lib64/libc.so.6: 
+#4  /lib64/libc.so.6: __libc_start_main
+#5  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/dftfe: ) [0x4083d1]
+--------------------------------------------------------
+
+  what():  
+--------------------------------------------------------
+An error occurred in line <572> of file </home/phanim/softwares/DFTFEinstallationCuda12.9/dependencies/src/dealii-9.6.2/source/base/parameter_handler.cc> in function
+    virtual void dealii::ParameterHandler::parse_input(const std::string&, const std::string&, bool, bool)
+The violated condition was: 
+    is
+Additional information: 
+    Could not open file FinalFP64.prm.
+    
+    If this happens during an operation that tries to read data: you may
+    be trying to read from a file that doesn't exist or that is not
+    readable given its file permissions.
+    
+    If this happens during an operation that tries to write data: you may
+    be trying to write to a file to which file or directory permissions do
+    not allow you to write. A typical example is where you specify an
+    output file in a directory that does not exist.
+
+Stacktrace:
+-----------
+#0  /home/phanim/softwares/DFTFEinstallationCuda12.9/dependencies/lib/libdeal_II.so.9.6.2: dealii::ParameterHandler::parse_input(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool, bool)
+#1  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/libdftfeReal.so: dftfe::runParameters::parse_parameters(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+#2  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/dftfe: ) [0x4074f0]
+#3  /lib64/libc.so.6: 
+#4  /lib64/libc.so.6: __libc_start_main
+#5  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/dftfe: ) [0x4083d1]
+--------------------------------------------------------
+  what():  
+--------------------------------------------------------
+An error occurred in line <572> of file </home/phanim/softwares/DFTFEinstallationCuda12.9/dependencies/src/dealii-9.6.2/source/base/parameter_handler.cc> in function
+    virtual void dealii::ParameterHandler::parse_input(const std::string&, const std::string&, bool, bool)
+The violated condition was: 
+    is
+Additional information: 
+    Could not open file FinalFP64.prm.
+    
+    If this happens during an operation that tries to read data: you may
+    be trying to read from a file that doesn't exist or that is not
+    readable given its file permissions.
+    
+    If this happens during an operation that tries to write data: you may
+    be trying to write to a file to which file or directory permissions do
+    not allow you to write. A typical example is where you specify an
+    output file in a directory that does not exist.
+
+Stacktrace:
+-----------
+#0  /home/phanim/softwares/DFTFEinstallationCuda12.9/dependencies/lib/libdeal_II.so.9.6.2: dealii::ParameterHandler::parse_input(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool, bool)
+#1  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/libdftfeReal.so: dftfe::runParameters::parse_parameters(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+#2  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/dftfe: ) [0x4074f0]
+#3  /lib64/libc.so.6: 
+#4  /lib64/libc.so.6: __libc_start_main
+#5  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/dftfe: ) [0x4083d1]
+--------------------------------------------------------
+
+  what():  
+--------------------------------------------------------
+An error occurred in line <572> of file </home/phanim/softwares/DFTFEinstallationCuda12.9/dependencies/src/dealii-9.6.2/source/base/parameter_handler.cc> in function
+    virtual void dealii::ParameterHandler::parse_input(const std::string&, const std::string&, bool, bool)
+The violated condition was: 
+    is
+Additional information: 
+    Could not open file FinalFP64.prm.
+    
+    If this happens during an operation that tries to read data: you may
+    be trying to read from a file that doesn't exist or that is not
+    readable given its file permissions.
+    
+    If this happens during an operation that tries to write data: you may
+    be trying to write to a file to which file or directory permissions do
+    not allow you to write. A typical example is where you specify an
+    output file in a directory that does not exist.
+
+Stacktrace:
+-----------
+#0  /home/phanim/softwares/DFTFEinstallationCuda12.9/dependencies/lib/libdeal_II.so.9.6.2: dealii::ParameterHandler::parse_input(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool, bool)
+#1  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/libdftfeReal.so: dftfe::runParameters::parse_parameters(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+#2  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/dftfe: ) [0x4074f0]
+#3  /lib64/libc.so.6: 
+#4  /lib64/libc.so.6: __libc_start_main
+#5  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/dftfe: ) [0x4083d1]
+--------------------------------------------------------
+
+
+  what():  
+--------------------------------------------------------
+An error occurred in line <572> of file </home/phanim/softwares/DFTFEinstallationCuda12.9/dependencies/src/dealii-9.6.2/source/base/parameter_handler.cc> in function
+    virtual void dealii::ParameterHandler::parse_input(const std::string&, const std::string&, bool, bool)
+The violated condition was: 
+    is
+Additional information: 
+    Could not open file FinalFP64.prm.
+    
+    If this happens during an operation that tries to read data: you may
+    be trying to read from a file that doesn't exist or that is not
+    readable given its file permissions.
+    
+    If this happens during an operation that tries to write data: you may
+    be trying to write to a file to which file or directory permissions do
+    not allow you to write. A typical example is where you specify an
+    output file in a directory that does not exist.
+
+Stacktrace:
+-----------
+#0  /home/phanim/softwares/DFTFEinstallationCuda12.9/dependencies/lib/libdeal_II.so.9.6.2: dealii::ParameterHandler::parse_input(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool, bool)
+#1  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/libdftfeReal.so: dftfe::runParameters::parse_parameters(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+#2  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/dftfe: ) [0x4074f0]
+#3  /lib64/libc.so.6: 
+#4  /lib64/libc.so.6: __libc_start_main
+#5  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/dftfe: ) [0x4083d1]
+--------------------------------------------------------
+
+  what():  
+--------------------------------------------------------
+An error occurred in line <572> of file </home/phanim/softwares/DFTFEinstallationCuda12.9/dependencies/src/dealii-9.6.2/source/base/parameter_handler.cc> in function
+    virtual void dealii::ParameterHandler::parse_input(const std::string&, const std::string&, bool, bool)
+The violated condition was: 
+    is
+Additional information: 
+    Could not open file FinalFP64.prm.
+    
+    If this happens during an operation that tries to read data: you may
+    be trying to read from a file that doesn't exist or that is not
+    readable given its file permissions.
+    
+    If this happens during an operation that tries to write data: you may
+    be trying to write to a file to which file or directory permissions do
+    not allow you to write. A typical example is where you specify an
+    output file in a directory that does not exist.
+
+Stacktrace:
+-----------
+#0  /home/phanim/softwares/DFTFEinstallationCuda12.9/dependencies/lib/libdeal_II.so.9.6.2: dealii::ParameterHandler::parse_input(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool, bool)
+#1  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/libdftfeReal.so: dftfe::runParameters::parse_parameters(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+#2  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/dftfe: ) [0x4074f0]
+#3  /lib64/libc.so.6: 
+#4  /lib64/libc.so.6: __libc_start_main
+#5  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/dftfe: ) [0x4083d1]
+--------------------------------------------------------
+
+  what():  
+--------------------------------------------------------
+An error occurred in line <572> of file </home/phanim/softwares/DFTFEinstallationCuda12.9/dependencies/src/dealii-9.6.2/source/base/parameter_handler.cc> in function
+    virtual void dealii::ParameterHandler::parse_input(const std::string&, const std::string&, bool, bool)
+The violated condition was: 
+    is
+Additional information: 
+    Could not open file FinalFP64.prm.
+    
+    If this happens during an operation that tries to read data: you may
+    be trying to read from a file that doesn't exist or that is not
+    readable given its file permissions.
+    
+    If this happens during an operation that tries to write data: you may
+    be trying to write to a file to which file or directory permissions do
+    not allow you to write. A typical example is where you specify an
+    output file in a directory that does not exist.
+
+Stacktrace:
+-----------
+#0  /home/phanim/softwares/DFTFEinstallationCuda12.9/dependencies/lib/libdeal_II.so.9.6.2: dealii::ParameterHandler::parse_input(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool, bool)
+#1  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/libdftfeReal.so: dftfe::runParameters::parse_parameters(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+#2  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/dftfe: ) [0x4074f0]
+#3  /lib64/libc.so.6: 
+#4  /lib64/libc.so.6: __libc_start_main
+#5  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/dftfe: ) [0x4083d1]
+--------------------------------------------------------
+
+  what():  
+--------------------------------------------------------
+An error occurred in line <572> of file </home/phanim/softwares/DFTFEinstallationCuda12.9/dependencies/src/dealii-9.6.2/source/base/parameter_handler.cc> in function
+    virtual void dealii::ParameterHandler::parse_input(const std::string&, const std::string&, bool, bool)
+The violated condition was: 
+    is
+Additional information: 
+    Could not open file FinalFP64.prm.
+    
+    If this happens during an operation that tries to read data: you may
+    be trying to read from a file that doesn't exist or that is not
+    readable given its file permissions.
+    
+    If this happens during an operation that tries to write data: you may
+    be trying to write to a file to which file or directory permissions do
+    not allow you to write. A typical example is where you specify an
+    output file in a directory that does not exist.
+
+Stacktrace:
+-----------
+#0  /home/phanim/softwares/DFTFEinstallationCuda12.9/dependencies/lib/libdeal_II.so.9.6.2: dealii::ParameterHandler::parse_input(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool, bool)
+#1  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/libdftfeReal.so: dftfe::runParameters::parse_parameters(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+#2  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/dftfe: ) [0x4074f0]
+#3  /lib64/libc.so.6: 
+#4  /lib64/libc.so.6: __libc_start_main
+#5  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/dftfe: ) [0x4083d1]
+--------------------------------------------------------
+
+  what():  
+--------------------------------------------------------
+An error occurred in line <572> of file </home/phanim/softwares/DFTFEinstallationCuda12.9/dependencies/src/dealii-9.6.2/source/base/parameter_handler.cc> in function
+    virtual void dealii::ParameterHandler::parse_input(const std::string&, const std::string&, bool, bool)
+The violated condition was: 
+    is
+Additional information: 
+    Could not open file FinalFP64.prm.
+    
+    If this happens during an operation that tries to read data: you may
+    be trying to read from a file that doesn't exist or that is not
+    readable given its file permissions.
+    
+    If this happens during an operation that tries to write data: you may
+    be trying to write to a file to which file or directory permissions do
+    not allow you to write. A typical example is where you specify an
+    output file in a directory that does not exist.
+
+Stacktrace:
+-----------
+#0  /home/phanim/softwares/DFTFEinstallationCuda12.9/dependencies/lib/libdeal_II.so.9.6.2: dealii::ParameterHandler::parse_input(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool, bool)
+#1  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/libdftfeReal.so: dftfe::runParameters::parse_parameters(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+#2  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/dftfe: ) [0x4074f0]
+#3  /lib64/libc.so.6: 
+#4  /lib64/libc.so.6: __libc_start_main
+#5  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/dftfe: ) [0x4083d1]
+--------------------------------------------------------
+
+  what():  
+--------------------------------------------------------
+An error occurred in line <572> of file </home/phanim/softwares/DFTFEinstallationCuda12.9/dependencies/src/dealii-9.6.2/source/base/parameter_handler.cc> in function
+    virtual void dealii::ParameterHandler::parse_input(const std::string&, const std::string&, bool, bool)
+The violated condition was: 
+    is
+Additional information: 
+    Could not open file FinalFP64.prm.
+    
+    If this happens during an operation that tries to read data: you may
+    be trying to read from a file that doesn't exist or that is not
+    readable given its file permissions.
+    
+    If this happens during an operation that tries to write data: you may
+    be trying to write to a file to which file or directory permissions do
+    not allow you to write. A typical example is where you specify an
+    output file in a directory that does not exist.
+
+Stacktrace:
+-----------
+#0  /home/phanim/softwares/DFTFEinstallationCuda12.9/dependencies/lib/libdeal_II.so.9.6.2: dealii::ParameterHandler::parse_input(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool, bool)
+#1  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/libdftfeReal.so: dftfe::runParameters::parse_parameters(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+#2  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/dftfe: ) [0x4074f0]
+#3  /lib64/libc.so.6: 
+#4  /lib64/libc.so.6: __libc_start_main
+#5  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/dftfe: ) [0x4083d1]
+--------------------------------------------------------
+
+  what():  
+--------------------------------------------------------
+An error occurred in line <572> of file </home/phanim/softwares/DFTFEinstallationCuda12.9/dependencies/src/dealii-9.6.2/source/base/parameter_handler.cc> in function
+    virtual void dealii::ParameterHandler::parse_input(const std::string&, const std::string&, bool, bool)
+The violated condition was: 
+    is
+Additional information: 
+    Could not open file FinalFP64.prm.
+    
+    If this happens during an operation that tries to read data: you may
+    be trying to read from a file that doesn't exist or that is not
+    readable given its file permissions.
+    
+    If this happens during an operation that tries to write data: you may
+    be trying to write to a file to which file or directory permissions do
+    not allow you to write. A typical example is where you specify an
+    output file in a directory that does not exist.
+
+Stacktrace:
+-----------
+#0  /home/phanim/softwares/DFTFEinstallationCuda12.9/dependencies/lib/libdeal_II.so.9.6.2: dealii::ParameterHandler::parse_input(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool, bool)
+#1  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/libdftfeReal.so: dftfe::runParameters::parse_parameters(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+#2  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/dftfe: ) [0x4074f0]
+#3  /lib64/libc.so.6: 
+#4  /lib64/libc.so.6: __libc_start_main
+#5  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/dftfe: ) [0x4083d1]
+--------------------------------------------------------
+
+  what():  
+--------------------------------------------------------
+An error occurred in line <572> of file </home/phanim/softwares/DFTFEinstallationCuda12.9/dependencies/src/dealii-9.6.2/source/base/parameter_handler.cc> in function
+    virtual void dealii::ParameterHandler::parse_input(const std::string&, const std::string&, bool, bool)
+The violated condition was: 
+    is
+Additional information: 
+    Could not open file FinalFP64.prm.
+    
+    If this happens during an operation that tries to read data: you may
+    be trying to read from a file that doesn't exist or that is not
+    readable given its file permissions.
+    
+    If this happens during an operation that tries to write data: you may
+    be trying to write to a file to which file or directory permissions do
+    not allow you to write. A typical example is where you specify an
+    output file in a directory that does not exist.
+
+Stacktrace:
+-----------
+#0  /home/phanim/softwares/DFTFEinstallationCuda12.9/dependencies/lib/libdeal_II.so.9.6.2: dealii::ParameterHandler::parse_input(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool, bool)
+#1  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/libdftfeReal.so: dftfe::runParameters::parse_parameters(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+#2  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/dftfe: ) [0x4074f0]
+#3  /lib64/libc.so.6: 
+#4  /lib64/libc.so.6: __libc_start_main
+#5  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/dftfe: ) [0x4083d1]
+--------------------------------------------------------
+
+  what():  
+--------------------------------------------------------
+An error occurred in line <572> of file </home/phanim/softwares/DFTFEinstallationCuda12.9/dependencies/src/dealii-9.6.2/source/base/parameter_handler.cc> in function
+    virtual void dealii::ParameterHandler::parse_input(const std::string&, const std::string&, bool, bool)
+The violated condition was: 
+    is
+Additional information: 
+    Could not open file FinalFP64.prm.
+    
+    If this happens during an operation that tries to read data: you may
+    be trying to read from a file that doesn't exist or that is not
+    readable given its file permissions.
+    
+    If this happens during an operation that tries to write data: you may
+    be trying to write to a file to which file or directory permissions do
+    not allow you to write. A typical example is where you specify an
+    output file in a directory that does not exist.
+
+Stacktrace:
+-----------
+#0  /home/phanim/softwares/DFTFEinstallationCuda12.9/dependencies/lib/libdeal_II.so.9.6.2: dealii::ParameterHandler::parse_input(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool, bool)
+#1  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/libdftfeReal.so: dftfe::runParameters::parse_parameters(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+#2  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/dftfe: ) [0x4074f0]
+#3  /lib64/libc.so.6: 
+#4  /lib64/libc.so.6: __libc_start_main
+#5  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/dftfe: ) [0x4083d1]
+--------------------------------------------------------
+
+x3101c0s37b0n0.hsn.cm.polaris.alcf.anl.gov: rank 22 died from signal 6
+terminate called after throwing an instance of 'dealii::StandardExceptions::ExcFileNotOpen'
+terminate called after throwing an instance of 'dealii::StandardExceptions::ExcFileNotOpen'
+terminate called after throwing an instance of 'dealii::StandardExceptions::ExcFileNotOpen'
+terminate called after throwing an instance of 'dealii::StandardExceptions::ExcFileNotOpen'
+terminate called after throwing an instance of 'dealii::StandardExceptions::ExcFileNotOpen'
+terminate called after throwing an instance of 'dealii::StandardExceptions::ExcFileNotOpen'
+terminate called after throwing an instance of 'dealii::StandardExceptions::ExcFileNotOpen'
+terminate called after throwing an instance of 'dealii::StandardExceptions::ExcFileNotOpen'
+terminate called after throwing an instance of 'dealii::StandardExceptions::ExcFileNotOpen'
+terminate called after throwing an instance of 'dealii::StandardExceptions::ExcFileNotOpen'
+terminate called after throwing an instance of 'dealii::StandardExceptions::ExcFileNotOpen'
+terminate called after throwing an instance of 'dealii::StandardExceptions::ExcFileNotOpen'
+terminate called after throwing an instance of 'dealii::StandardExceptions::ExcFileNotOpen'
+terminate called after throwing an instance of 'dealii::StandardExceptions::ExcFileNotOpen'
+terminate called after throwing an instance of 'dealii::StandardExceptions::ExcFileNotOpen'
+terminate called after throwing an instance of 'dealii::StandardExceptions::ExcFileNotOpen'
+terminate called after throwing an instance of 'dealii::StandardExceptions::ExcFileNotOpen'
+terminate called after throwing an instance of 'dealii::StandardExceptions::ExcFileNotOpen'
+terminate called after throwing an instance of 'dealii::StandardExceptions::ExcFileNotOpen'
+terminate called after throwing an instance of 'dealii::StandardExceptions::ExcFileNotOpen'
+terminate called after throwing an instance of 'dealii::StandardExceptions::ExcFileNotOpen'
+terminate called after throwing an instance of 'dealii::StandardExceptions::ExcFileNotOpen'
+terminate called after throwing an instance of 'dealii::StandardExceptions::ExcFileNotOpen'
+terminate called after throwing an instance of 'dealii::StandardExceptions::ExcFileNotOpen'
+  what():  
+--------------------------------------------------------
+An error occurred in line <572> of file </home/phanim/softwares/DFTFEinstallationCuda12.9/dependencies/src/dealii-9.6.2/source/base/parameter_handler.cc> in function
+    virtual void dealii::ParameterHandler::parse_input(const std::string&, const std::string&, bool, bool)
+The violated condition was: 
+    is
+Additional information: 
+    Could not open file Final.prm.
+    
+    If this happens during an operation that tries to read data: you may
+    be trying to read from a file that doesn't exist or that is not
+    readable given its file permissions.
+    
+    If this happens during an operation that tries to write data: you may
+    be trying to write to a file to which file or directory permissions do
+    not allow you to write. A typical example is where you specify an
+    output file in a directory that does not exist.
+
+Stacktrace:
+-----------
+#0  /home/phanim/softwares/DFTFEinstallationCuda12.9/dependencies/lib/libdeal_II.so.9.6.2: dealii::ParameterHandler::parse_input(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool, bool)
+#1  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/libdftfeReal.so: dftfe::runParameters::parse_parameters(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+#2  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/dftfe: ) [0x4074f0]
+#3  /lib64/libc.so.6: 
+#4  /lib64/libc.so.6: __libc_start_main
+#5  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/dftfe: ) [0x4083d1]
+--------------------------------------------------------
+
+  what():  
+--------------------------------------------------------
+An error occurred in line <572> of file </home/phanim/softwares/DFTFEinstallationCuda12.9/dependencies/src/dealii-9.6.2/source/base/parameter_handler.cc> in function
+    virtual void dealii::ParameterHandler::parse_input(const std::string&, const std::string&, bool, bool)
+The violated condition was: 
+    is
+Additional information: 
+    Could not open file Final.prm.
+    
+    If this happens during an operation that tries to read data: you may
+    be trying to read from a file that doesn't exist or that is not
+    readable given its file permissions.
+    
+    If this happens during an operation that tries to write data: you may
+    be trying to write to a file to which file or directory permissions do
+    not allow you to write. A typical example is where you specify an
+    output file in a directory that does not exist.
+
+Stacktrace:
+-----------
+#0  /home/phanim/softwares/DFTFEinstallationCuda12.9/dependencies/lib/libdeal_II.so.9.6.2: dealii::ParameterHandler::parse_input(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool, bool)
+#1  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/libdftfeReal.so: dftfe::runParameters::parse_parameters(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+#2  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/dftfe: ) [0x4074f0]
+#3  /lib64/libc.so.6: 
+#4  /lib64/libc.so.6: __libc_start_main
+#5  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/dftfe: ) [0x4083d1]
+--------------------------------------------------------
+
+  what():  
+--------------------------------------------------------
+An error occurred in line <572> of file </home/phanim/softwares/DFTFEinstallationCuda12.9/dependencies/src/dealii-9.6.2/source/base/parameter_handler.cc> in function
+    virtual void dealii::ParameterHandler::parse_input(const std::string&, const std::string&, bool, bool)
+The violated condition was: 
+    is
+Additional information: 
+    Could not open file Final.prm.
+    
+    If this happens during an operation that tries to read data: you may
+    be trying to read from a file that doesn't exist or that is not
+    readable given its file permissions.
+    
+    If this happens during an operation that tries to write data: you may
+    be trying to write to a file to which file or directory permissions do
+    not allow you to write. A typical example is where you specify an
+    output file in a directory that does not exist.
+
+Stacktrace:
+-----------
+#0  /home/phanim/softwares/DFTFEinstallationCuda12.9/dependencies/lib/libdeal_II.so.9.6.2: dealii::ParameterHandler::parse_input(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool, bool)
+#1  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/libdftfeReal.so: dftfe::runParameters::parse_parameters(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+#2  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/dftfe: ) [0x4074f0]
+#3  /lib64/libc.so.6: 
+#4  /lib64/libc.so.6: __libc_start_main
+#5  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/dftfe: ) [0x4083d1]
+--------------------------------------------------------
+
+  what():  
+--------------------------------------------------------
+An error occurred in line <572> of file </home/phanim/softwares/DFTFEinstallationCuda12.9/dependencies/src/dealii-9.6.2/source/base/parameter_handler.cc> in function
+    virtual void dealii::ParameterHandler::parse_input(const std::string&, const std::string&, bool, bool)
+The violated condition was: 
+    is
+Additional information: 
+    Could not open file Final.prm.
+    
+    If this happens during an operation that tries to read data: you may
+    be trying to read from a file that doesn't exist or that is not
+    readable given its file permissions.
+    
+    If this happens during an operation that tries to write data: you may
+    be trying to write to a file to which file or directory permissions do
+    not allow you to write. A typical example is where you specify an
+    output file in a directory that does not exist.
+
+Stacktrace:
+-----------
+#0  /home/phanim/softwares/DFTFEinstallationCuda12.9/dependencies/lib/libdeal_II.so.9.6.2: dealii::ParameterHandler::parse_input(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool, bool)
+#1  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/libdftfeReal.so: dftfe::runParameters::parse_parameters(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+#2  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/dftfe: ) [0x4074f0]
+#3  /lib64/libc.so.6: 
+#4  /lib64/libc.so.6: __libc_start_main
+#5  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/dftfe: ) [0x4083d1]
+--------------------------------------------------------
+
+  what():  
+--------------------------------------------------------
+An error occurred in line <572> of file </home/phanim/softwares/DFTFEinstallationCuda12.9/dependencies/src/dealii-9.6.2/source/base/parameter_handler.cc> in function
+    virtual void dealii::ParameterHandler::parse_input(const std::string&, const std::string&, bool, bool)
+The violated condition was: 
+    is
+Additional information: 
+    Could not open file Final.prm.
+    
+    If this happens during an operation that tries to read data: you may
+    be trying to read from a file that doesn't exist or that is not
+    readable given its file permissions.
+    
+    If this happens during an operation that tries to write data: you may
+    be trying to write to a file to which file or directory permissions do
+    not allow you to write. A typical example is where you specify an
+    output file in a directory that does not exist.
+
+Stacktrace:
+-----------
+#0  /home/phanim/softwares/DFTFEinstallationCuda12.9/dependencies/lib/libdeal_II.so.9.6.2: dealii::ParameterHandler::parse_input(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool, bool)
+#1  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/libdftfeReal.so: dftfe::runParameters::parse_parameters(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+#2  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/dftfe: ) [0x4074f0]
+#3  /lib64/libc.so.6: 
+#4  /lib64/libc.so.6: __libc_start_main
+#5  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/dftfe: ) [0x4083d1]
+--------------------------------------------------------
+
+  what():  
+--------------------------------------------------------
+An error occurred in line <572> of file </home/phanim/softwares/DFTFEinstallationCuda12.9/dependencies/src/dealii-9.6.2/source/base/parameter_handler.cc> in function
+    virtual void dealii::ParameterHandler::parse_input(const std::string&, const std::string&, bool, bool)
+The violated condition was: 
+    is
+Additional information: 
+    Could not open file Final.prm.
+    
+    If this happens during an operation that tries to read data: you may
+    be trying to read from a file that doesn't exist or that is not
+    readable given its file permissions.
+    
+    If this happens during an operation that tries to write data: you may
+    be trying to write to a file to which file or directory permissions do
+    not allow you to write. A typical example is where you specify an
+    output file in a directory that does not exist.
+
+Stacktrace:
+-----------
+#0  /home/phanim/softwares/DFTFEinstallationCuda12.9/dependencies/lib/libdeal_II.so.9.6.2: dealii::ParameterHandler::parse_input(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool, bool)
+#1  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/libdftfeReal.so: dftfe::runParameters::parse_parameters(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+#2  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/dftfe: ) [0x4074f0]
+#3  /lib64/libc.so.6: 
+#4  /lib64/libc.so.6: __libc_start_main
+#5  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/dftfe: ) [0x4083d1]
+--------------------------------------------------------
+
+  what():  
+--------------------------------------------------------
+An error occurred in line <572> of file </home/phanim/softwares/DFTFEinstallationCuda12.9/dependencies/src/dealii-9.6.2/source/base/parameter_handler.cc> in function
+    virtual void dealii::ParameterHandler::parse_input(const std::string&, const std::string&, bool, bool)
+The violated condition was: 
+    is
+Additional information: 
+    Could not open file Final.prm.
+    
+    If this happens during an operation that tries to read data: you may
+    be trying to read from a file that doesn't exist or that is not
+    readable given its file permissions.
+    
+    If this happens during an operation that tries to write data: you may
+    be trying to write to a file to which file or directory permissions do
+    not allow you to write. A typical example is where you specify an
+    output file in a directory that does not exist.
+
+Stacktrace:
+-----------
+#0  /home/phanim/softwares/DFTFEinstallationCuda12.9/dependencies/lib/libdeal_II.so.9.6.2: dealii::ParameterHandler::parse_input(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool, bool)
+#1  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/libdftfeReal.so: dftfe::runParameters::parse_parameters(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+#2  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/dftfe: ) [0x4074f0]
+#3  /lib64/libc.so.6: 
+#4  /lib64/libc.so.6: __libc_start_main
+#5  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/dftfe: ) [0x4083d1]
+--------------------------------------------------------
+
+  what():  
+--------------------------------------------------------
+An error occurred in line <572> of file </home/phanim/softwares/DFTFEinstallationCuda12.9/dependencies/src/dealii-9.6.2/source/base/parameter_handler.cc> in function
+    virtual void dealii::ParameterHandler::parse_input(const std::string&, const std::string&, bool, bool)
+The violated condition was: 
+    is
+Additional information: 
+    Could not open file Final.prm.
+    
+    If this happens during an operation that tries to read data: you may
+    be trying to read from a file that doesn't exist or that is not
+    readable given its file permissions.
+    
+    If this happens during an operation that tries to write data: you may
+    be trying to write to a file to which file or directory permissions do
+    not allow you to write. A typical example is where you specify an
+    output file in a directory that does not exist.
+
+Stacktrace:
+-----------
+#0  /home/phanim/softwares/DFTFEinstallationCuda12.9/dependencies/lib/libdeal_II.so.9.6.2: dealii::ParameterHandler::parse_input(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool, bool)
+#1  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/libdftfeReal.so: dftfe::runParameters::parse_parameters(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+#2  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/dftfe: ) [0x4074f0]
+#3  /lib64/libc.so.6: 
+#4  /lib64/libc.so.6: __libc_start_main
+#5  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/dftfe: ) [0x4083d1]
+--------------------------------------------------------
+
+  what():  
+--------------------------------------------------------
+An error occurred in line <572> of file </home/phanim/softwares/DFTFEinstallationCuda12.9/dependencies/src/dealii-9.6.2/source/base/parameter_handler.cc> in function
+    virtual void dealii::ParameterHandler::parse_input(const std::string&, const std::string&, bool, bool)
+The violated condition was: 
+    is
+Additional information: 
+    Could not open file Final.prm.
+    
+    If this happens during an operation that tries to read data: you may
+    be trying to read from a file that doesn't exist or that is not
+    readable given its file permissions.
+    
+    If this happens during an operation that tries to write data: you may
+    be trying to write to a file to which file or directory permissions do
+    not allow you to write. A typical example is where you specify an
+    output file in a directory that does not exist.
+
+Stacktrace:
+-----------
+#0  /home/phanim/softwares/DFTFEinstallationCuda12.9/dependencies/lib/libdeal_II.so.9.6.2: dealii::ParameterHandler::parse_input(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool, bool)
+#1  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/libdftfeReal.so: dftfe::runParameters::parse_parameters(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+#2  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/dftfe: ) [0x4074f0]
+#3  /lib64/libc.so.6: 
+#4  /lib64/libc.so.6: __libc_start_main
+#5  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/dftfe: ) [0x4083d1]
+--------------------------------------------------------
+
+  what():  
+--------------------------------------------------------
+An error occurred in line <572> of file </home/phanim/softwares/DFTFEinstallationCuda12.9/dependencies/src/dealii-9.6.2/source/base/parameter_handler.cc> in function
+    virtual void dealii::ParameterHandler::parse_input(const std::string&, const std::string&, bool, bool)
+The violated condition was: 
+    is
+Additional information: 
+    Could not open file Final.prm.
+    
+    If this happens during an operation that tries to read data: you may
+    be trying to read from a file that doesn't exist or that is not
+    readable given its file permissions.
+    
+    If this happens during an operation that tries to write data: you may
+    be trying to write to a file to which file or directory permissions do
+    not allow you to write. A typical example is where you specify an
+    output file in a directory that does not exist.
+
+Stacktrace:
+-----------
+#0  /home/phanim/softwares/DFTFEinstallationCuda12.9/dependencies/lib/libdeal_II.so.9.6.2: dealii::ParameterHandler::parse_input(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool, bool)
+#1  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/libdftfeReal.so: dftfe::runParameters::parse_parameters(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+#2  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/dftfe: ) [0x4074f0]
+#3  /lib64/libc.so.6: 
+#4  /lib64/libc.so.6: __libc_start_main
+#5  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/dftfe: ) [0x4083d1]
+--------------------------------------------------------
+
+  what():  
+--------------------------------------------------------
+An error occurred in line <572> of file </home/phanim/softwares/DFTFEinstallationCuda12.9/dependencies/src/dealii-9.6.2/source/base/parameter_handler.cc> in function
+    virtual void dealii::ParameterHandler::parse_input(const std::string&, const std::string&, bool, bool)
+The violated condition was: 
+    is
+Additional information: 
+    Could not open file Final.prm.
+    
+    If this happens during an operation that tries to read data: you may
+    be trying to read from a file that doesn't exist or that is not
+    readable given its file permissions.
+    
+    If this happens during an operation that tries to write data: you may
+    be trying to write to a file to which file or directory permissions do
+    not allow you to write. A typical example is where you specify an
+    output file in a directory that does not exist.
+
+Stacktrace:
+-----------
+#0  /home/phanim/softwares/DFTFEinstallationCuda12.9/dependencies/lib/libdeal_II.so.9.6.2: dealii::ParameterHandler::parse_input(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool, bool)
+#1  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/libdftfeReal.so: dftfe::runParameters::parse_parameters(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+#2  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/dftfe: ) [0x4074f0]
+#3  /lib64/libc.so.6: 
+#4  /lib64/libc.so.6: __libc_start_main
+#5  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/dftfe: ) [0x4083d1]
+--------------------------------------------------------
+
+  what():  
+--------------------------------------------------------
+An error occurred in line <572> of file </home/phanim/softwares/DFTFEinstallationCuda12.9/dependencies/src/dealii-9.6.2/source/base/parameter_handler.cc> in function
+    virtual void dealii::ParameterHandler::parse_input(const std::string&, const std::string&, bool, bool)
+The violated condition was: 
+    is
+Additional information: 
+    Could not open file Final.prm.
+    
+    If this happens during an operation that tries to read data: you may
+    be trying to read from a file that doesn't exist or that is not
+    readable given its file permissions.
+    
+    If this happens during an operation that tries to write data: you may
+    be trying to write to a file to which file or directory permissions do
+    not allow you to write. A typical example is where you specify an
+    output file in a directory that does not exist.
+
+Stacktrace:
+-----------
+#0  /home/phanim/softwares/DFTFEinstallationCuda12.9/dependencies/lib/libdeal_II.so.9.6.2: dealii::ParameterHandler::parse_input(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool, bool)
+#1  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/libdftfeReal.so: dftfe::runParameters::parse_parameters(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+#2  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/dftfe: ) [0x4074f0]
+#3  /lib64/libc.so.6: 
+#4  /lib64/libc.so.6: __libc_start_main
+#5  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/dftfe: ) [0x4083d1]
+--------------------------------------------------------
+
+  what():  
+--------------------------------------------------------
+An error occurred in line <572> of file </home/phanim/softwares/DFTFEinstallationCuda12.9/dependencies/src/dealii-9.6.2/source/base/parameter_handler.cc> in function
+    virtual void dealii::ParameterHandler::parse_input(const std::string&, const std::string&, bool, bool)
+The violated condition was: 
+    is
+Additional information: 
+    Could not open file Final.prm.
+    
+    If this happens during an operation that tries to read data: you may
+    be trying to read from a file that doesn't exist or that is not
+    readable given its file permissions.
+    
+    If this happens during an operation that tries to write data: you may
+    be trying to write to a file to which file or directory permissions do
+    not allow you to write. A typical example is where you specify an
+    output file in a directory that does not exist.
+
+Stacktrace:
+-----------
+#0  /home/phanim/softwares/DFTFEinstallationCuda12.9/dependencies/lib/libdeal_II.so.9.6.2: dealii::ParameterHandler::parse_input(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool, bool)
+#1  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/libdftfeReal.so: dftfe::runParameters::parse_parameters(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+#2  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/dftfe: ) [0x4074f0]
+#3  /lib64/libc.so.6: 
+#4  /lib64/libc.so.6: __libc_start_main
+#5  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/dftfe: ) [0x4083d1]
+--------------------------------------------------------
+
+  what():  
+--------------------------------------------------------
+An error occurred in line <572> of file </home/phanim/softwares/DFTFEinstallationCuda12.9/dependencies/src/dealii-9.6.2/source/base/parameter_handler.cc> in function
+    virtual void dealii::ParameterHandler::parse_input(const std::string&, const std::string&, bool, bool)
+The violated condition was: 
+    is
+Additional information: 
+    Could not open file Final.prm.
+    
+    If this happens during an operation that tries to read data: you may
+    be trying to read from a file that doesn't exist or that is not
+    readable given its file permissions.
+    
+    If this happens during an operation that tries to write data: you may
+    be trying to write to a file to which file or directory permissions do
+    not allow you to write. A typical example is where you specify an
+    output file in a directory that does not exist.
+
+Stacktrace:
+-----------
+#0  /home/phanim/softwares/DFTFEinstallationCuda12.9/dependencies/lib/libdeal_II.so.9.6.2: dealii::ParameterHandler::parse_input(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool, bool)
+#1  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/libdftfeReal.so: dftfe::runParameters::parse_parameters(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+#2  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/dftfe: ) [0x4074f0]
+#3  /lib64/libc.so.6: 
+#4  /lib64/libc.so.6: __libc_start_main
+#5  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/dftfe: ) [0x4083d1]
+--------------------------------------------------------
+
+  what():  
+--------------------------------------------------------
+An error occurred in line <572> of file </home/phanim/softwares/DFTFEinstallationCuda12.9/dependencies/src/dealii-9.6.2/source/base/parameter_handler.cc> in function
+    virtual void dealii::ParameterHandler::parse_input(const std::string&, const std::string&, bool, bool)
+The violated condition was: 
+    is
+Additional information: 
+    Could not open file Final.prm.
+    
+    If this happens during an operation that tries to read data: you may
+    be trying to read from a file that doesn't exist or that is not
+    readable given its file permissions.
+    
+    If this happens during an operation that tries to write data: you may
+    be trying to write to a file to which file or directory permissions do
+    not allow you to write. A typical example is where you specify an
+    output file in a directory that does not exist.
+
+Stacktrace:
+-----------
+#0  /home/phanim/softwares/DFTFEinstallationCuda12.9/dependencies/lib/libdeal_II.so.9.6.2: dealii::ParameterHandler::parse_input(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool, bool)
+#1  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/libdftfeReal.so: dftfe::runParameters::parse_parameters(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+#2  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/dftfe: ) [0x4074f0]
+#3  /lib64/libc.so.6: 
+#4  /lib64/libc.so.6: __libc_start_main
+#5  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/dftfe: ) [0x4083d1]
+--------------------------------------------------------
+
+  what():  
+--------------------------------------------------------
+An error occurred in line <572> of file </home/phanim/softwares/DFTFEinstallationCuda12.9/dependencies/src/dealii-9.6.2/source/base/parameter_handler.cc> in function
+    virtual void dealii::ParameterHandler::parse_input(const std::string&, const std::string&, bool, bool)
+The violated condition was: 
+    is
+Additional information: 
+    Could not open file Final.prm.
+    
+    If this happens during an operation that tries to read data: you may
+    be trying to read from a file that doesn't exist or that is not
+    readable given its file permissions.
+    
+    If this happens during an operation that tries to write data: you may
+    be trying to write to a file to which file or directory permissions do
+    not allow you to write. A typical example is where you specify an
+    output file in a directory that does not exist.
+
+Stacktrace:
+-----------
+#0  /home/phanim/softwares/DFTFEinstallationCuda12.9/dependencies/lib/libdeal_II.so.9.6.2: dealii::ParameterHandler::parse_input(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool, bool)
+#1  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/libdftfeReal.so: dftfe::runParameters::parse_parameters(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+#2  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/dftfe: ) [0x4074f0]
+#3  /lib64/libc.so.6: 
+#4  /lib64/libc.so.6: __libc_start_main
+#5  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/dftfe: ) [0x4083d1]
+--------------------------------------------------------
+
+  what():  
+--------------------------------------------------------
+An error occurred in line <572> of file </home/phanim/softwares/DFTFEinstallationCuda12.9/dependencies/src/dealii-9.6.2/source/base/parameter_handler.cc> in function
+    virtual void dealii::ParameterHandler::parse_input(const std::string&, const std::string&, bool, bool)
+The violated condition was: 
+    is
+Additional information: 
+    Could not open file Final.prm.
+    
+    If this happens during an operation that tries to read data: you may
+    be trying to read from a file that doesn't exist or that is not
+    readable given its file permissions.
+    
+    If this happens during an operation that tries to write data: you may
+    be trying to write to a file to which file or directory permissions do
+    not allow you to write. A typical example is where you specify an
+    output file in a directory that does not exist.
+
+Stacktrace:
+-----------
+#0  /home/phanim/softwares/DFTFEinstallationCuda12.9/dependencies/lib/libdeal_II.so.9.6.2: dealii::ParameterHandler::parse_input(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool, bool)
+#1  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/libdftfeReal.so: dftfe::runParameters::parse_parameters(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+#2  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/dftfe: ) [0x4074f0]
+#3  /lib64/libc.so.6: 
+#4  /lib64/libc.so.6: __libc_start_main
+#5  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/dftfe: ) [0x4083d1]
+--------------------------------------------------------
+
+  what():  
+--------------------------------------------------------
+An error occurred in line <572> of file </home/phanim/softwares/DFTFEinstallationCuda12.9/dependencies/src/dealii-9.6.2/source/base/parameter_handler.cc> in function
+    virtual void dealii::ParameterHandler::parse_input(const std::string&, const std::string&, bool, bool)
+The violated condition was: 
+    is
+Additional information: 
+    Could not open file Final.prm.
+    
+    If this happens during an operation that tries to read data: you may
+    be trying to read from a file that doesn't exist or that is not
+    readable given its file permissions.
+    
+    If this happens during an operation that tries to write data: you may
+    be trying to write to a file to which file or directory permissions do
+    not allow you to write. A typical example is where you specify an
+    output file in a directory that does not exist.
+
+Stacktrace:
+-----------
+#0  /home/phanim/softwares/DFTFEinstallationCuda12.9/dependencies/lib/libdeal_II.so.9.6.2: dealii::ParameterHandler::parse_input(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool, bool)
+#1  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/libdftfeReal.so: dftfe::runParameters::parse_parameters(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+#2  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/dftfe: ) [0x4074f0]
+#3  /lib64/libc.so.6: 
+#4  /lib64/libc.so.6: __libc_start_main
+#5  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/dftfe: ) [0x4083d1]
+--------------------------------------------------------
+
+  what():  
+--------------------------------------------------------
+An error occurred in line <572> of file </home/phanim/softwares/DFTFEinstallationCuda12.9/dependencies/src/dealii-9.6.2/source/base/parameter_handler.cc> in function
+    virtual void dealii::ParameterHandler::parse_input(const std::string&, const std::string&, bool, bool)
+The violated condition was: 
+    is
+Additional information: 
+    Could not open file Final.prm.
+    
+    If this happens during an operation that tries to read data: you may
+    be trying to read from a file that doesn't exist or that is not
+    readable given its file permissions.
+    
+    If this happens during an operation that tries to write data: you may
+    be trying to write to a file to which file or directory permissions do
+    not allow you to write. A typical example is where you specify an
+    output file in a directory that does not exist.
+
+Stacktrace:
+-----------
+#0  /home/phanim/softwares/DFTFEinstallationCuda12.9/dependencies/lib/libdeal_II.so.9.6.2: dealii::ParameterHandler::parse_input(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool, bool)
+#1  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/libdftfeReal.so: dftfe::runParameters::parse_parameters(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+#2  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/dftfe: ) [0x4074f0]
+#3  /lib64/libc.so.6: 
+#4  /lib64/libc.so.6: __libc_start_main
+#5  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/dftfe: ) [0x4083d1]
+--------------------------------------------------------
+
+  what():  
+--------------------------------------------------------
+An error occurred in line <572> of file </home/phanim/softwares/DFTFEinstallationCuda12.9/dependencies/src/dealii-9.6.2/source/base/parameter_handler.cc> in function
+    virtual void dealii::ParameterHandler::parse_input(const std::string&, const std::string&, bool, bool)
+The violated condition was: 
+    is
+Additional information: 
+    Could not open file Final.prm.
+    
+    If this happens during an operation that tries to read data: you may
+    be trying to read from a file that doesn't exist or that is not
+    readable given its file permissions.
+    
+    If this happens during an operation that tries to write data: you may
+    be trying to write to a file to which file or directory permissions do
+    not allow you to write. A typical example is where you specify an
+    output file in a directory that does not exist.
+
+Stacktrace:
+-----------
+#0  /home/phanim/softwares/DFTFEinstallationCuda12.9/dependencies/lib/libdeal_II.so.9.6.2: dealii::ParameterHandler::parse_input(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool, bool)
+#1  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/libdftfeReal.so: dftfe::runParameters::parse_parameters(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+#2  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/dftfe: ) [0x4074f0]
+#3  /lib64/libc.so.6: 
+#4  /lib64/libc.so.6: __libc_start_main
+#5  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/dftfe: ) [0x4083d1]
+--------------------------------------------------------
+
+  what():  
+--------------------------------------------------------
+An error occurred in line <572> of file </home/phanim/softwares/DFTFEinstallationCuda12.9/dependencies/src/dealii-9.6.2/source/base/parameter_handler.cc> in function
+    virtual void dealii::ParameterHandler::parse_input(const std::string&, const std::string&, bool, bool)
+The violated condition was: 
+    is
+Additional information: 
+    Could not open file Final.prm.
+    
+    If this happens during an operation that tries to read data: you may
+    be trying to read from a file that doesn't exist or that is not
+    readable given its file permissions.
+    
+    If this happens during an operation that tries to write data: you may
+    be trying to write to a file to which file or directory permissions do
+    not allow you to write. A typical example is where you specify an
+    output file in a directory that does not exist.
+
+Stacktrace:
+-----------
+#0  /home/phanim/softwares/DFTFEinstallationCuda12.9/dependencies/lib/libdeal_II.so.9.6.2: dealii::ParameterHandler::parse_input(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool, bool)
+#1  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/libdftfeReal.so: dftfe::runParameters::parse_parameters(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+#2  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/dftfe: ) [0x4074f0]
+#3  /lib64/libc.so.6: 
+#4  /lib64/libc.so.6: __libc_start_main
+#5  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/dftfe: ) [0x4083d1]
+--------------------------------------------------------
+
+  what():  
+--------------------------------------------------------
+An error occurred in line <572> of file </home/phanim/softwares/DFTFEinstallationCuda12.9/dependencies/src/dealii-9.6.2/source/base/parameter_handler.cc> in function
+    virtual void dealii::ParameterHandler::parse_input(const std::string&, const std::string&, bool, bool)
+The violated condition was: 
+    is
+Additional information: 
+    Could not open file Final.prm.
+    
+    If this happens during an operation that tries to read data: you may
+    be trying to read from a file that doesn't exist or that is not
+    readable given its file permissions.
+    
+    If this happens during an operation that tries to write data: you may
+    be trying to write to a file to which file or directory permissions do
+    not allow you to write. A typical example is where you specify an
+    output file in a directory that does not exist.
+
+Stacktrace:
+-----------
+#0  /home/phanim/softwares/DFTFEinstallationCuda12.9/dependencies/lib/libdeal_II.so.9.6.2: dealii::ParameterHandler::parse_input(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool, bool)
+#1  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/libdftfeReal.so: dftfe::runParameters::parse_parameters(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+#2  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/dftfe: ) [0x4074f0]
+#3  /lib64/libc.so.6: 
+#4  /lib64/libc.so.6: __libc_start_main
+#5  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/dftfe: ) [0x4083d1]
+--------------------------------------------------------
+
+  what():  
+--------------------------------------------------------
+An error occurred in line <572> of file </home/phanim/softwares/DFTFEinstallationCuda12.9/dependencies/src/dealii-9.6.2/source/base/parameter_handler.cc> in function
+    virtual void dealii::ParameterHandler::parse_input(const std::string&, const std::string&, bool, bool)
+The violated condition was: 
+    is
+Additional information: 
+    Could not open file Final.prm.
+    
+    If this happens during an operation that tries to read data: you may
+    be trying to read from a file that doesn't exist or that is not
+    readable given its file permissions.
+    
+    If this happens during an operation that tries to write data: you may
+    be trying to write to a file to which file or directory permissions do
+    not allow you to write. A typical example is where you specify an
+    output file in a directory that does not exist.
+
+Stacktrace:
+-----------
+#0  /home/phanim/softwares/DFTFEinstallationCuda12.9/dependencies/lib/libdeal_II.so.9.6.2: dealii::ParameterHandler::parse_input(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool, bool)
+#1  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/libdftfeReal.so: dftfe::runParameters::parse_parameters(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+#2  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/dftfe: ) [0x4074f0]
+#3  /lib64/libc.so.6: 
+#4  /lib64/libc.so.6: __libc_start_main
+#5  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/dftfe: ) [0x4083d1]
+--------------------------------------------------------
+
+  what():  
+--------------------------------------------------------
+An error occurred in line <572> of file </home/phanim/softwares/DFTFEinstallationCuda12.9/dependencies/src/dealii-9.6.2/source/base/parameter_handler.cc> in function
+    virtual void dealii::ParameterHandler::parse_input(const std::string&, const std::string&, bool, bool)
+The violated condition was: 
+    is
+Additional information: 
+    Could not open file Final.prm.
+    
+    If this happens during an operation that tries to read data: you may
+    be trying to read from a file that doesn't exist or that is not
+    readable given its file permissions.
+    
+    If this happens during an operation that tries to write data: you may
+    be trying to write to a file to which file or directory permissions do
+    not allow you to write. A typical example is where you specify an
+    output file in a directory that does not exist.
+
+Stacktrace:
+-----------
+#0  /home/phanim/softwares/DFTFEinstallationCuda12.9/dependencies/lib/libdeal_II.so.9.6.2: dealii::ParameterHandler::parse_input(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool, bool)
+#1  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/libdftfeReal.so: dftfe::runParameters::parse_parameters(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+#2  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/dftfe: ) [0x4074f0]
+#3  /lib64/libc.so.6: 
+#4  /lib64/libc.so.6: __libc_start_main
+#5  /home/phanim/softwares/DFTFEinstallationCuda12.9/dftfe_PAW_initOptim/installGPUAwareOFF/real/dftfe: ) [0x4083d1]
+--------------------------------------------------------
+
+x3101c0s1b0n0.hsn.cm.polaris.alcf.anl.gov: rank 2 died from signal 6
+
+Lmod is automatically replacing "nvidia/25.5" with "gcc-native/14".
+
+
+Lmod is automatically replacing "PrgEnv-nvidia/8.6.0" with "PrgEnv-gnu/8.6.0".
+
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) cray-mpich/9.0.1
+
+
+The following have been reloaded with a version change:
+  1) gcc-native/14 => gcc-native/13.2
+
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ CUBLAS version:       120900
+ gpuMaxThreadsPerBlock:         1024
+ gpuDevMaxBlockDimX:         1024
+ gpuDevMaxBlockDimY:         1024
+ gpuDevMaxBlockDimZ:           64
+ gpuDevMaxGridDimX :   2147483647
+ gpuDevMaxGridDimY :        65535
+ gpuDevMaxGridDimZ :        65535
+ gpuSMcount:          108
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ CUBLAS version:       120900
+ gpuMaxThreadsPerBlock:         1024
+ gpuDevMaxBlockDimX:         1024
+ gpuDevMaxBlockDimY:         1024
+ gpuDevMaxBlockDimZ:           64
+ gpuDevMaxGridDimX :   2147483647
+ gpuDevMaxGridDimY :        65535
+ gpuDevMaxGridDimZ :        65535
+ gpuSMcount:          108
+x3101c0s1b0n0.hsn.cm.polaris.alcf.anl.gov: rank 0 exited with code 1
+x3101c0s37b0n0.hsn.cm.polaris.alcf.anl.gov: rank 23 died from signal 15
+
+Lmod is automatically replacing "nvidia/25.5" with "gcc-native/14".
+
+
+Lmod is automatically replacing "PrgEnv-nvidia/8.6.0" with "PrgEnv-gnu/8.6.0".
+
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) cray-mpich/9.0.1
+
+
+The following have been reloaded with a version change:
+  1) gcc-native/14 => gcc-native/13.2
+
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ CUBLAS version:       120900
+ gpuMaxThreadsPerBlock:         1024
+ gpuDevMaxBlockDimX:         1024
+ gpuDevMaxBlockDimY:         1024
+ gpuDevMaxBlockDimZ:           64
+ gpuDevMaxGridDimX :   2147483647
+ gpuDevMaxGridDimY :        65535
+ gpuDevMaxGridDimZ :        65535
+ gpuSMcount:          108
+x3101c0s1b0n0.hsn.cm.polaris.alcf.anl.gov: rank 0 exited with code 1
+x3101c0s37b0n0.hsn.cm.polaris.alcf.anl.gov: rank 23 died from signal 15
+
+Lmod is automatically replacing "nvidia/25.5" with "gcc-native/14".
+
+
+Lmod is automatically replacing "PrgEnv-nvidia/8.6.0" with "PrgEnv-gnu/8.6.0".
+
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) cray-mpich/9.0.1
+
+
+The following have been reloaded with a version change:
+  1) gcc-native/14 => gcc-native/13.2
+
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ CUBLAS version:       120900
+ gpuMaxThreadsPerBlock:         1024
+ gpuDevMaxBlockDimX:         1024
+ gpuDevMaxBlockDimY:         1024
+ gpuDevMaxBlockDimZ:           64
+ gpuDevMaxGridDimX :   2147483647
+ gpuDevMaxGridDimY :        65535
+ gpuDevMaxGridDimZ :        65535
+ gpuSMcount:          108
+
+Lmod is automatically replacing "nvidia/25.5" with "gcc-native/14".
+
+
+Lmod is automatically replacing "PrgEnv-nvidia/8.6.0" with "PrgEnv-gnu/8.6.0".
+
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) cray-mpich/9.0.1
+
+
+The following have been reloaded with a version change:
+  1) gcc-native/14 => gcc-native/13.2
+
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ WARNING elpa_setup: MPI threading level MPI_THREAD_SERALIZED or MPI_THREAD_MULTIPLE required but your implementation does not support this! The number of OpenMP threads within ELPA will be limited to 1
+ CUBLAS version:       120900
+ gpuMaxThreadsPerBlock:         1024
+ gpuDevMaxBlockDimX:         1024
+ gpuDevMaxBlockDimY:         1024
+ gpuDevMaxBlockDimZ:           64
+ gpuDevMaxGridDimX :   2147483647
+ gpuDevMaxGridDimY :        65535
+ gpuDevMaxGridDimZ :        65535
+ gpuSMcount:          108

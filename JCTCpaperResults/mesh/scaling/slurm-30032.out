@@ -1,0 +1,10 @@
+/var/spool/slurm/slurmd/job30032/slurm_script: line 8: ​: command not found
+Number of Nodes Allocated      = 2
+Number of Tasks Allocated      = 96
+Number of Cores/Task Allocated = 
+CPU on node  = 48
+/var/spool/slurm/slurmd/job30032/slurm_script: line 14: ​: command not found
+--------------------------------------------------------------------------
+prterun noticed that process rank 77 with PID 71716 on node cn2 exited on
+signal 9 (Killed).
+--------------------------------------------------------------------------

@@ -1,0 +1,9 @@
+MPICH ERROR [Rank 0] [job id 4cdf564d-3d51-437a-9c0a-0c24a45afc67] [Sun Sep 28 18:43:47 2025] [x3005c0s13b0n0] - Abort(-1) (rank 0 in comm 0): MPIDI_CRAY_init: GPU_SUPPORT_ENABLED is requested, but GTL library is not linked
+ (Other MPI error)
+
+aborting job:
+MPIDI_CRAY_init: GPU_SUPPORT_ENABLED is requested, but GTL library is not linked
+
+x3005c0s13b0n0.hsn.cm.polaris.alcf.anl.gov: rank 0 exited with code 255
+x3005c0s19b0n0.hsn.cm.polaris.alcf.anl.gov: rank 9 died from signal 15
+x3005c0s19b1n0.hsn.cm.polaris.alcf.anl.gov: rank 13 died from signal 11 and dumped core

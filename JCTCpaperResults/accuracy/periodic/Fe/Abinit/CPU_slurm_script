@@ -1,0 +1,34 @@
+#!/bin/bash
+#SBATCH --job-name=Alfcc # Job name
+#SBATCH --ntasks-per-node=48
+#SBATCH --cpus-per-task=1
+#SBATCH --nodes=1
+#SBATCH --time=20:00:00 # Time limit hrs:min:sec
+##SBATCH --nodelist=cn2
+#SBATCH --distribution=block
+#SBATCH --mem-bind=local
+#SBATCH --exclusive
+
+echo "Number of Nodes Allocated      = $SLURM_JOB_NUM_NODES"
+echo "Number of Tasks Allocated      = $SLURM_NTASKS"
+echo "Number of Cores/Task Allocated = $SLURM_CPUS_PER_TASK"
+
+module load openmpi/gcc13cuda126 modulefiles/compiler-rt/2025.0.4 modulefiles/tbb/2022.0 modulefiles/mkl/2025.0
+
+export LD_LIBRARY_PATH=/storage/hdf5/hdf5-1.14.6/build/install/lib:/storage/netcdf_c/netcdf-c-4.9.3/build/install/lib:/storage/netcdf_fortran/netcdf-fortran-4.6.2/build/install/lib:/apps/softwares/oneapi/2025/mkl/2025.0/lib/:/lib/x86_64-linux-gnu:/storage/dftfeDependencies/libxc/install/lib:$LD_LIBRARY_PATH
+
+cd $SLURM_SUBMIT_DIR
+
+
+
+
+mpirun -n $SLURM_NTASKS /storage/abinit/abinit-10.6.3/build/install/bin/abinit GS1.abi > GS1.out
+mpirun -n $SLURM_NTASKS /storage/abinit/abinit-10.6.3/build/install/bin/abinit GS2.abi > GS2.out
+ mpirun -n $SLURM_NTASKS /storage/abinit/abinit-10.6.3/build/install/bin/abinit GS3.abi > GS3.out
+ mpirun -n $SLURM_NTASKS /storage/abinit/abinit-10.6.3/build/install/bin/abinit GS4.abi > GS4.out
+  mpirun -n $SLURM_NTASKS /storage/abinit/abinit-10.6.3/build/install/bin/abinit GS5.abi > GS5.out
+  mpirun -n $SLURM_NTASKS /storage/abinit/abinit-10.6.3/build/install/bin/abinit GS6.abi > GS6.out
+   mpirun -n $SLURM_NTASKS /storage/abinit/abinit-10.6.3/build/install/bin/abinit GS7.abi > GS7.out
+
+
+rm -rf *.nc *_WFK *.agr
