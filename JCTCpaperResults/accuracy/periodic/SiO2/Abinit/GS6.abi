@@ -1,0 +1,60 @@
+# Input for PAW1 tutorial
+#Definition of the unit cell
+acell 3*1.0  # The keyword "acell" refers to the
+    # lengths of the primitive vectors (in Bohr)
+rprim 
+6.203548666 0 0
+3.101774333 5.372430738 0
+3.101774333 1.790810246 5.065176275
+autoparal 1
+maxnsym 512
+#Definition of the atom types and pseudopotentials
+ntypat 2   # There is only one type of atom
+znucl 14 8       
+pseudos "../../../pspFiles/JTH2.0/Si.GGA_PBE-JTH.xml, ../../../pspFiles/JTH2.0/O.GGA_PBE-JTH.xml" 
+    
+#Definition of the atoms
+natom 3   # There are two atoms
+typat 1 2 2      # They both are of type 1, that is, Carbon
+xred      # This keyword indicates that the location of the atoms
+    # will follow, one triplet of number for each atom
+0.000000000  0.000000000  0.000000000
+0.250000000  0.250000000  0.250000000
+0.750000000  0.750000000  0.750000000
+#Definition of bands and occupation numbers
+occopt 3   # Automatic generation of occupation numbers, as a semiconductor
+#Numerical parameters of the calculation : planewave basis set and k point grid
+usexcnhat = 0
+ecut 60  # Maximal plane-wave kinetic energy cut-off, in Hartree
+pawecutdg 300     # Max. plane-wave kinetic energy cut-off, in Ha, for the PAW double grid
+pawxcdev = 0
+wfoptalg = 14  
+iscf 17   # Pulay mixing of the density (sometimes better for some setups)
+npulayit 8
+diemix 0.05 
+diemac  1.0d6 # default is very large (works for metals) — usually do not reduce for metals
+dielng  0.5   # characteristic screening length (try 0.1 - 1.0)
+pawovlp -1     
+#Parameters for the SCF procedure
+nstep 400   # Maximal number of SCF cycles
+tolvrs 1.0E-7   # Will stop when, twice in a row, the difference 
+    # between two consecutive evaluations of potential residual 
+    # differ by less than tolvrs
+tsmear 0.002   
+chksymtnons 0       
+chkprim 0
+nsym 1
+# ---------- K-points (Gamma-centered) ----------
+ngkpt 12 12 12
+nshiftk 1
+shiftk 0.0 0.0 0.0
+# ---------- Spin (ferromagnetic start) ----------
+nsppol 2
+# initial moments ~2 μB/Fe along z; adjust as needed
+spinat
+ 0.0 0.0 -0
+ 0.0 0.0 -0.0
+ 0.0 0.0 -0.0
+
+paw_add_core 1
+

@@ -1,0 +1,47 @@
+coordinates.inp
+CPUjob.sub
+CPUjob.sub.e7204183
+CPUjob.sub.e7204254
+CPUjob.sub.o7204183
+CPUjob.sub.o7204254
+dftfeScratch0t1781504201896
+dftfeScratch0t1781856506240
+domainBoundingVectors.inp
+Finalout_12Node_400WFCMemOptFalse_400WFC_Beta0D02.op
+Finalout_16Node_400WFCMemOptFalse_400WFC_Beta0D1.op
+Finalout_200Node_400WFCMemOptFalse_400WFC_Beta0D02.op
+Finalout_6Node_200WFCMemOptTrue_200WFC_Beta0D1.op
+Finalout_6Node_NewFP64.op
+Finalout_6Node_New.op
+Finalout_96Node_400WFCMemOptFalse_400WFC_Beta0D1.op
+Final_out_CPU_6Node_192MPI.op
+forces.txt
+forces.txt.old
+job.sub
+job.sub.e6985295
+job.sub.e7199804
+job.sub.e7199817
+job.sub.o6985295
+job.sub.o7199804
+job.sub.o7199817
+out_10Node_400WFCMemOptFalse.op
+out_12Node_400WFCMemOptFalse.op
+out_192Node_400WFCMemOptFalse.op
+out_24Node_400WFCMemOptFalse.op
+out_48Node_400WFCMemOptFalse.op
+out_5Node_200WFCMemOptTrue.op
+out_5Node_400WFCMemOptTrue.op
+out_6Node_200WFCMemOptTrue.op
+out_6Node_400WFCMemOptTrue.op
+out_96Node_400WFCMemOptFalse.op
+pseudo_JTH2.inp
+Pt.GGA_PBE-JTH.xml
+set_affinity_gpu_polaris.sh
+TimingCPU.prm
+TimingFalse.prm
+TimingFP64.prm
+Timing.prm
+NUM_OF_NODES       = 6
+TOTAL_NUM_RANKS    = 192
+RANKS_PER_NODE     = 32
+THREADS_PER_RANK   = 1

@@ -1,0 +1,53 @@
+#!/bin/sh
+#SBATCH -A nti115
+#SBATCH -J fullPAW_CPU
+#SBATCH -t 01:29:00
+#SBATCH -p batch
+#SBATCH -N 1
+#SBATCH --ntasks-per-node=56
+#SBATCH --cpus-per-task=1
+##SBATCH --dependency=singleton
+
+# -----------------------
+# Threading (pure MPI)
+# -----------------------
+export OMP_NUM_THREADS=1
+
+# -----------------------
+# MPI / Cray MPICH tuning
+# -----------------------
+export MPICH_VERSION_DISPLAY=1
+export MPICH_ENV_DISPLAY=1
+export MPICH_OFI_NIC_POLICY=NUMA
+export MPICH_GPU_SUPPORT_ENABLED=0
+export MPICH_SMP_SINGLE_COPY_MODE=NONE
+
+# -----------------------
+# Libfabric tuning
+# -----------------------
+export FI_MR_CACHE_MONITOR=disabled
+
+# -----------------------
+# Libraries
+# -----------------------
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$INST/lib
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$INST/lib/lib64
+export LD_LIBRARY_PATH=$CRAY_LD_LIBRARY_PATH:$LD_LIBRARY_PATH
+
+module list
+
+# -----------------------
+# Executable
+# -----------------------
+#export BASE=/lustre/orion/nti115/scratch/kartickr/DFTFE/dftfe_PAWjctc/build/release/real
+export BASE=/lustre/orion/nti115/scratch/kartickr/DFTFE/dftfe_PAW_optim_noMF/build/release/real
+# Optional debug check
+
+
+# -----------------------
+# Launch (CPU only)
+# -----------------------
+srun -n $SLURM_NTASKS \
+     -c 1 \
+     --cpu-bind=cores \
+     $BASE/dftfe TimingCPU.prm > CPU_1Node_800WFC.op

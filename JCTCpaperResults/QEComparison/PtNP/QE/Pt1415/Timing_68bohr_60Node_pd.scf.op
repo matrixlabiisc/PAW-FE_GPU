@@ -1,0 +1,274 @@
+“RANK= 0 LOCAL_RANK= 0 gpu= 0”
+“RANK= 1 LOCAL_RANK= 1 gpu= 1”
+“RANK= 2 LOCAL_RANK= 2 gpu= 2”
+“RANK= 3 LOCAL_RANK= 3 gpu= 3”
+“RANK= 147 LOCAL_RANK= 3 gpu= 3”
+“RANK= 124 LOCAL_RANK= 0 gpu= 0”
+“RANK= 125 LOCAL_RANK= 1 gpu= 1”
+“RANK= 146 LOCAL_RANK= 2 gpu= 2”
+“RANK= 126 LOCAL_RANK= 2 gpu= 2”
+“RANK= 127 LOCAL_RANK= 3 gpu= 3”
+“RANK= 145 LOCAL_RANK= 1 gpu= 1”
+“RANK= 144 LOCAL_RANK= 0 gpu= 0”
+“RANK= 170 LOCAL_RANK= 2 gpu= 2”
+“RANK= 83 LOCAL_RANK= 3 gpu= 3”
+“RANK= 218 LOCAL_RANK= 2 gpu= 2”
+“RANK= 87 LOCAL_RANK= 3 gpu= 3”
+“RANK= 86 LOCAL_RANK= 2 gpu= 2”
+“RANK= 217 LOCAL_RANK= 1 gpu= 1”
+“RANK= 7 LOCAL_RANK= 3 gpu= 3”
+“RANK= 19 LOCAL_RANK= 3 gpu= 3”
+“RANK= 85 LOCAL_RANK= 1 gpu= 1”
+“RANK= 235 LOCAL_RANK= 3 gpu= 3”
+“RANK= 229 LOCAL_RANK= 1 gpu= 1”
+“RANK= 236 LOCAL_RANK= 0 gpu= 0”
+“RANK= 81 LOCAL_RANK= 1 gpu= 1”
+“RANK= 84 LOCAL_RANK= 0 gpu= 0”
+“RANK= 216 LOCAL_RANK= 0 gpu= 0”
+“RANK= 121 LOCAL_RANK= 1 gpu= 1”
+“RANK= 24 LOCAL_RANK= 0 gpu= 0”
+“RANK= 219 LOCAL_RANK= 3 gpu= 3”
+“RANK= 106 LOCAL_RANK= 2 gpu= 2”
+“RANK= 168 LOCAL_RANK= 0 gpu= 0”
+“RANK= 39 LOCAL_RANK= 3 gpu= 3”
+“RANK= 101 LOCAL_RANK= 1 gpu= 1”
+“RANK= 82 LOCAL_RANK= 2 gpu= 2”
+“RANK= 169 LOCAL_RANK= 1 gpu= 1”
+“RANK= 4 LOCAL_RANK= 0 gpu= 0”
+“RANK= 9 LOCAL_RANK= 1 gpu= 1”
+“RANK= 80 LOCAL_RANK= 0 gpu= 0”
+“RANK= 171 LOCAL_RANK= 3 gpu= 3”
+“RANK= 237 LOCAL_RANK= 1 gpu= 1”
+“RANK= 119 LOCAL_RANK= 3 gpu= 3”
+“RANK= 6 LOCAL_RANK= 2 gpu= 2”
+“RANK= 5 LOCAL_RANK= 1 gpu= 1”
+“RANK= 16 LOCAL_RANK= 0 gpu= 0”
+“RANK= 26 LOCAL_RANK= 2 gpu= 2”
+“RANK= 151 LOCAL_RANK= 3 gpu= 3”
+“RANK= 228 LOCAL_RANK= 0 gpu= 0”
+“RANK= 231 LOCAL_RANK= 3 gpu= 3”
+“RANK= 238 LOCAL_RANK= 2 gpu= 2”
+“RANK= 239 LOCAL_RANK= 3 gpu= 3”
+“RANK= 17 LOCAL_RANK= 1 gpu= 1”
+“RANK= 31 LOCAL_RANK= 3 gpu= 3”
+“RANK= 172 LOCAL_RANK= 0 gpu= 0”
+“RANK= 230 LOCAL_RANK= 2 gpu= 2”
+“RANK= 18 LOCAL_RANK= 2 gpu= 2”
+“RANK= 12 LOCAL_RANK= 0 gpu= 0”
+“RANK= 110 LOCAL_RANK= 2 gpu= 2”
+“RANK= 233 LOCAL_RANK= 1 gpu= 1”
+“RANK= 132 LOCAL_RANK= 0 gpu= 0”
+“RANK= 212 LOCAL_RANK= 0 gpu= 0”
+“RANK= 120 LOCAL_RANK= 0 gpu= 0”
+“RANK= 27 LOCAL_RANK= 3 gpu= 3”
+“RANK= 25 LOCAL_RANK= 1 gpu= 1”
+“RANK= 123 LOCAL_RANK= 3 gpu= 3”
+“RANK= 102 LOCAL_RANK= 2 gpu= 2”
+“RANK= 63 LOCAL_RANK= 3 gpu= 3”
+“RANK= 122 LOCAL_RANK= 2 gpu= 2”
+“RANK= 107 LOCAL_RANK= 3 gpu= 3”
+“RANK= 232 LOCAL_RANK= 0 gpu= 0”
+“RANK= 234 LOCAL_RANK= 2 gpu= 2”
+“RANK= 105 LOCAL_RANK= 1 gpu= 1”
+“RANK= 165 LOCAL_RANK= 1 gpu= 1”
+“RANK= 104 LOCAL_RANK= 0 gpu= 0”
+“RANK= 136 LOCAL_RANK= 0 gpu= 0”
+“RANK= 100 LOCAL_RANK= 0 gpu= 0”
+“RANK= 149 LOCAL_RANK= 1 gpu= 1”
+“RANK= 103 LOCAL_RANK= 3 gpu= 3”
+“RANK= 36 LOCAL_RANK= 0 gpu= 0”
+“RANK= 10 LOCAL_RANK= 2 gpu= 2”
+“RANK= 131 LOCAL_RANK= 3 gpu= 3”
+“RANK= 79 LOCAL_RANK= 3 gpu= 3”
+“RANK= 174 LOCAL_RANK= 2 gpu= 2”
+“RANK= 164 LOCAL_RANK= 0 gpu= 0”
+“RANK= 8 LOCAL_RANK= 0 gpu= 0”
+“RANK= 38 LOCAL_RANK= 2 gpu= 2”
+“RANK= 113 LOCAL_RANK= 1 gpu= 1”
+“RANK= 37 LOCAL_RANK= 1 gpu= 1”
+“RANK= 13 LOCAL_RANK= 1 gpu= 1”
+“RANK= 148 LOCAL_RANK= 0 gpu= 0”
+“RANK= 11 LOCAL_RANK= 3 gpu= 3”
+“RANK= 150 LOCAL_RANK= 2 gpu= 2”
+“RANK= 21 LOCAL_RANK= 1 gpu= 1”
+“RANK= 173 LOCAL_RANK= 1 gpu= 1”
+“RANK= 117 LOCAL_RANK= 1 gpu= 1”
+“RANK= 29 LOCAL_RANK= 1 gpu= 1”
+“RANK= 175 LOCAL_RANK= 3 gpu= 3”
+“RANK= 14 LOCAL_RANK= 2 gpu= 2”
+“RANK= 15 LOCAL_RANK= 3 gpu= 3”
+“RANK= 118 LOCAL_RANK= 2 gpu= 2”
+“RANK= 135 LOCAL_RANK= 3 gpu= 3”
+“RANK= 214 LOCAL_RANK= 2 gpu= 2”
+“RANK= 28 LOCAL_RANK= 0 gpu= 0”
+“RANK= 61 LOCAL_RANK= 1 gpu= 1”
+“RANK= 116 LOCAL_RANK= 0 gpu= 0”
+“RANK= 138 LOCAL_RANK= 2 gpu= 2”
+“RANK= 134 LOCAL_RANK= 2 gpu= 2”
+“RANK= 77 LOCAL_RANK= 1 gpu= 1”
+“RANK= 30 LOCAL_RANK= 2 gpu= 2”
+“RANK= 166 LOCAL_RANK= 2 gpu= 2”
+“RANK= 167 LOCAL_RANK= 3 gpu= 3”
+“RANK= 133 LOCAL_RANK= 1 gpu= 1”
+“RANK= 215 LOCAL_RANK= 3 gpu= 3”
+“RANK= 213 LOCAL_RANK= 1 gpu= 1”
+“RANK= 70 LOCAL_RANK= 2 gpu= 2”
+“RANK= 109 LOCAL_RANK= 1 gpu= 1”
+“RANK= 62 LOCAL_RANK= 2 gpu= 2”
+“RANK= 108 LOCAL_RANK= 0 gpu= 0”
+“RANK= 60 LOCAL_RANK= 0 gpu= 0”
+“RANK= 128 LOCAL_RANK= 0 gpu= 0”
+“RANK= 137 LOCAL_RANK= 1 gpu= 1”
+“RANK= 139 LOCAL_RANK= 3 gpu= 3”
+“RANK= 111 LOCAL_RANK= 3 gpu= 3”
+“RANK= 67 LOCAL_RANK= 3 gpu= 3”
+“RANK= 22 LOCAL_RANK= 2 gpu= 2”
+“RANK= 112 LOCAL_RANK= 0 gpu= 0”
+“RANK= 76 LOCAL_RANK= 0 gpu= 0”
+“RANK= 78 LOCAL_RANK= 2 gpu= 2”
+“RANK= 129 LOCAL_RANK= 1 gpu= 1”
+“RANK= 23 LOCAL_RANK= 3 gpu= 3”
+“RANK= 130 LOCAL_RANK= 2 gpu= 2”
+“RANK= 115 LOCAL_RANK= 3 gpu= 3”
+“RANK= 20 LOCAL_RANK= 0 gpu= 0”
+“RANK= 114 LOCAL_RANK= 2 gpu= 2”
+“RANK= 54 LOCAL_RANK= 2 gpu= 2”
+“RANK= 69 LOCAL_RANK= 1 gpu= 1”
+“RANK= 181 LOCAL_RANK= 1 gpu= 1”
+“RANK= 140 LOCAL_RANK= 0 gpu= 0”
+“RANK= 141 LOCAL_RANK= 1 gpu= 1”
+“RANK= 94 LOCAL_RANK= 2 gpu= 2”
+“RANK= 46 LOCAL_RANK= 2 gpu= 2”
+“RANK= 158 LOCAL_RANK= 2 gpu= 2”
+“RANK= 71 LOCAL_RANK= 3 gpu= 3”
+“RANK= 99 LOCAL_RANK= 3 gpu= 3”
+“RANK= 68 LOCAL_RANK= 0 gpu= 0”
+“RANK= 64 LOCAL_RANK= 0 gpu= 0”
+“RANK= 143 LOCAL_RANK= 3 gpu= 3”
+“RANK= 142 LOCAL_RANK= 2 gpu= 2”
+“RANK= 65 LOCAL_RANK= 1 gpu= 1”
+“RANK= 66 LOCAL_RANK= 2 gpu= 2”
+“RANK= 227 LOCAL_RANK= 3 gpu= 3”
+“RANK= 52 LOCAL_RANK= 0 gpu= 0”
+“RANK= 33 LOCAL_RANK= 1 gpu= 1”
+“RANK= 183 LOCAL_RANK= 3 gpu= 3”
+“RANK= 199 LOCAL_RANK= 3 gpu= 3”
+“RANK= 206 LOCAL_RANK= 2 gpu= 2”
+“RANK= 53 LOCAL_RANK= 1 gpu= 1”
+“RANK= 47 LOCAL_RANK= 3 gpu= 3”
+“RANK= 190 LOCAL_RANK= 2 gpu= 2”
+“RANK= 89 LOCAL_RANK= 1 gpu= 1”
+“RANK= 193 LOCAL_RANK= 1 gpu= 1”
+“RANK= 49 LOCAL_RANK= 1 gpu= 1”
+“RANK= 55 LOCAL_RANK= 3 gpu= 3”
+“RANK= 182 LOCAL_RANK= 2 gpu= 2”
+“RANK= 92 LOCAL_RANK= 0 gpu= 0”
+“RANK= 211 LOCAL_RANK= 3 gpu= 3”
+“RANK= 153 LOCAL_RANK= 1 gpu= 1”
+“RANK= 43 LOCAL_RANK= 3 gpu= 3”
+“RANK= 178 LOCAL_RANK= 2 gpu= 2”
+“RANK= 44 LOCAL_RANK= 0 gpu= 0”
+“RANK= 95 LOCAL_RANK= 3 gpu= 3”
+“RANK= 45 LOCAL_RANK= 1 gpu= 1”
+“RANK= 180 LOCAL_RANK= 0 gpu= 0”
+“RANK= 74 LOCAL_RANK= 2 gpu= 2”
+“RANK= 93 LOCAL_RANK= 1 gpu= 1”
+“RANK= 159 LOCAL_RANK= 3 gpu= 3”
+“RANK= 59 LOCAL_RANK= 3 gpu= 3”
+“RANK= 157 LOCAL_RANK= 1 gpu= 1”
+“RANK= 156 LOCAL_RANK= 0 gpu= 0”
+“RANK= 192 LOCAL_RANK= 0 gpu= 0”
+“RANK= 96 LOCAL_RANK= 0 gpu= 0”
+“RANK= 161 LOCAL_RANK= 1 gpu= 1”
+“RANK= 191 LOCAL_RANK= 3 gpu= 3”
+“RANK= 200 LOCAL_RANK= 0 gpu= 0”
+“RANK= 97 LOCAL_RANK= 1 gpu= 1”
+“RANK= 98 LOCAL_RANK= 2 gpu= 2”
+“RANK= 226 LOCAL_RANK= 2 gpu= 2”
+“RANK= 48 LOCAL_RANK= 0 gpu= 0”
+“RANK= 188 LOCAL_RANK= 0 gpu= 0”
+“RANK= 189 LOCAL_RANK= 1 gpu= 1”
+“RANK= 32 LOCAL_RANK= 0 gpu= 0”
+“RANK= 196 LOCAL_RANK= 0 gpu= 0”
+“RANK= 205 LOCAL_RANK= 1 gpu= 1”
+“RANK= 224 LOCAL_RANK= 0 gpu= 0”
+“RANK= 91 LOCAL_RANK= 3 gpu= 3”
+“RANK= 225 LOCAL_RANK= 1 gpu= 1”
+“RANK= 179 LOCAL_RANK= 3 gpu= 3”
+“RANK= 154 LOCAL_RANK= 2 gpu= 2”
+“RANK= 35 LOCAL_RANK= 3 gpu= 3”
+“RANK= 34 LOCAL_RANK= 2 gpu= 2”
+“RANK= 42 LOCAL_RANK= 2 gpu= 2”
+“RANK= 207 LOCAL_RANK= 3 gpu= 3”
+“RANK= 204 LOCAL_RANK= 0 gpu= 0”
+“RANK= 73 LOCAL_RANK= 1 gpu= 1”
+“RANK= 201 LOCAL_RANK= 1 gpu= 1”
+“RANK= 163 LOCAL_RANK= 3 gpu= 3”
+“RANK= 197 LOCAL_RANK= 1 gpu= 1”
+“RANK= 41 LOCAL_RANK= 1 gpu= 1”
+“RANK= 88 LOCAL_RANK= 0 gpu= 0”
+“RANK= 222 LOCAL_RANK= 2 gpu= 2”
+“RANK= 221 LOCAL_RANK= 1 gpu= 1”
+“RANK= 40 LOCAL_RANK= 0 gpu= 0”
+“RANK= 185 LOCAL_RANK= 1 gpu= 1”
+“RANK= 198 LOCAL_RANK= 2 gpu= 2”
+“RANK= 90 LOCAL_RANK= 2 gpu= 2”
+“RANK= 58 LOCAL_RANK= 2 gpu= 2”
+“RANK= 160 LOCAL_RANK= 0 gpu= 0”
+“RANK= 177 LOCAL_RANK= 1 gpu= 1”
+“RANK= 50 LOCAL_RANK= 2 gpu= 2”
+“RANK= 152 LOCAL_RANK= 0 gpu= 0”
+“RANK= 155 LOCAL_RANK= 3 gpu= 3”
+“RANK= 176 LOCAL_RANK= 0 gpu= 0”
+“RANK= 208 LOCAL_RANK= 0 gpu= 0”
+“RANK= 72 LOCAL_RANK= 0 gpu= 0”
+“RANK= 75 LOCAL_RANK= 3 gpu= 3”
+“RANK= 57 LOCAL_RANK= 1 gpu= 1”
+“RANK= 203 LOCAL_RANK= 3 gpu= 3”
+“RANK= 56 LOCAL_RANK= 0 gpu= 0”
+“RANK= 195 LOCAL_RANK= 3 gpu= 3”
+“RANK= 194 LOCAL_RANK= 2 gpu= 2”
+“RANK= 220 LOCAL_RANK= 0 gpu= 0”
+“RANK= 209 LOCAL_RANK= 1 gpu= 1”
+“RANK= 210 LOCAL_RANK= 2 gpu= 2”
+“RANK= 223 LOCAL_RANK= 3 gpu= 3”
+“RANK= 51 LOCAL_RANK= 3 gpu= 3”
+“RANK= 202 LOCAL_RANK= 2 gpu= 2”
+“RANK= 187 LOCAL_RANK= 3 gpu= 3”
+“RANK= 162 LOCAL_RANK= 2 gpu= 2”
+“RANK= 186 LOCAL_RANK= 2 gpu= 2”
+“RANK= 184 LOCAL_RANK= 0 gpu= 0”
+     Message from routine get_command_line:
+     unexpected argument # 4     :-inp
+
+     Program PWSCF v.7.5 starts on 21Mar2026 at 23:16: 7 
+        Git branch: HEAD
+        Last git commit: 770a0b2d12928a67048e2f3da8d10d057e52179e
+        Last git commit date: Tue Aug 19 09:57:12 2025 +0000
+        Last git commit subject: Merge branch 'QE-7.5-RC' into 'master'
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 29 465901 (2017);
+         "P. Giannozzi et al., J. Chem. Phys. 152 154105 (2020);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI & OpenMP), running on    1920 processor cores
+     Number of MPI processes:               240
+     Threads/MPI process:                     8
+
+     MPI processes distributed on    60 nodes
+     496678 MiB available memory on the printing compute node when the environment starts
+ 
+     Waiting for input...
+     Reading input from standard input
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine  read_namelists (2):
+      could not find namelist &control
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...

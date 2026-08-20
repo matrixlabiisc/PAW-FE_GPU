@@ -1,0 +1,49 @@
+# Input for PAW1 tutorial
+#Definition of the unit cell
+acell 30.0 32.0 28.0   # The keyword "acell" refers to the
+                  # lengths of the primitive vectors (in Bohr)
+rprim 1.0 0.0 0.0
+       0.0 1.0 0.0
+       0.0 0.0 1.0
+autoparal 1
+#Definition of the atom types and pseudopotentials
+ntypat 2          # There is only one type of atom
+znucl 7 8           # Atomic number of the possible type(s) of atom. Here carbon.
+pp_dirpath "."              
+pseudos "../../../pspFiles/JTH2.0/N.GGA_PBE-JTH.xml, ../../../pspFiles/JTH2.0/O.GGA_PBE-JTH.xml" 
+                         
+#Definition of the atoms
+natom 3          # There are two atoms
+typat 1 2 2       # They both are of type 1, that is, Carbon
+xcart                       # Cartesian coordinates in Bohr
+0 0 0
+0 2.4122594 1.022450286
+0 -2.4122594 1.022450286
+
+# (N–O ≈ 1.19 Å, angle ≈ 134°)
+#Definition of bands and occupation numbers
+nband 20          # Compute 6 bands (4 occupied, 2 empty)
+nsppol 2
+spinat 0.0 0.0 1.0
+        0.0 0.0 1.0
+        0.0 0.0 -1.0
+occopt 3          # Automatic generation of occupation numbers, as a semiconductor
+#Numerical parameters of the calculation : planewave basis set and k point grid
+usexcnhat = 0
+ecut 60         # Maximal plane-wave kinetic energy cut-off, in Hartree
+pawecutdg 300     # Max. plane-wave kinetic energy cut-off, in Ha, for the PAW double grid
+pawxcdev = 0
+wfoptalg = 14   
+pawovlp -1     
+#Parameters for the SCF procedure
+nstep 400          # Maximal number of SCF cycles
+tolrff 1E-5
+tsmear 0.001583416   
+#chksymtnons 0              
+#tolsym 1.0e-8
+chkprim 0
+#Kpoint rule
+kptopt 0
+nkpt 1
+kpt 0.0 0.0 0.0
+paw_add_core 1

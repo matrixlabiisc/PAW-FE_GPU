@@ -1,0 +1,103 @@
+set VERBOSITY=4
+set USE GPU = true
+set MEM OPT MODE                                    = true
+set SOLVER MDOE = GS
+subsection Geometry
+  set NATOMS=2
+  set NATOM TYPES=1
+  set ATOMIC COORDINATES FILE      = coordinates.inp       
+  set DOMAIN VECTORS FILE = domainVectors5.inp 
+    subsection Optimization
+    set BFGS STEP METHOD           = QN
+    set CELL CONSTRAINT TYPE       = 12
+    set CELL OPT SOLVER            = LBFGS
+    set CELL STRESS                = true
+    set FORCE TOL                  = 1e-4
+    set ION FORCE                  = true
+    set ION OPT SOLVER             = LBFGS
+    set ION RELAX FLAGS FILE       = 
+    set LBFGS HISTORY              = 5
+    set MAXIMUM CELL UPDATE STEP   = 0.1
+    set MAXIMUM ION UPDATE STEP    = 0.5
+    set MAXIMUM OPTIMIZATION STEPS = 300
+    set MAXIMUM STAGGERED CYCLES   = 300
+    set MAX LINE SEARCH ITER       = 5
+    set NON SELF CONSISTENT FORCE  = false
+    set OPTIMIZATION MODE          = ION
+    set REUSE DENSITY              = 1
+    set REUSE WFC                  = true
+    set STRESS TOL                 = 1e-6
+    set USE PRECONDITIONER         = false
+  end
+end
+
+subsection Boundary conditions
+  set PERIODIC1                       = true
+  set PERIODIC2                       = true
+  set PERIODIC3                       = true
+end
+
+subsection Finite element mesh parameters
+  set POLYNOMIAL ORDER=7
+  set POLYNOMIAL ORDER ELECTROSTATICS = 9
+  set DENSITY QUADRATURE COPY          = 1
+  set DENSITY QUADRATURE ORDER         = 20
+  set LOCAL POTENTIAL QUADRATURE COPY  = 1
+  set LOCAL POTENTIAL QUADRATURE ORDER = 20
+  set NON LOCAL PSP QUADRATURE COPY    = 2
+  set NON LOCAL PSP QUADRATURE ORDER   = 12
+  set NUCLEAR CHARGE QUADRATURE COPY   = 2
+  set NUCLEAR CHARGE QUADRATURE ORDER  = 14  
+  subsection Auto mesh generation parameters
+    set MESH SIZE AROUND ATOM  = 1.0
+    set ATOM BALL RADIUS = 9.0
+    
+  end
+end
+
+subsection DFT functional parameters
+  set EXCHANGE CORRELATION TYPE   = GGA-PBE
+  set PSEUDOPOTENTIAL CALCULATION = true  
+  set PSEUDOPOTENTIAL FILE NAMES LIST = pseudo.inp
+  set PAW GPU XC EVALUATION                             = false
+  set SPIN POLARIZATION                                 = 1
+
+end
+
+subsection SCF parameters
+set ADAPT ANDERSON MIXING PARAMETER         = false
+  set MIXING PARAMETER                        = 0.05
+  set ENERGY TOLERANCE                        = 4e-08  
+  set TEMPERATURE                      = 631.5500764
+  set MIXING METHOD                     =ANDERSON
+  set TOLERANCE                        = 1e-7
+  set MAXIMUM ITERATIONS                      = 100
+
+  set USE GRAD PHI MIXING                     = true
+  set USE ENERGY RESIDUAL METRIC = true
+  set USE APPROX DELTA MATRIX                 = true
+  subsection Eigen-solver parameters
+      set NUMBER OF KOHN-SHAM WAVEFUNCTIONS = 30
+      set USE APPROXIMATE OVERLAP MATRIX                       = false      
+      set USE SINGLE PREC CHEBY                                = true   
+  end
+end
+subsection Brillouin zone k point sampling options
+  set USE GROUP SYMMETRY         = false
+  set USE TIME REVERSAL SYMMETRY = true
+  set kPOINT RULE FILE           =
+  subsection Monkhorst-Pack (MP) grid generation
+    set SAMPLING POINTS 1 = 15
+    set SAMPLING POINTS 2 = 15
+    set SAMPLING POINTS 3 = 15
+    set SAMPLING SHIFT 1  = 0
+    set SAMPLING SHIFT 2  = 0
+    set SAMPLING SHIFT 3  = 0
+  end
+end
+subsection Parallelization
+  set BAND PARAL OPT           = true
+  set MPI ALLREDUCE BLOCK SIZE = 100.0
+  set NPBAND                   = 1
+  set NPKPT                    = 80
+end

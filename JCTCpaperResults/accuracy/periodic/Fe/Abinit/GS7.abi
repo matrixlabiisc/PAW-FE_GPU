@@ -1,0 +1,54 @@
+# Input for PAW1 tutorial
+#Definition of the unit cell
+acell 3*5.459575714  # The keyword "acell" refers to the
+                  # lengths of the primitive vectors (in Bohr)
+rprim 1.0 0.0 0.0
+       0.0 1.0 0.0
+       0.0 0.0 1.0
+npkpt 6
+maxnsym 512
+#Definition of the atom types and pseudopotentials
+ntypat 1          # There is only one type of atom
+znucl 26              
+pseudos "../../../pspFiles/JTH2.0/Fe.GGA_PBE-JTH.xml" 
+                         
+#Definition of the atoms
+natom 2          # There are two atoms
+typat 1 1      # They both are of type 1, that is, Carbon
+xred             # This keyword indicates that the location of the atoms
+                  # will follow, one triplet of number for each atom
+0 0 0
+0.5 0.5 0.5
+#Definition of bands and occupation numbers
+occopt 3          # Automatic generation of occupation numbers, as a semiconductor
+#Numerical parameters of the calculation : planewave basis set and k point grid
+usexcnhat = 0
+ecut 60         # Maximal plane-wave kinetic energy cut-off, in Hartree
+pawecutdg 300    # Max. plane-wave kinetic energy cut-off, in Ha, for the PAW double grid
+pawxcdev = 0
+wfoptalg = 14  
+iscf 17          # Pulay mixing of the density (sometimes better for some setups)
+npulayit 8
+diemix 0.05 
+diemac  1.0d6        # default is very large (works for metals) — usually do not reduce for metals
+dielng  0.5          # characteristic screening length (try 0.1 - 1.0)
+pawovlp -1     
+#Parameters for the SCF procedure
+nstep 400          # Maximal number of SCF cycles
+tolvrs 1.0E-8   # Will stop when, twice in a row, the difference 
+                  # between two consecutive evaluations of potential residual 
+                  # differ by less than tolvrs
+tsmear 0.002 
+chksymtnons 0              
+chkprim 0
+nsym 1
+# ---------- K-points (Gamma-centered) ----------
+ngkpt 15 15 15
+nshiftk 1
+shiftk 0.0 0.0 0.0
+# ---------- Spin (ferromagnetic start) ----------
+nsppol 2
+# initial moments ~2 μB/Fe along z; adjust as needed
+spinat 0.0 0.0 2.0
+       0.0 0.0 2.0
+paw_add_core 1

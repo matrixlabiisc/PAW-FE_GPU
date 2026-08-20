@@ -1,0 +1,78 @@
+#!/bin/bash
+#PBS -l select=2
+#PBS -l place=scatter
+#PBS -l walltime=00:49:59
+#PBS -l filesystems=flare
+#PBS -j oe
+#PBS -q debug
+#PBS -A DFTCalc2
+#PBS -N PAWjctc_GPU
+
+module load boost
+
+cd $PBS_O_WORKDIR
+
+# =========================
+# Job size configuration
+# =========================
+NNODES=$(wc -l < "$PBS_NODEFILE")
+
+NRANKS_PER_NODE=12     # 1 rank per tile (6 GPUs × 2 tiles)
+NTHREADS=4             # threads per rank (tunable: try 4 or 8)
+NDEPTH=$NTHREADS
+
+NTOTRANKS=$(( NNODES * NRANKS_PER_NODE ))
+
+echo "Nodes                = $NNODES"
+echo "Ranks per node       = $NRANKS_PER_NODE"
+echo "Threads per rank     = $NTHREADS"
+echo "Total MPI ranks      = $NTOTRANKS"
+
+# =========================
+# Threading & affinity
+# =========================
+export OMP_NUM_THREADS=$NTHREADS
+export OMP_PLACES=cores
+export OMP_PROC_BIND=close
+
+export DFTFE_NUM_THREADS=$NTHREADS
+export DEAL_II_NUM_THREADS=1
+export ELPA_NUM_THREADS=$NTHREADS
+
+# =========================
+# MPI / communication
+# =========================
+export CCL_LOG_LEVEL=error
+export CCL_ATL_TRANSPORT=ofi
+export FI_PROVIDER=cxi
+export CCL_KVS_MODE=pmi
+export CCL_PROCESS_LAUNCHER=pmix
+export FI_MR_CACHE_MONITOR=userfaultfd
+export CCL_KVS_CONNECTION_TIMEOUT=300
+
+# GPU backend
+export CCL_DEVICE=level_zero
+
+# =========================
+# GPU binding (keep this)
+# =========================
+GPU_BIND_SCHEME="--gpu-bind=list:0.0:0.1:1.0:1.1:2.0:2.1:3.0:3.1:4.0:4.1:5.0:5.1"
+
+# =========================
+# Launch
+# =========================
+mpiexec -n ${NTOTRANKS} \
+        --ppn ${NRANKS_PER_NODE} \
+        --depth=${NDEPTH} \
+        --cpu-bind=depth \
+        ${GPU_BIND_SCHEME} \
+        /lus/flare/projects/DFTCalc2/kartickr/dftfe_PAW_optim_noMF/install/real/dftfe FinalFP64.prm \
+        > GPUout_2NodeFP64_4Threads_PGDmerge.op
+
+mpiexec -n ${NTOTRANKS} \
+        --ppn ${NRANKS_PER_NODE} \
+        --depth=${NDEPTH} \
+        --cpu-bind=depth \
+        ${GPU_BIND_SCHEME} \
+        /lus/flare/projects/DFTCalc2/kartickr/dftfe_PAW_optim_noMF/install/real/dftfe Final.prm \
+        > GPUout_2Node_4Threads_PGDmerge.op        

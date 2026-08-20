@@ -1,0 +1,26 @@
+coordinates.inp
+CPUjob.sub
+CPUjob.sub.e7274478
+CPUjob.sub.o7274478
+dftfeScratch0t1784797708939
+dftfeScratch0t1784798197562
+domainBoundingVectors.inp
+Final_6Nodes_200WFC.op
+Final_7Nodes_200WFC.op
+FinalCPU.prm
+FinalFP64_6Nodes_200WFC.op
+FinalFP64_7Nodes_200WFC.op
+FinalFP64.prm
+Final.prm
+forces.txt
+forces.txt.old
+GPUjob.sub
+job.err
+job.out
+pseudo_JTH2.inp
+Pt.GGA_PBE-JTH.xml
+set_affinity_gpu_polaris.sh
+NUM_OF_NODES       = 7
+TOTAL_NUM_RANKS    = 224
+RANKS_PER_NODE     = 32
+THREADS_PER_RANK   = 1

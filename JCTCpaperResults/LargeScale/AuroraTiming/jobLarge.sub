@@ -1,0 +1,55 @@
+#!/bin/bash
+#PBS -l select=800
+#PBS -l place=scatter
+#PBS -l walltime=00:50:00
+#PBS -l filesystems=home
+#PBS -j oe
+#PBS -q prod
+#PBS -A DFTCalc2
+#PBS -N Compression
+
+echo "Number of Nodes Allocated      = $PBS_NUM_NODES"
+echo "Number of Tasks Allocated      = $PBS_NUM_PPN"
+echo "CPU on node                    = $PBS_NUM_CPUS"
+module load cmake ninja boost
+
+cd $PBS_O_WORKDIR
+export MPIR_CVAR_ENABLE_GPU=0
+
+NNODES=$(wc -l < "$PBS_NODEFILE")
+NRANKS_PER_NODE=12
+NTHREADS=5
+NTOTRANKS=$(( NNODES * NRANKS_PER_NODE ))
+
+export OMP_NUM_THREADS=$NTHREADS
+export OMP_PLACES=cores
+export DFTFE_NUM_THREADS=$NTHREADS
+export DEAL_II_NUM_THREADS=1
+export OMP_MAX_ACTIVE_LEVELS=1
+export ELPA_DEFAULT_omp_threads=1
+export MKL_NUM_THREADS=$NTHREADS
+export OMP_PROC_BIND=close
+export MKL_DYNAMIC=FALSE
+
+# =========================
+# MPI / communication
+# =========================
+export CCL_LOG_LEVEL=error
+export CCL_ATL_TRANSPORT=mpi
+export FI_PROVIDER=cxi
+export CCL_KVS_MODE=mpi
+export CCL_PROCESS_LAUNCHER=pmix
+export CCL_SYCL_OUTPUT_EVENT=1
+
+export ZE_FLAT_DEVICE_HIERARCHY=FLAT
+export ZEX_NUMBER_OF_CCS=0:1,1:1,2:1,3:1,4:1,5:1,6:1,7:1,8:1,9:1,10:1,11:1
+export CPU_BIND_SCHEME="--cpu-bind=list:1-8:9-16:17-24:25-32:33-40:41-48:53-60:61-68:69-76:77-84:85-92:93-100"
+export GPU_BIND_SCHEME="--gpu-bind=list:0:1:2:3:4:5:6:7:8:9:10:11"
+
+echo "MPI thread level              = $MPICH_DEFAULT_THREAD_LEVEL"
+echo "OMP placement                 = places=$OMP_PLACES bind=$OMP_PROC_BIND threads=$OMP_NUM_THREADS"
+echo "MKL threads                   = $MKL_NUM_THREADS"
+echo "CCL workers                   = count=$CCL_WORKER_COUNT affinity=$CCL_WORKER_AFFINITY"
+
+export BASE=/lus/flare/projects/DFTCalc2/nikhilk/dftfe_SC26/install/complex
+mpiexec --pmi=pmix -n ${NTOTRANKS} --ppn ${NRANKS_PER_NODE} ${CPU_BIND_SCHEME} ${GPU_BIND_SCHEME} /home/phanim/nishant/install_DFTFE/dftfe_PAWjctc/install-GPUAware-OFF-NCCL-ON-17f048a/real/dftfe Final.prm > outJCTC_800Nodes_Nikhil.op

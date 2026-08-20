@@ -1,0 +1,6 @@
+/var/spool/slurm/slurmd/job30042/slurm_script: line 8: ​: command not found
+Number of Nodes Allocated      = 2
+Number of Tasks Allocated      = 96
+Number of Cores/Task Allocated = 
+CPU on node  = 48
+/var/spool/slurm/slurmd/job30042/slurm_script: line 14: ​: command not found
